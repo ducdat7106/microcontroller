@@ -1,0 +1,114 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    05/08/2022  06:21:32  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\time_timer0.obj TO .\Objects\time_mode_of_timer0 PRINT (.\List
+>> ings\time_mode_of_timer0.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  .\Objects\time_timer0.obj (TIME_TIMER0)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\time_mode_of_timer0 (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0019H     UNIT         ?PR?_DELAY_MS_TIMER0?TIME_TIMER0
+            CODE    001CH     0012H     UNIT         ?PR?MAIN?MAIN
+            CODE    002EH     000DH     UNIT         ?PR?_INITTIMER0?TIME_TIMER0
+            CODE    003BH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\time_mode_of_timer0 (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?_INITTIMER0?TIME_TIMER0
+  +--> ?PR?_DELAY_MS_TIMER0?TIME_TIMER0
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\time_mode_of_timer0 (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:0080H.0       PUBLIC        P0_0
+  C:001CH         PUBLIC        main
+  -------         PROC          MAIN
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/08/2022  06:21:32  PAGE 2
+
+
+  C:001CH         LINE#         5
+  C:001CH         LINE#         6
+  C:001CH         LINE#         7
+  C:0023H         LINE#         9
+  C:0023H         LINE#         10
+  C:0023H         LINE#         11
+  C:0025H         LINE#         12
+  C:002CH         LINE#         13
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        TIME_TIMER0
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0003H         PUBLIC        _delay_ms_timer0
+  D:0089H         PUBLIC        TMOD
+  B:0088H.5       PUBLIC        TF0
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  B:0088H.4       PUBLIC        TR0
+  C:002EH         PUBLIC        _initTimer0
+  -------         PROC          _INITTIMER0
+  D:0006H         SYMBOL        mode
+  C:002EH         LINE#         21
+  C:002EH         LINE#         22
+  C:002EH         LINE#         24
+  C:0034H         LINE#         25
+  C:0034H         LINE#         27
+  C:0037H         LINE#         28
+  C:003AH         LINE#         29
+  C:003AH         LINE#         30
+  -------         ENDPROC       _INITTIMER0
+  -------         PROC          _DELAY_MS_TIMER0
+  D:0006H         SYMBOL        t
+  C:0003H         LINE#         32
+  C:0003H         LINE#         33
+  C:0003H         LINE#         34
+  C:0003H         LINE#         35
+  C:0006H         LINE#         36
+  C:0009H         LINE#         37
+  C:000BH         LINE#         38
+  C:000EH         LINE#         39
+  C:0010H         LINE#         40
+  C:0012H         LINE#         42
+  C:0017H         LINE#         43
+  C:001BH         LINE#         44
+  -------         ENDPROC       _DELAY_MS_TIMER0
+  -------         ENDMOD        TIME_TIMER0
+
+Program Size: data=9.0 xdata=0 code=71
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

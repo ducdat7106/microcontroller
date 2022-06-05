@@ -1,0 +1,94 @@
+C51 COMPILER V9.60.0.0   TIME_TIMER0                                                       05/08/2022 06:21:13 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE TIME_TIMER0
+OBJECT MODULE PLACED IN .\Objects\time_timer0.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE User\time_timer0.c OPTIMIZE(8,SPEED) BROWSE INCDIR(.\Main;.\User) DEBUG 
+                    -OBJECTEXTEND PRINT(.\Listings\time_timer0.lst) TABS(2) OBJECT(.\Objects\time_timer0.obj)
+
+line level    source
+
+   1          #include "time_timer0.h"
+   2          
+   3          
+   4          /*
+   5          crytal =12 MHz
+   6          qua bo chia truoc /12--> f = 12/12=1Mhz
+   7          
+   8          chu ky lenh = 1us
+   9          
+  10          -->de chay 1ms can 1000 lenh
+  11          
+  12          timer0 16bit = 65536
+  13          -->65536-1000  =  64536
+  14          
+  15          -->co ngat se bat
+  16          
+  17          dec  -  64536
+  18          hex  -  FC18   ---> TL0 = 18
+  19                         ---> TH0 = FC
+  20          */
+  21          void initTimer0(int mode)
+  22          {
+  23   1        //mode 1, timer0 16bit
+  24   1        if(mode == 1)
+  25   1        {
+  26   2          // Chon mode cho T0
+  27   2          TMOD &= 0xF0; // Xoa cac bit dieu khien thanh ghi TMOD cua T0
+  28   2          TMOD |= 0x01; // Cho mode 1 cho timer0
+  29   2        }
+  30   1      }
+  31          
+  32          void delay_ms_timer0(unsigned int t)
+  33          {
+  34   1        do{
+  35   2          TL0 = 0x18;
+  36   2          TH0 = 0xFC;
+  37   2          TR0 = 1;  // Timer0 bat dau dem
+  38   2          while(!TF0); //kiem tra co ngat
+  39   2          TR0 = 0;  // Timer0 ngung dem
+  40   2          TF0 = 0;
+  41   2      
+  42   2          t--;
+  43   2        }while(t!=0);
+  44   1      }
+  45          
+  46          /*
+  47          //khong toi uu de su dung
+  48          
+  49          void delay_ms_timer0(unsigned int t)
+  50          {
+  51              unsigned int cnt;
+  52                
+  53              TL0 = 0;
+  54              TH0 = 0;
+C51 COMPILER V9.60.0.0   TIME_TIMER0                                                       05/08/2022 06:21:13 PAGE 2   
+
+  55              TR0 = 1;  // Timer0 bat dau dem
+  56              
+  57              do{
+  58                cnt = TH0;
+  59                cnt <<= 8;
+  60                cnt |= TL0;
+  61              }while(cnt<=1000)
+  62                
+  63              TR0 = 0;  // Timer0 ngung dem
+  64          
+  65              t--;
+  66            }while(t!=0);
+  67          }
+  68          */
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     38    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

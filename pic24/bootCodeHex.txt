@@ -1,0 +1,6 @@
+cd /d D:\microcontrollers\pic24\Grapeloader\dist\grapeloader
+
+grapeloader.exe -p COM4 -f + đường dẫn file code hex
+
+
+nhấn reset

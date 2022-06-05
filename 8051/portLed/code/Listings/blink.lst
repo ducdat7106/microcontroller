@@ -1,0 +1,42 @@
+C51 COMPILER V9.60.0.0   BLINK                                                             05/07/2022 21:25:15 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE BLINK
+OBJECT MODULE PLACED IN .\Objects\blink.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE Lib\blink.c OPTIMIZE(8,SPEED) BROWSE INCDIR(.\Main;.\Lib) DEBUG OBJECTEX
+                    -TEND PRINT(.\Listings\blink.lst) TABS(2) OBJECT(.\Objects\blink.obj)
+
+line level    source
+
+   1          #include "blink.h"
+   2          
+   3          void blink_ledx(int x)
+   4          {
+   5   1          if(x == 10)
+   6   1          {
+   7   2            Led1 = 0x00;
+   8   2            delay_ms(1000);
+   9   2            Led1 = 0xFF;
+  10   2            delay_ms(1000);
+  11   2            
+  12   2          }else{
+  13   2            Led2 = 0x00;
+  14   2            delay_ms(1000);
+  15   2            Led2 = 0xFF;
+  16   2            delay_ms(1000);
+  17   2          }
+  18   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     41    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

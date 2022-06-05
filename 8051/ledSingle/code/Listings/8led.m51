@@ -1,0 +1,165 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    05/06/2022  20:50:16  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\led.obj TO .\Objects\8led PRINT (.\Listings\8led.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\led.obj (LED)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\8led (LED)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0014H     UNIT         ?DT?LED
+            IDATA   001CH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0022H     UNIT         ?PR?_DELAY_MS?LED
+            CODE    00B1H     0022H     UNIT         ?PR?DISPLAYLED_7SEG?LED
+            CODE    00D3H     0019H     UNIT         ?C_INITSEG
+            CODE    00ECH     0010H     UNIT         ?PR?BLINKLEDCATHODE?LED
+            CODE    00FCH     0010H     UNIT         ?PR?BLINKLEDANODE?LED
+            CODE    010CH     000CH     UNIT         ?PR?CONFIG?LED
+            CODE    0118H     0008H     UNIT         ?PR?MAIN?LED
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\8led (LED)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?LED
+  +--> ?C_INITSEG
+
+?PR?MAIN?LED
+  +--> ?PR?CONFIG?LED
+  +--> ?PR?DISPLAYLED_7SEG?LED
+
+?PR?DISPLAYLED_7SEG?LED
+  +--> ?PR?_DELAY_MS?LED
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\8led (LED)
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/06/2022  20:50:16  PAGE 2
+
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LED
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:00B1H         PUBLIC        displayLed_7SEG
+  D:00A8H         PUBLIC        IE
+  C:00FCH         PUBLIC        blinkLedAnode
+  D:00B8H         PUBLIC        IP
+  D:0008H         PUBLIC        MA7D_Cathode_Mass
+  C:0118H         PUBLIC        main
+  C:0093H         PUBLIC        _Delay_ms
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:0012H         PUBLIC        MA7D_Anode_Power
+  C:00ECH         PUBLIC        blinkLedCathode
+  D:00C8H         PUBLIC        T2CON
+  C:010CH         PUBLIC        config
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:0118H         LINE#         21
+  C:0118H         LINE#         22
+  C:0118H         LINE#         23
+  C:011BH         LINE#         25
+  C:011BH         LINE#         26
+  C:011BH         LINE#         27
+  C:011EH         LINE#         28
+  -------         ENDPROC       MAIN
+  C:008FH         SYMBOL        L?0020
+  -------         PROC          L?0019
+  -------         ENDPROC       L?0019
+  C:008FH         SYMBOL        L?0020
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        time
+  -------         DO            
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:0093H         LINE#         31
+  C:0093H         LINE#         32
+  C:0093H         LINE#         34
+  C:009DH         LINE#         35
+  C:009DH         LINE#         36
+  C:00B0H         LINE#         37
+  C:00B0H         LINE#         38
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          CONFIG
+  C:010CH         LINE#         40
+  C:010CH         LINE#         41
+  C:010CH         LINE#         43
+  C:010FH         LINE#         44
+  C:0112H         LINE#         46
+  C:0114H         LINE#         47
+  C:0117H         LINE#         48
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/06/2022  20:50:16  PAGE 3
+
+
+  -------         ENDPROC       CONFIG
+  -------         PROC          BLINKLEDCATHODE
+  C:00ECH         LINE#         50
+  C:00ECH         LINE#         51
+  C:00ECH         LINE#         52
+  C:00EFH         LINE#         53
+  C:00F2H         LINE#         54
+  C:00F5H         LINE#         55
+  -------         ENDPROC       BLINKLEDCATHODE
+  -------         PROC          BLINKLEDANODE
+  C:00FCH         LINE#         58
+  C:00FCH         LINE#         59
+  C:00FCH         LINE#         60
+  C:00FFH         LINE#         61
+  C:0102H         LINE#         62
+  C:0105H         LINE#         63
+  -------         ENDPROC       BLINKLEDANODE
+  -------         PROC          DISPLAYLED_7SEG
+  -------         DO            
+  D:0082H         SYMBOL        number
+  -------         ENDDO         
+  C:00B1H         LINE#         66
+  C:00B1H         LINE#         67
+  C:00B1H         LINE#         70
+  C:00B4H         LINE#         71
+  C:00B4H         LINE#         72
+  C:00BDH         LINE#         73
+  C:00C6H         LINE#         74
+  C:00C9H         LINE#         75
+  C:00D2H         LINE#         76
+  -------         ENDPROC       DISPLAYLED_7SEG
+  -------         ENDMOD        LED
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?BLINKLEDCATHODE?LED
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?BLINKLEDANODE?LED
+
+Program Size: data=29.0 xdata=0 code=288
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

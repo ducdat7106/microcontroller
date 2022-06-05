@@ -1,0 +1,301 @@
+C51 COMPILER V9.60.0.0   LEDSINGLE                                                         05/16/2022 11:03:13 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE LEDSINGLE
+OBJECT MODULE PLACED IN .\Objects\ledSingle.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE Lib\ledSingle.c OPTIMIZE(8,SPEED) BROWSE INCDIR(.\Main;.\Lib) DEBUG OBJE
+                    -CTEXTEND PRINT(.\Listings\ledSingle.lst) TABS(2) OBJECT(.\Objects\ledSingle.obj)
+
+line level    source
+
+   1          #include "ledSingle.h"
+   2          
+   3          unsigned char LHigh,LLow; //LHigh - Led High, LLow - Led Low 
+   4          unsigned int LRight, LLeft;
+   5            
+   6          unsigned int temp=0,  run=0x0001;
+   7          unsigned int result = 0;
+   8          
+   9          extern unsigned int value;
+  10          
+  11          int reset=10;
+  12          
+  13          void ouput16Led();
+  14          void turnOffLed();
+  15          void turnOnLed();
+  16          
+  17          void ouput16Led()
+  18          {
+  19   1        LHigh = result;
+  20   1        LLow = result >> 8;
+  21   1        
+  22   1        Led_High = ~LHigh;
+  23   1        Led_Low = ~LLow;
+  24   1      }
+  25          
+  26          void turnOffLedSingle()
+  27          {
+  28   1        Led_High = Led_Low = 0xFF;
+  29   1      }
+  30          
+  31          void turnOnLed()
+  32          {
+  33   1        Led_High = Led_Low = 0x00;
+  34   1      }
+  35          
+  36          void resetLedSingle()
+  37          {
+  38   1        result=0;
+  39   1        temp=0;
+  40   1        run = 0x8000; //cho xua
+  41   1        reset = 0;
+  42   1      }
+  43          
+  44          /*
+  45          void don_1led_sang_phai()
+  46          {
+  47            for(i=0; i<16; i++)
+  48            {
+  49              run = 0x0001;
+  50              for(j=i; j<16; j++)
+  51              {
+  52                result = temp|run;
+  53                ouput16Led();
+  54                
+C51 COMPILER V9.60.0.0   LEDSINGLE                                                         05/16/2022 11:03:13 PAGE 2   
+
+  55                run = run << 1;
+  56              }
+  57              temp = result;
+  58            }
+  59            temp = 0;
+  60          }
+  61          */
+  62          
+  63          void don_1led_sang_phai()
+  64          {
+  65   1          static int i=0, j=-1;
+  66   1        
+  67   1          if(reset == 0)
+  68   1          {
+  69   2            i=0; 
+  70   2            j=-1;
+  71   2            reset=10;
+  72   2          }
+  73   1        
+  74   1          if(value%50==0)
+  75   1          {
+  76   2            j++;
+  77   2            
+  78   2            /////
+  79   2            result = temp|run;
+  80   2            ouput16Led();   
+  81   2            run = run >> 1; // cho xua
+  82   2            ///
+  83   2            
+  84   2            if(j>15)
+  85   2            {
+  86   3              i++;
+  87   3              j=i-1;
+  88   3              run = 0x8000; //cho sua
+  89   3              temp = result;
+  90   3            }
+  91   2            
+  92   2            if(i>15)
+  93   2            {
+  94   3              i=0;
+  95   3              j=-1;
+  96   3              temp = 0;
+  97   3            }
+  98   2          }
+  99   1      }
+ 100          
+ 101          
+ 102          
+ 103          /*
+ 104          void don_1led_sang_trai()
+ 105          {
+ 106            for(i=0; i<16; i++)
+ 107            {
+ 108              run = 0x8000;
+ 109              for(j=i; j<16; j++)
+ 110              {
+ 111                result = temp|run;
+ 112                ouput16Led();
+ 113                delay_ms(50);
+ 114                run = run >> 1;
+ 115              }
+ 116              temp = result;
+C51 COMPILER V9.60.0.0   LEDSINGLE                                                         05/16/2022 11:03:13 PAGE 3   
+
+ 117            }
+ 118            temp = 0;
+ 119          }
+ 120          
+ 121          void don_2led_sang_phai()
+ 122          {
+ 123            for(i=0; i<16; i++)
+ 124            {
+ 125              run = 0x0003;//000+0011
+ 126              for(j=i; j<8; j++)
+ 127              {
+ 128                result = temp|run;
+ 129                ouput16Led();
+ 130                delay_ms(50);
+ 131                run = run << 2;
+ 132              }
+ 133              temp = result;
+ 134            }
+ 135            temp = 0;
+ 136          }
+ 137          
+ 138          void don_2led_sang_trai()
+ 139          {
+ 140            for(i=0; i<16; i++)
+ 141            {
+ 142              run = 0xC000;//1100+000
+ 143              for(j=i; j<8; j++)
+ 144              {
+ 145                result = temp|run;
+ 146                ouput16Led();
+ 147                delay_ms(50);
+ 148                run = run >> 2;
+ 149              }
+ 150              temp = result;
+ 151            }
+ 152            temp = 0;
+ 153          }
+ 154          
+ 155          
+ 156          void don_3led_sang_1led_phai()
+ 157          {
+ 158            for(i=0; i<16; i++)
+ 159            {
+ 160              run = 0x0007;
+ 161              for(j=i; j<16; j++)
+ 162              {
+ 163                  result = temp |run;
+ 164                  ouput16Led();
+ 165                  delay_ms(50);
+ 166                  run = run << 1;
+ 167              }
+ 168              temp = result;
+ 169            }
+ 170            
+ 171            temp = 0; 
+ 172          }
+ 173          
+ 174          
+ 175          void don_3led_sang_1led_trai()
+ 176          {
+ 177            for(i=0; i<16; i++)
+ 178            {
+C51 COMPILER V9.60.0.0   LEDSINGLE                                                         05/16/2022 11:03:13 PAGE 4   
+
+ 179              run = 0xE000;
+ 180              for(j=i; j<16; j++)
+ 181              {
+ 182                  result = temp |run;
+ 183                  ouput16Led();
+ 184                  delay_ms(50);
+ 185                  run = run >> 1;
+ 186              }
+ 187              temp = result;
+ 188            }
+ 189            
+ 190            temp = 0; 
+ 191          }
+ 192          
+ 193          void led_2led_giua_sang_dan_ra()
+ 194          {
+ 195            LRight = LLeft =0;
+ 196            
+ 197            for(i=0; i<8; i++)
+ 198            {
+ 199              LLeft = (LLeft <<1 ) + 0x01;
+ 200              LRight = (LRight >> 1) + 0x80;
+ 201          
+ 202              result =LLeft<<8;
+ 203              result |= LRight;
+ 204              
+ 205              ouput16Led();
+ 206              delay_ms(500);
+ 207            }
+ 208          }
+ 209          
+ 210          void led_2_ben_sang_dan_vao()
+ 211          {
+ 212            LRight = LLeft =0;
+ 213            for(i=0; i<8; i++)
+ 214            {
+ 215              LLeft = (LLeft <<1 ) + 0x0001;
+ 216              LRight = (LRight >> 1) + 0x8000;
+ 217              result =LLeft|LRight;
+ 218              ouput16Led();
+ 219              delay_ms(500);
+ 220            }
+ 221          }
+ 222          
+ 223          void led_2_ben_tat_dan_vao()
+ 224          {
+ 225            unsigned char LLLeft, LLRight;
+ 226            LLLeft=LLRight=0xFF;
+ 227            
+ 228            result = 0xFFFF;
+ 229            ouput16Led();
+ 230            delay_ms(500);
+ 231            
+ 232            for(i=0; i<8; i++)
+ 233            {
+ 234              LLLeft = (LLLeft>>1);
+ 235              LLRight = (LLRight<<1);
+ 236              
+ 237              result = LLLeft<<8;
+ 238              result |= LLRight;
+ 239              ouput16Led();
+ 240              delay_ms(500);
+C51 COMPILER V9.60.0.0   LEDSINGLE                                                         05/16/2022 11:03:13 PAGE 5   
+
+ 241            }
+ 242          }
+ 243          
+ 244          void led_2led_giua_tat_dan_ra_2_ben()
+ 245          {
+ 246            unsigned char LLLeft, LLRight;
+ 247            LLLeft=LLRight=0xFF;
+ 248            
+ 249            result = 0xFFFF;
+ 250            ouput16Led();
+ 251            delay_ms(500);
+ 252            
+ 253            for(i=0; i<8; i++)
+ 254            {
+ 255              LLLeft=(LLLeft<<1);
+ 256              LLRight = (LLRight>>1);
+ 257              
+ 258              result = LLLeft<<8;
+ 259              result |= LLRight;
+ 260              
+ 261              ouput16Led();
+ 262              delay_ms(500);
+ 263            } 
+ 264          }
+ 265          */
+ 266          
+ 267          
+ 268          
+ 269          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    194    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     18    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

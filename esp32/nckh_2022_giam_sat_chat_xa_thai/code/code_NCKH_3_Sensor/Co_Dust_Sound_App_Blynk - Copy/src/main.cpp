@@ -1,0 +1,286 @@
+#include <Arduino.h>
+
+#define BLYNK_TEMPLATE_ID "TMPLpBdYLvHV"
+#define BLYNK_DEVICE_NAME "NCKH BASIC 1"
+#define BLYNK_AUTH_TOKEN "dPQne8M3jZdkfnskX2lSF8UMFIq9bIpB"
+
+char auth[] = BLYNK_AUTH_TOKEN;
+
+
+
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <BlynkSimpleEsp32.h>
+#include <SharpGP2Y10.h>
+
+const char ssid[] = "Viettel Telecom";
+const char pass[] = "dat123456789";
+
+#define CO_Pin 34
+#define CO_Value_Set 50
+unsigned int CO_Value_Basic = 0;
+unsigned int CO_Value_Use = 0;
+
+#define SOUND_Pin 39
+#define SOUND_Value_Set 60
+unsigned int SOUND_Value_Basic = 0;
+unsigned int SOUND_Value_Use = 0;
+
+#define DUST_Pin 36     // pin Vo
+#define DUST_Led_Pin 32 // pin led+
+#define DUST_Value_Set 50
+unsigned int DUST_Value_Basic = 0;
+unsigned int DUST_Value_Use = 0;
+
+bool CO_Safe;
+bool Sound_Safe;
+bool Dust_Safe;
+
+unsigned int maxAnalog = 4096;
+unsigned int minAnalog = 0;
+
+// Led on board
+#define ledSafeBoard 23   // pin 12 + of Led
+#define ledDangerBoard 22 // pin 13 + of Led
+
+// Led on app blynk
+WidgetLED COAppLedSafe(V2);
+WidgetLED COAppLedDanger(V3);
+
+WidgetLED SOUNDAppLedSafe(V12);
+WidgetLED SOUNDAppLedDanger(V13);
+
+WidgetLED DUSTAppLedSafe(V22);
+WidgetLED DUSTAppLedDanger(V23);
+
+WidgetLCD LCDs(V100);
+
+
+unsigned int lastTime;
+unsigned int outTime = 1000; // 1000ms
+
+
+
+void initPin();
+
+void checkSafe();
+void controllDisplay();
+void controllLedBoard();
+void controllLedApp();
+void writeLcdBa();
+void writeLcdAd();
+
+void readCo();
+void readDust();
+void readSound();
+
+void runBlynks();
+void readSenser();
+
+SharpGP2Y10 dustSensor(DUST_Pin, DUST_Led_Pin);
+
+void setup()
+{
+  Serial.begin(115200);
+
+  Blynk.begin(auth, ssid, pass);
+  Serial.println("Connect wifi " + String(ssid) + " success.");
+
+  initPin();
+
+  lastTime = millis(); 
+}
+
+void loop()
+{
+  runBlynks();
+
+  readSenser();
+
+  controllDisplay();
+}
+
+void readSenser()
+{
+  if (millis() - lastTime >= outTime)
+  {
+    readCo();
+    readDust();
+    readSound();
+
+    lastTime = millis();
+  }
+}
+
+void runBlynks()
+{
+  Blynk.run();
+
+  // Transmit data from esp32 to Blynk App
+  Blynk.virtualWrite(V1, CO_Value_Use);
+  Blynk.virtualWrite(V11, SOUND_Value_Use);
+  Blynk.virtualWrite(V21, DUST_Value_Use);
+}
+
+void controllDisplay()
+{
+  checkSafe();
+
+  controllLedBoard();
+  controllLedApp();
+  writeLcdAd();
+}
+
+void checkSafe()
+{
+  if (CO_Value_Use <= CO_Value_Set)
+    CO_Safe = 1;
+  else
+    CO_Safe = 0;
+
+  if (DUST_Value_Use <= DUST_Value_Set)
+    Dust_Safe = 1;
+  else
+    Dust_Safe = 0;
+
+  if (SOUND_Value_Use <= SOUND_Value_Set)
+    Sound_Safe = 1;
+  else
+    Sound_Safe = 0;
+}
+
+void controllLedBoard()
+{
+  if (CO_Safe && Dust_Safe && Sound_Safe)
+  {
+    digitalWrite(ledSafeBoard, HIGH);
+    digitalWrite(ledDangerBoard, LOW);
+  }
+  else
+  {
+    digitalWrite(ledSafeBoard, LOW);
+    digitalWrite(ledDangerBoard, HIGH);
+  }
+}
+
+void controllLedApp()
+{
+  if (CO_Safe)
+  {
+    COAppLedSafe.on();
+    COAppLedDanger.off();
+  }
+  else
+  {
+    COAppLedSafe.off();
+    COAppLedDanger.on();
+  }
+
+  if (Sound_Safe)
+  {
+    SOUNDAppLedSafe.on();
+    SOUNDAppLedDanger.off();
+  }
+  else
+  {
+    SOUNDAppLedSafe.off();
+    SOUNDAppLedDanger.on();
+  }
+
+  if (Dust_Safe)
+  {
+    DUSTAppLedSafe.on();
+    DUSTAppLedDanger.off();
+  }
+  else
+  {
+    DUSTAppLedSafe.off();
+    DUSTAppLedDanger.on();
+  }
+}
+
+// No support for web blynk
+void writeLcdBa()
+{
+  /*
+  Ba - Basic
+  transmit data up lcd in app blynk
+  lcd on app must setup basic mode
+  */
+
+  Blynk.virtualWrite(V100, "CO_CValue Res: " + String(CO_Value_Use));
+}
+
+void writeLcdAd()
+{
+  /*
+  Ad - Advanced
+  lcd on app must setup advanced mode
+  */
+
+  static int counter;
+
+  LCDs.print(0, 0, "environment:");
+
+  if (CO_Safe && Dust_Safe && Sound_Safe)
+  {
+    LCDs.print(5, 1, "safe");
+    counter++;
+  }
+  else
+  {
+    LCDs.print(5, 1, "danger");
+  }
+
+  if (counter % 4 == 0)
+  {
+    LCDs.clear();
+  }
+}
+
+void initPin()
+{
+  // Input
+  pinMode(CO_Pin, INPUT);
+  pinMode(DUST_Pin, INPUT);
+  pinMode(SOUND_Pin, INPUT);
+
+  // Output
+  pinMode(ledSafeBoard, OUTPUT);
+  pinMode(ledDangerBoard, OUTPUT);
+  digitalWrite(ledSafeBoard, LOW);
+  digitalWrite(ledDangerBoard, LOW);
+}
+
+void readCo()
+{
+  unsigned int lowerLimit = 10;
+  unsigned int upperLimit = 2000;
+
+  CO_Value_Basic = analogRead(CO_Pin);
+  CO_Value_Use = map(CO_Value_Basic, minAnalog, maxAnalog, lowerLimit, upperLimit);
+
+  Serial.println("\n\nCO Gas value basic: " + String(CO_Value_Basic) + "  CO Gas value use: " + String(CO_Value_Use));
+}
+
+void readSound()
+{
+  unsigned int lowerLimit = 10;
+  unsigned int upperLimit = 2000;
+
+  SOUND_Value_Basic = analogRead(SOUND_Pin);
+  SOUND_Value_Use = map(SOUND_Value_Basic, minAnalog, maxAnalog, lowerLimit, upperLimit);
+
+  Serial.println("Sound value basic: " + String(SOUND_Value_Basic) + "  Dust value use: " + String(SOUND_Value_Use));
+}
+
+void readDust()
+{
+  unsigned int lowerLimit = 300;
+  unsigned int upperLimit = 3000;
+
+  DUST_Value_Basic = dustSensor.getDustDensity();
+  DUST_Value_Use = map(DUST_Value_Basic, minAnalog, maxAnalog, lowerLimit, upperLimit);
+
+  Serial.println("Dust value basic: " + String(DUST_Value_Basic) + "  Dust value use: " + String(DUST_Value_Use));
+}

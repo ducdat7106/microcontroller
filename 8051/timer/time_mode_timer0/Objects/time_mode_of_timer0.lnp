@@ -1,0 +1,4 @@
+".\Objects\main.obj",
+".\Objects\time_timer0.obj" 
+TO ".\Objects\time_mode_of_timer0" 
+PRINT(".\Listings\time_mode_of_timer0.m51") RAMSIZE(256) 

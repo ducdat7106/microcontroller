@@ -1,0 +1,50 @@
+C51 COMPILER V9.60.0.0   BUTTON_CONTROLL_LED                                               05/05/2022 15:06:18 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE BUTTON_CONTROLL_LED
+OBJECT MODULE PLACED IN .\Objects\button_controll_led.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE button_controll_led.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(
+                    -.\Listings\button_controll_led.lst) TABS(2) OBJECT(.\Objects\button_controll_led.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          
+   3          #define BUTTON_ON  P1_0
+   4          #define BUTTON_OFF  P1_1
+   5          
+   6          #define Turn_OFF 0xFF
+   7          #define Turn_ON 0x00
+   8          
+   9          #define Led P0
+  10          
+  11          
+  12          P3 = 0x00;
+*** ERROR C231 IN LINE 12 OF button_controll_led.c: 'P3': redefinition
+*** ERROR C231 IN LINE 12 OF button_controll_led.c: 'P3': redefinition
+  13          
+  14            
+  15          void main()
+  16          {
+  17   1          int flag=1;
+  18   1          Led = Turn_OFF;
+  19   1          
+  20   1          while(1)
+  21   1          {
+  22   2              //Led=Turn_ON;
+  23   2            if(BUTTON_ON == 0)
+  24   2                  flag=0;
+  25   2                  
+  26   2              if(BUTTON_OFF==0)
+  27   2                  flag=1;
+  28   2              
+  29   2              if(flag==0)
+  30   2                  Led=Turn_ON;
+  31   2              else
+  32   2                  Led=Turn_OFF;
+  33   2              
+  34   2              P3 = 0x00;
+  35   2          }
+  36   1      }
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  2 ERROR(S)

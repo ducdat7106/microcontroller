@@ -1,0 +1,1 @@
+"Lib\ledSingle.c" OPTIMIZE (8,SPEED) BROWSE INCDIR(.\Main;.\Lib) DEBUG OBJECTEXTEND PRINT(.\Listings\ledSingle.lst) TABS (2) OBJECT(.\Objects\ledSingle.obj)
