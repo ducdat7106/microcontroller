@@ -1,4 +1,0 @@
-".\Objects\main.obj",
-".\Objects\counter_timer0.obj" 
-TO ".\Objects\counter_timer0" 
-PRINT(".\Listings\counter_timer0.m51") RAMSIZE(256) 

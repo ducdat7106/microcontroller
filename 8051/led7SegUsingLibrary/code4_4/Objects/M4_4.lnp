@@ -1,7 +1,0 @@
-".\Objects\main.obj",
-".\Objects\delay.obj",
-".\Objects\Led7Seg.obj",
-".\Objects\button.obj",
-".\Objects\timer0.obj" 
-TO ".\Objects\M4_4" 
-PRINT(".\Listings\M4_4.m51") RAMSIZE(256) 

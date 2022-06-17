@@ -1,5 +1,0 @@
-".\Objects\main.obj",
-".\Objects\delay.obj",
-".\Objects\blink.obj" 
-TO ".\Objects\port_led_blink" 
-PRINT(".\Listings\port_led_blink.m51") RAMSIZE(256) 

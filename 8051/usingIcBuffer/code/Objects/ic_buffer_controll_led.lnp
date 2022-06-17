@@ -1,3 +1,0 @@
-".\Objects\ic_buffer_controll_led.obj" 
-TO ".\Objects\ic_buffer_controll_led" 
-PRINT(".\Listings\ic_buffer_controll_led.m51") RAMSIZE(256) 

@@ -1,3 +1,0 @@
-".\Objects\button_controll_led.obj" 
-TO ".\Objects\button_controll_led" 
-PRINT(".\Listings\button_controll_led.m51") RAMSIZE(256) 

@@ -1,3 +1,0 @@
-tham khao code mau tai:
-
-https://www.theengineeringprojects.com/2016/01/use-timer-interrupt-8051-microcontroller.html

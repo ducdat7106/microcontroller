@@ -1,8 +1,0 @@
-".\Objects\main.obj",
-".\Objects\delay.obj",
-".\Objects\ledSingle.obj",
-".\Objects\led7Seg.obj",
-".\Objects\timer0.obj",
-".\Objects\button.obj" 
-TO ".\Objects\B4_3" 
-PRINT(".\Listings\B4_3.m51") RAMSIZE(256) 

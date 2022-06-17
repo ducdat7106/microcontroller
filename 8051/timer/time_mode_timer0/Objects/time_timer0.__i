@@ -1,1 +1,0 @@
-"User\time_timer0.c" OPTIMIZE (8,SPEED) BROWSE INCDIR(.\Main;.\User) DEBUG OBJECTEXTEND PRINT(.\Listings\time_timer0.lst) TABS (2) OBJECT(.\Objects\time_timer0.obj)

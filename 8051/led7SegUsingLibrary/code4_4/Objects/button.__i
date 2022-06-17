@@ -1,1 +1,0 @@
-"Lib\button.c" OPTIMIZE (8,SPEED) BROWSE INCDIR(.\Main;.\Lib) DEBUG OBJECTEXTEND PRINT(.\Listings\button.lst) TABS (2) OBJECT(.\Objects\button.obj)
