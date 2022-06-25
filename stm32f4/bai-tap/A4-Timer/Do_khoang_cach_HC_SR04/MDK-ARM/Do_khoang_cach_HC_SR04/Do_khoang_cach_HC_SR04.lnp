@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"do_khoang_cach_hc_sr04\startup_stm32f407xx.o"
+"do_khoang_cach_hc_sr04\main.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_it.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_msp.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_tim.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_tim_ex.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_rcc.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_rcc_ex.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_flash.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_flash_ex.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_flash_ramfunc.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_gpio.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_dma_ex.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_dma.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_pwr.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_pwr_ex.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_cortex.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal.o"
+"do_khoang_cach_hc_sr04\stm32f4xx_hal_exti.o"
+"do_khoang_cach_hc_sr04\system_stm32f4xx.o"
+--strict --scatter "Do_khoang_cach_HC_SR04\Do_khoang_cach_HC_SR04.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Do_khoang_cach_HC_SR04.map" -o Do_khoang_cach_HC_SR04\Do_khoang_cach_HC_SR04.axf

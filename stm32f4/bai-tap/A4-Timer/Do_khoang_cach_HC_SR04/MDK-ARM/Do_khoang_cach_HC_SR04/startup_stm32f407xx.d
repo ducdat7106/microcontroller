@@ -1,0 +1,1 @@
+do_khoang_cach_hc_sr04\startup_stm32f407xx.o: startup_stm32f407xx.s
