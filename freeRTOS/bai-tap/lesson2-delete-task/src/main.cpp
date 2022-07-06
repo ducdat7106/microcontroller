@@ -6,15 +6,14 @@
 #define led1 12
 #define led2 10
 
-TaskHandle_t TaskHandle_1;
-TaskHandle_t TaskHandle_2;
+TaskHandle_t TaskHandle_1 = NULL;
+TaskHandle_t TaskHandle_2 = NULL;
 
 void initPin();
 
 void MyTask1(void *pvParameters);
 void MyTask2(void *pvParameters);
 void MyTaskIdle(void *pvParameters);
-
 
 void setup()
 {
@@ -32,7 +31,6 @@ void setup()
 
 void loop()
 {
-
 }
 
 void initPin()
@@ -47,34 +45,51 @@ void MyTask1(void *pvParameters)
 {
   while (1)
   {
+    static int digit = 0;
+    digit++;
+    if (digit == 10)
+      digit = 0;
+
     Serial.println("Task1 running");
 
     digitalWrite(led1, HIGH);
     digitalWrite(led2, LOW);
+    if (digit == 1)
+      xTaskCreate(MyTask2, "LED2", 64, NULL, 2, &TaskHandle_2);
 
-    xTaskCreate(MyTask2, "LED2", 64, NULL, 2, &TaskHandle_2);
-
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    vTaskDelay(100 / portTICK_PERIOD_MS);
   }
 }
 
 void MyTask2(void *pvParameters)
 {
-  Serial.println("Task2 is running and about to delete ifself");
+  for (;;)
+  {
+     static int digit = 0;
+    digit++;
+    if (digit == 10)
+      digit = 2;
+    Serial.println("Task2 is running and about to delete ifself");
 
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, HIGH);
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, HIGH);
+    
+    if (digit ==1 )
+      vTaskDelete(TaskHandle_1); // vTaskDelete(NULL);
 
-  vTaskDelete(TaskHandle_2);  // vTaskDelete(NULL);
-
+    vTaskDelay(110 / portTICK_PERIOD_MS);
+  }
 }
 
 void MyTaskIdel(void *pvParameters)
 {
-  Serial.println("Task Idle running");
+  for (;;)
+  {
+    Serial.println("Task Idle running");
 
-  digitalWrite(led1, LOW);
-  digitalWrite(led2, LOW);
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, LOW);
 
-  vTaskDelay(400 / portTICK_PERIOD_MS);
+    vTaskDelay(40 / portTICK_PERIOD_MS);
+  }
 }
