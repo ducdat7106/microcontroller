@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning 25/5/2022</title>
+    
+    <link rel="stylesheet" href="./main.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <!-- lien ket voi functions.js -->
+
+
+</head>
+
+<body>
+    <!-- Turn on or turn off lamp -->
+    <!-- <img id="image" onclick="changeColor()"  src="./image/ledOn.png" alt="LedOff"> -->
+    <img id="img_1" src="./image/ledOff.png" alt="led-off">
+
+    <!-- <button id="button_1" onclick="OffIntoOn()">Turn on</button>
+    <button id="buttoff_1" onclick="OnIntoOff()">Turn off</button> -->
+    <div>
+        <button id="button_1">Turn on</button>
+        <button id="buttoff_1">Turn off</button>
+    </div>
+    
+
+
+    <!-- Display number on screen -->
+    <br><br>
+    <div>
+        Temprature:
+        <span  id="nhietdo">500</span>
+    </div>
+
+    <script src="./function.js"></script>
+    
+</body>
+</html>

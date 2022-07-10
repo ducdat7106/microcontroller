@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning 25/5/2022</title>
+    
+    <link rel="stylesheet" href="./main.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <!-- lien ket voi functions.js -->
+</head>
+
+<body>
+    <h1>GIÁM SÁT KHÍ THẢI TRONG CÔNG NGHIỆP VÀ GIAO THÔNG</h1>
+    <!-- <h2>reload web site</h2> -->
+
+    <div class="result">
+        <span>TRẠNG THÁI HIỆN TẠI</span>
+        <p id="result">00</p>
+    </div>
+    
+    <div class="Co">
+        Nồng độ CO: <br>
+        <span id="co">00</span>
+        <span> (ppm)</span> <br><br><br>
+        <img id="imgCo" src="./image/safe.png" alt="an toan">
+    </div>
+
+    <div class="Gas">
+        Nồng độ Gas: <br>
+        <span id="gas">00</span>
+        <span> (ppm)</span> <br><br><br>
+        <img id="imgGas" src="./image/safe.png" alt="an toan">
+    </div>
+
+    <div class="Dust">
+        Nồng độ bụi P2.5:  <br>    
+        <span id="dust">00</span>
+        <span> (ug/m3)</span> <br><br><br>
+        <img id="imgDust" src="./image/safe.png" alt="an toan">
+    </div>
+
+    <div class="Sound">
+        Cường độ âm thanh: <br>
+        <span  id="sound">00</span>
+        <span>(dB)</span> <br><br><br>
+        <img id="imgSound" src="./image/safe.png" alt="an toan">
+    </div>
+
+    <script src="./function.js"></script>
+    
+</body>
+</html>
