@@ -1,0 +1,23 @@
+Màn hình LCD TFT 1.44 inch ST7735 giao tiếp SPI có kích thước nhỏ gọn, 
+màn hình có độ phân giải 128x128 pixels với khả năng hiển thị lên đến 65K màu.
+
+Connect:
+
+DI / SDI / MOSI
+
+SDO / MISO
+
+SC / SCK / SCLK 
+
+CE / SS / CS 	- SPI Chip Select( Defined as Slave Select in SPI) If low this device is active on data lines
+
+RST / RESET 	- Screen Reset
+
+A0 / RS 		- Register Select Signal (0:index register, 1:data register)
+
+BLK / BL 		- Backligh Control
+
+
+DI -> Pin 11
+SC - Pin 13
+CS - Pin 10
