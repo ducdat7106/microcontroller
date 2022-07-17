@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"buzzer_using_button\startup_stm32f407xx.o"
+"buzzer_using_button\main.o"
+"buzzer_using_button\stm32f4xx_it.o"
+"buzzer_using_button\stm32f4xx_hal_msp.o"
+"buzzer_using_button\stm32f4xx_hal_tim.o"
+"buzzer_using_button\stm32f4xx_hal_tim_ex.o"
+"buzzer_using_button\stm32f4xx_hal_rcc.o"
+"buzzer_using_button\stm32f4xx_hal_rcc_ex.o"
+"buzzer_using_button\stm32f4xx_hal_flash.o"
+"buzzer_using_button\stm32f4xx_hal_flash_ex.o"
+"buzzer_using_button\stm32f4xx_hal_flash_ramfunc.o"
+"buzzer_using_button\stm32f4xx_hal_gpio.o"
+"buzzer_using_button\stm32f4xx_hal_dma_ex.o"
+"buzzer_using_button\stm32f4xx_hal_dma.o"
+"buzzer_using_button\stm32f4xx_hal_pwr.o"
+"buzzer_using_button\stm32f4xx_hal_pwr_ex.o"
+"buzzer_using_button\stm32f4xx_hal_cortex.o"
+"buzzer_using_button\stm32f4xx_hal.o"
+"buzzer_using_button\stm32f4xx_hal_exti.o"
+"buzzer_using_button\system_stm32f4xx.o"
+--strict --scatter "Buzzer_using_Button\Buzzer_using_Button.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Buzzer_using_Button.map" -o Buzzer_using_Button\Buzzer_using_Button.axf
