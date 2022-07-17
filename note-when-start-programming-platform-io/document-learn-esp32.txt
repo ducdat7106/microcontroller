@@ -1,0 +1,3 @@
+https://www.espressif.com/en/support/documents/technical-documents
+
+https://freertos.org/a00106.html
