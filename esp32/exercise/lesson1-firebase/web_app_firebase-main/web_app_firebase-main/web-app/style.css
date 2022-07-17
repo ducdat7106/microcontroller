@@ -1,0 +1,34 @@
+
+/* thiet ke thong so va dinh dang trang web */
+* {
+    padding: 0;
+    margin: 0;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 400px;
+    border: solid 1px #EBEBEB;
+    padding: 5rem;
+}
+
+button {
+    margin-top: 2rem;
+}
+.fan_off{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.fan_on{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+      <!-- khung nhiet do va do am -->
+      <form>
+        <h1 id="nhietdo"></h1>
+        <h2 id="doam"></h2><br>
+      </form>
+      <!-- khung hinh anh va cac label  -->
+        <form>
+          <!-- hien thi hinh anh -->
+            <img src="img/fan_off.png" class="fan_on" alt="">
+            <button type="button" id="btn1" class="btn waves-effect waves-lights">On</button>
+            <button type="button" id="btn2" class="btn waves-effect waves-lights">Off</button><br><br>
+            <!-- label hien thi text hoac cac chu dan hien thi tren web -->
+            <label for="text">This website make by KMT team</label><br>
+            <label for="text">Nguyen Ngoc Hoang</label><br>
+            <label for="text">Do Minh Toan 1</label><br>
+            <label for="text">Truong Quang Phuc</label><br>
+        </form>
+    </main>
+<script src="functions.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    
+    //Remember to add this ...database line in your code unless it will not work
+    
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+<!-- lien ket voi functions.js -->
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+          apiKey: "AIzaSyArz7GxNLH5ZpUFpui_W19KPjmYJ1WYMUA",
+          authDomain: "project-html-javascript.firebaseapp.com",
+          projectId: "project-html-javascript",
+          storageBucket: "project-html-javascript.appspot.com",
+          messagingSenderId: "842344738843",
+          appId: "1:842344738843:web:8109050ce244bf4e8388be",
+          measurementId: "G-5W7KLF1DW8"
+        };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  //functions
+  // make sure that the name in ' ' match with name of your database child
+  var nhietDo = document.getElementById('nhietdo');
+  var dbRef = firebase.database().ref().child('Nhiet do');
+  var doAm = document.getElementById('doam');
+  var dbRef2 = firebase.database().ref().child('Do am');
+  dbRef.on('value', snap => nhietDo.innerText = snap.val());
+  dbRef2.on('value', snap => doAm.innerText = snap.val());
+ 
+ 
+</script>
+</body>
+</html>
