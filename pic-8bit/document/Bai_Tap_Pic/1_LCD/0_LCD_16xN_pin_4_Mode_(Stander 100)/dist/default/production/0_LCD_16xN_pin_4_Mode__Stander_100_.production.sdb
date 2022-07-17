@@ -1,0 +1,185 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"7 G:\My Drive\microcontrollers\pic16\Bai_Tap_Pic\1_LCD_OK\0_LCD_16xN_pin_4_Mode_(Stander 100)\lcd.c
+[v _LCD_DATA LCD_DATA `(v  1 e 1 0 ]
+"30
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+"53
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"79
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+"100
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+"110
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"126
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+"152
+[v _LCD_SL LCD_SL `(v  1 e 1 0 ]
+"163
+[v _LCD_SR LCD_SR `(v  1 e 1 0 ]
+"169
+[v _LCD_Write_Number LCD_Write_Number `(v  1 e 1 0 ]
+"11 G:\My Drive\microcontrollers\pic16\Bai_Tap_Pic\1_LCD_OK\0_LCD_16xN_pin_4_Mode_(Stander 100)\main.c
+[v _main main `(v  1 e 1 0 ]
+"1499 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2767
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2770
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2989
+[v _TRISD2 TRISD2 `VEb  1 e 0 @1090 ]
+"2992
+[v _TRISD3 TRISD3 `VEb  1 e 0 @1091 ]
+"11 G:\My Drive\microcontrollers\pic16\Bai_Tap_Pic\1_LCD_OK\0_LCD_16xN_pin_4_Mode_(Stander 100)\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"30
+[v main@i_68 i `i  1 a 2 40 ]
+"25
+[v main@i i `i  1 a 2 38 ]
+"37
+} 0
+"100 G:\My Drive\microcontrollers\pic16\Bai_Tap_Pic\1_LCD_OK\0_LCD_16xN_pin_4_Mode_(Stander 100)\lcd.c
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+{
+[v LCD_Write_String@str str `*.24uc  1 a 1 wreg ]
+"102
+[v LCD_Write_String@i i `i  1 a 2 6 ]
+"100
+[v LCD_Write_String@str str `*.24uc  1 a 1 wreg ]
+"103
+[v LCD_Write_String@str str `*.24uc  1 a 1 8 ]
+"105
+} 0
+"169
+[v _LCD_Write_Number LCD_Write_Number `(v  1 e 1 0 ]
+{
+"191
+[v LCD_Write_Number@p p `i  1 a 2 33 ]
+"171
+[v LCD_Write_Number@num num `[10]ui  1 a 20 10 ]
+"174
+[v LCD_Write_Number@length length `i  1 a 2 30 ]
+"172
+[v LCD_Write_Number@c c `uc  1 a 1 32 ]
+"169
+[v LCD_Write_Number@number number `l  1 p 4 6 ]
+"197
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+{
+"10
+[v ___almod@sign sign `uc  1 a 1 10 ]
+[v ___almod@counter counter `uc  1 a 1 9 ]
+"5
+[v ___almod@divisor divisor `l  1 p 4 0 ]
+[v ___almod@dividend dividend `l  1 p 4 4 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"79 G:\My Drive\microcontrollers\pic16\Bai_Tap_Pic\1_LCD_OK\0_LCD_16xN_pin_4_Mode_(Stander 100)\lcd.c
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+{
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+"81
+[v LCD_Write_Char@High4 High4 `uc  1 a 1 4 ]
+[v LCD_Write_Char@Low4 Low4 `uc  1 a 1 3 ]
+"79
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+"82
+[v LCD_Write_Char@Data Data `uc  1 a 1 5 ]
+"95
+} 0
+"126
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+{
+[v LCD_Set_Cursor@r r `uc  1 a 1 wreg ]
+"128
+[v LCD_Set_Cursor@Temp Temp `uc  1 a 1 10 ]
+[v LCD_Set_Cursor@High4 High4 `uc  1 a 1 9 ]
+[v LCD_Set_Cursor@Low4 Low4 `uc  1 a 1 8 ]
+"126
+[v LCD_Set_Cursor@r r `uc  1 a 1 wreg ]
+[v LCD_Set_Cursor@c c `uc  1 p 1 4 ]
+"129
+[v LCD_Set_Cursor@r r `uc  1 a 1 7 ]
+"145
+} 0
+"163
+[v _LCD_SR LCD_SR `(v  1 e 1 0 ]
+{
+"167
+} 0
+"152
+[v _LCD_SL LCD_SL `(v  1 e 1 0 ]
+{
+"156
+} 0
+"53
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"75
+} 0
+"110
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"115
+} 0
+"30
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+{
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+"33
+[v LCD_CMD@CMD CMD `uc  1 a 1 3 ]
+"47
+} 0
+"7
+[v _LCD_DATA LCD_DATA `(v  1 e 1 0 ]
+{
+[v LCD_DATA@Data Data `uc  1 a 1 wreg ]
+[v LCD_DATA@Data Data `uc  1 a 1 wreg ]
+"9
+[v LCD_DATA@Data Data `uc  1 a 1 0 ]
+"25
+} 0

@@ -1,0 +1,443 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"4 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X/adc_thay_hai.h
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"11
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"20 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X/uart.h
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+"80
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"117
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"39 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X\lcd_hd44780_pic16.c
+[v _LCDByte LCDByte `(v  1 e 1 0 ]
+"94
+[v _LCDBusyLoop LCDBusyLoop `(v  1 e 1 0 ]
+"152
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+"210
+[v _LCDWriteString LCDWriteString `(v  1 e 1 0 ]
+"311
+[v _LCDGotoXY LCDGotoXY `(v  1 e 1 0 ]
+"48 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+"109
+[v _main main `(v  1 e 1 0 ]
+"174
+[v _TIMER1_Init TIMER1_Init `(v  1 e 1 0 ]
+"194
+[v _UART_Write_data UART_Write_data `(v  1 e 1 0 ]
+"15 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X/custom_char.h
+[v ___cgram __cgram `[64]uc  1 e 64 0 ]
+"340 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S65 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+"414
+[u S69 . 1 `S65 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES69  1 e 1 @9 ]
+"634
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S223 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1516
+[u S232 . 1 `S223 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES232  1 e 1 @136 ]
+[s S76 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"1578
+[u S85 . 1 `S76 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES85  1 e 1 @137 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2404
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2482
+[v _CHS0 CHS0 `VEb  1 e 0 @251 ]
+"2485
+[v _CHS1 CHS1 `VEb  1 e 0 @252 ]
+"2488
+[v _CHS2 CHS2 `VEb  1 e 0 @253 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2575
+[v _GO_DONE GO_DONE `VEb  1 e 0 @250 ]
+"2614
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2740
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2767
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2794
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2857
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"2860
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"2866
+[v _T1OSCEN T1OSCEN `VEb  1 e 0 @131 ]
+"2869
+[v _T1SYNC T1SYNC `VEb  1 e 0 @130 ]
+"2884
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"2887
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"2890
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"2893
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3016
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3022
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"24 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X\main.c
+[v _count count `ui  1 e 2 0 ]
+[v _count1 count1 `ui  1 e 2 0 ]
+"25
+[v _do_dienap do_dienap `uc  1 e 1 0 ]
+"26
+[v _adc_ok adc_ok `uc  1 e 1 0 ]
+"27
+[v _dong dong `f  1 e 4 0 ]
+[v _dienap dienap `f  1 e 4 0 ]
+"29
+[v _in_buffer in_buffer `[6]uc  1 e 6 0 ]
+"30
+[v _in_count in_count `uc  1 e 1 0 ]
+"31
+[v _check_sang check_sang `uc  1 e 1 0 ]
+"34
+[v _commbuffer commbuffer `[10]uc  1 e 10 0 ]
+"109
+[v _main main `(v  1 e 1 0 ]
+{
+"111
+[v main@digit digit `[3]uc  1 a 3 38 ]
+"112
+[v main@adc_value adc_value `ui  1 a 2 41 ]
+"168
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"194 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X\main.c
+[v _UART_Write_data UART_Write_data `(v  1 e 1 0 ]
+{
+[v UART_Write_data@Value Value `uc  1 a 1 wreg ]
+"197
+[v UART_Write_data@k k `ui  1 a 2 15 ]
+"196
+[v UART_Write_data@i i `uc  1 a 1 17 ]
+"194
+[v UART_Write_data@Value Value `uc  1 a 1 wreg ]
+"199
+[v UART_Write_data@Value Value `uc  1 a 1 14 ]
+"213
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 10 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 9 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 5 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 7 ]
+"30
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"20 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X/uart.h
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+{
+"22
+[v UART_Init@x x `ui  1 a 2 31 ]
+"20
+[v UART_Init@baudrate baudrate `DCl  1 p 4 15 ]
+"65
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 11 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 10 ]
+[v ___aldiv@counter counter `uc  1 a 1 9 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"174 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X\main.c
+[v _TIMER1_Init TIMER1_Init `(v  1 e 1 0 ]
+{
+"192
+} 0
+"210 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X\lcd_hd44780_pic16.c
+[v _LCDWriteString LCDWriteString `(v  1 e 1 0 ]
+{
+[v LCDWriteString@msg msg `*.24DCuc  1 a 1 wreg ]
+"246
+[v LCDWriteString@cc cc `c  1 a 1 10 ]
+"210
+[v LCDWriteString@msg msg `*.24DCuc  1 a 1 wreg ]
+[v LCDWriteString@msg msg `*.24DCuc  1 a 1 11 ]
+"264
+} 0
+"152
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+{
+[v LCDInit@style style `uc  1 a 1 wreg ]
+"204
+[v LCDInit@__i __i `uc  1 a 1 13 ]
+"152
+[v LCDInit@style style `uc  1 a 1 wreg ]
+"168
+[v LCDInit@style style `uc  1 a 1 12 ]
+"209
+} 0
+"311
+[v _LCDGotoXY LCDGotoXY `(v  1 e 1 0 ]
+{
+[v LCDGotoXY@x x `uc  1 a 1 wreg ]
+[v LCDGotoXY@x x `uc  1 a 1 wreg ]
+[v LCDGotoXY@y y `uc  1 p 1 10 ]
+"313
+[v LCDGotoXY@x x `uc  1 a 1 13 ]
+"354
+} 0
+"39
+[v _LCDByte LCDByte `(v  1 e 1 0 ]
+{
+[v LCDByte@c c `uc  1 a 1 wreg ]
+"49
+[v LCDByte@temp temp `uc  1 a 1 9 ]
+"48
+[v LCDByte@ln ln `uc  1 a 1 7 ]
+[v LCDByte@hn hn `uc  1 a 1 6 ]
+"39
+[v LCDByte@c c `uc  1 a 1 wreg ]
+[v LCDByte@isdata isdata `uc  1 p 1 4 ]
+"51
+[v LCDByte@c c `uc  1 a 1 8 ]
+"92
+} 0
+"94
+[v _LCDBusyLoop LCDBusyLoop `(v  1 e 1 0 ]
+{
+"98
+[v LCDBusyLoop@status status `uc  1 a 1 3 ]
+[v LCDBusyLoop@temp temp `uc  1 a 1 2 ]
+[v LCDBusyLoop@busy busy `uc  1 a 1 1 ]
+"150
+} 0
+"4 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X/adc_thay_hai.h
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"9
+} 0
+"48 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"50
+[v ISR@ch ch `uc  1 a 1 29 ]
+"106
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+[v strncmp@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strncmp@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strncmp@s2 s2 `*.24DCuc  1 p 1 0 ]
+[v strncmp@len len `ui  1 p 2 1 ]
+[v strncmp@s1 s1 `*.4DCuc  1 a 1 5 ]
+"14
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 6 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 5 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 7 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 4 ]
+"44
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S573 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S578 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S581 . 4 `l 1 i 4 0 `d 1 f 4 0 `S573 1 fAsBytes 4 0 `S578 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S581  1 a 4 15 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 9 ]
+[s S650 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S653 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S650 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S653  1 a 2 19 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 14 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 13 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 8 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"11 D:\2_PIC16f877A\1000_Ket_Hop_100%\ADC_UART_LCD_TIMER_INTERRUPT.X/adc_thay_hai.h
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@Channel Channel `uc  1 a 1 wreg ]
+"13
+[v ADC_Read@value value `ui  1 a 2 4 ]
+"11
+[v ADC_Read@Channel Channel `uc  1 a 1 wreg ]
+[v ADC_Read@Channel Channel `uc  1 a 1 6 ]
+"27
+} 0

@@ -1,0 +1,135 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"52 G:\My Drive\Bai_Lam\1_PIC16F\14_LED_7SEG\led 7 seg using IC595.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"66
+[v _Config_Init Config_Init `(v  1 e 1 0 ]
+"90
+[v _Write_Data Write_Data `(v  1 e 1 0 ]
+"109
+[v _Test_Button Test_Button `(v  1 e 1 0 ]
+"130
+[v _Scan_7Seg Scan_7Seg `(v  1 e 1 0 ]
+[s S56 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[u S65 . 1 `S56 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES65  1 e 1 @6 ]
+[s S98 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S107 . 1 `S98 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES107  1 e 1 @7 ]
+[s S35 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S44 . 1 `S35 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES44  1 e 1 @134 ]
+[s S77 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1454
+[u S86 . 1 `S77 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES86  1 e 1 @135 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"39 G:\My Drive\Bai_Lam\1_PIC16F\14_LED_7SEG\led 7 seg using IC595.X\main.c
+[v _j j `ui  1 e 2 0 ]
+[v _nghin nghin `ui  1 e 2 0 ]
+[v _tram tram `ui  1 e 2 0 ]
+[v _chuc chuc `ui  1 e 2 0 ]
+[v _donvi donvi `ui  1 e 2 0 ]
+"40
+[v _Value_Display Value_Display `ui  1 e 2 0 ]
+"42
+[v _Number_7Seg Number_7Seg `[10]uc  1 e 10 0 ]
+"52
+[v _main main `(v  1 e 1 0 ]
+{
+"64
+} 0
+"109
+[v _Test_Button Test_Button `(v  1 e 1 0 ]
+{
+"129
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0
+"130 G:\My Drive\Bai_Lam\1_PIC16F\14_LED_7SEG\led 7 seg using IC595.X\main.c
+[v _Scan_7Seg Scan_7Seg `(v  1 e 1 0 ]
+{
+"154
+} 0
+"90
+[v _Write_Data Write_Data `(v  1 e 1 0 ]
+{
+[v Write_Data@number number `ui  1 p 2 0 ]
+"106
+} 0
+"66
+[v _Config_Init Config_Init `(v  1 e 1 0 ]
+{
+"86
+} 0

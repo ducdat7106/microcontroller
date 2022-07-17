@@ -1,0 +1,397 @@
+A51 MACRO ASSEMBLER  CODEASMCUBE                                                          06/06/2015 11:35:15 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.01
+OBJECT MODULE PLACED IN codeasmcube.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE codeasmcube.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 00H
+                       2     ;DO AN VI DIEU KHIEN LED 3D CUBE 8X8X8
+                       3     ;NGUOI THUC HIEN : NGUYEN TRONG TUAN ANH 11CDT1
+                       4     ;GVHD :GVHD: Th.s LE XUNG___________________KHAI BAO_____________________________
+                       5     ;TRINH BIEN DICH KEIL C
+  0090                 6     DU_LIEU DATA P1
+  00B0                 7     DIEU_KHIEN DATA P3
+  00A0                 8     QUET DATA P2
+  0002                 9     SO_LAN_LAP EQU 2
+  0014                10     TOC_DO_HIEN_THI EQU 20
+                      11     ;____________________CHUONG TRINH CHINH______________________
+0000                  12     MAIN:
+0000 1112             13     CALL DICH_CHU  
+0002 1172             14     CALL CHAY_CHU_DUOI_LEN  
+0004 113E             15     CALL HIEN_CHU_MRTU        
+0006 1199             16     CALL SANG_DUOI_MANG
+0008 11C5             17     CALL SANG_TRAI_PHAI
+000A 11F5             18     CALL SANG_DUOI_LOP
+000C 311E             19     CALL SANG_DAN_LOP
+000E 3141             20     CALL NHAP_NHAY
+0010 80EE             21     JMP MAIN
+                      22     ;____________________DICH_CHU______________________________________
+0012                  23     DICH_CHU:
+0012 7A00             24     MOV R2,#00H
+0014                  25     DICH:
+0014 7D14             26     MOV R5,#TOC_DO_HIEN_THI
+0016                  27     TOC_DO_DICH:
+0016 7800             28     MOV R0,#00H
+0018 7901             29     MOV R1,#00000001B
+001A                  30     QUET_LED_DICH:
+001A E8               31     MOV A,R0 
+001B 9001A2           32     MOV DPTR,#MA_CHU_M      
+001E 93               33     MOVC A,@A+DPTR ;
+001F F590             34     MOV DU_LIEU,A   ;
+                      35     
+0021 EA               36     MOV A,R2
+0022 90019A           37     MOV DPTR,#MA_DIEU_KHIEN 
+0025 93               38     MOVC A,@A+DPTR ;
+0026 F5B0             39     MOV DIEU_KHIEN,A
+                      40     ;_______________________________________
+0028 89A0             41     MOV QUET,R1  
+002A E9               42     MOV A,R1        
+002B 03               43     RR A            
+002C F9               44     MOV R1,A        
+002D 89A0             45     MOV QUET,R1
+                      46     ;________________________________________
+002F 3168             47     CALL DELAY_MS
+0031 315C             48     CALL XOA
+0033 08               49     INC R0
+0034 B808E3           50     CJNE R0,#8,QUET_LED_DICH
+0037 DDDD             51     DJNZ R5,TOC_DO_DICH
+0039 0A               52     INC R2
+003A BA08D7           53     CJNE R2,#8,DICH
+003D 22               54     RET
+                      55     ;_______________________________HIEN CHU MRTU____________________
+003E                  56     HIEN_CHU_MRTU:
+003E 9001A2           57     MOV DPTR,#MA_CHU_M
+0041 1153             58     CALL HIEN_THI_CHU
+A51 MACRO ASSEMBLER  CODEASMCUBE                                                          06/06/2015 11:35:15 PAGE     2
+
+0043 9001AA           59     MOV DPTR,#MA_CHU_R
+0046 1153             60     CALL HIEN_THI_CHU
+0048 9001B2           61     MOV DPTR,#MA_CHU_T
+004B 1153             62     CALL HIEN_THI_CHU
+004D 9001BA           63     MOV DPTR,#MA_CHU_U
+0050 1153             64     CALL HIEN_THI_CHU
+0052 22               65     RET
+                      66     ;///////////////////////////////////
+0053                  67     HIEN_THI_CHU:
+0053 7D14             68     MOV R5,#TOC_DO_HIEN_THI
+0055                  69     TOC_DO:
+0055 7800             70     MOV R0,#00H
+0057 7901             71     MOV R1,#00000001B
+0059                  72     QUET_LED:       
+0059 E8               73     MOV A,R0 ; 
+005A 93               74     MOVC A,@A+DPTR ;
+005B F590             75     MOV DU_LIEU,A   ;
+005D 75B0E7           76     MOV DIEU_KHIEN,#0E7H
+                      77     ;//
+0060 89A0             78     MOV QUET,R1  
+0062 E9               79     MOV A,R1        
+0063 03               80     RR A            
+0064 F9               81     MOV R1,A        
+0065 89A0             82     MOV QUET,R1
+                      83     ;////
+0067 3168             84     CALL DELAY_MS
+0069 315C             85     CALL XOA
+006B 08               86     INC R0
+006C B808EA           87     CJNE R0,#8,QUET_LED
+006F DDE4             88     DJNZ R5,TOC_DO
+0071 22               89     RET
+                      90     ;___________________________CHAY CHU_________________
+0072                  91     CHAY_CHU_DUOI_LEN:
+0072 9001C2           92     MOV DPTR,#MA_CHU_MRTU
+0075 7F20             93     MOV R7,#32
+0077                  94     CHAY_CHU:
+0077 7D05             95     MOV R5,#5
+0079                  96     TOC_DO2:
+0079 7800             97     MOV R0,#00H
+007B 7901             98     MOV R1,#00000001B
+007D                  99     QUET_LED2:      
+007D E8              100     MOV A,R0 
+007E 93              101     MOVC A,@A+DPTR 
+007F F590            102     MOV DU_LIEU,A   
+0081 75B0E7          103     MOV DIEU_KHIEN,#0E7H
+                     104     ;//
+0084 89A0            105     MOV QUET,R1  
+0086 E9              106     MOV A,R1        
+0087 03              107     RR A            
+0088 F9              108     MOV R1,A        
+0089 89A0            109     MOV QUET,R1
+                     110     ;///////////////////////
+008B 3168            111     CALL DELAY_MS
+008D 315C            112     CALL XOA
+008F 08              113     INC R0
+0090 B808EA          114     CJNE R0,#8,QUET_LED2
+0093 DDE4            115     DJNZ R5,TOC_DO2
+0095 A3              116     INC DPTR
+0096 DFDF            117     DJNZ R7,CHAY_CHU
+0098 22              118     RET
+                     119     ;_____________SANG DUOI MANG___________________
+0099                 120     SANG_DUOI_MANG:
+0099 315C            121     CALL XOA
+009B 7800            122     MOV R0,#00H        ;Bien dem so trang thai hien thi
+009D 90019A          123     MOV DPTR,#MA_DIEU_KHIEN   ;Nap di chi vung du lieu 
+00A0                 124     LABEL_1:              
+A51 MACRO ASSEMBLER  CODEASMCUBE                                                          06/06/2015 11:35:15 PAGE     3
+
+00A0 E8              125     MOV A,R0            ; Chuyen gia tri thanh ghi R0 vao thanh ghi A
+00A1 93              126     MOVC A,@A+DPTR        ; Lay du lieu tu vung nho
+00A2 7590FF          127     MOV DU_LIEU,#0FFH
+00A5 F5B0            128     MOV DIEU_KHIEN,A
+00A7 75A0FF          129     MOV QUET,#0FFH            
+00AA 317B            130     CALL DELAY_S
+00AC 08              131     INC R0            ; Lay du lieu ke tiep
+00AD B807F0          132     CJNE R0,#7,LABEL_1        ; Kiem tra so du trang thai hien thi
+                     133     ;/////////////////
+00B0 315C            134     CALL XOA
+00B2 7807            135     MOV R0,#7       ;Bien dem so trang thai hien thi
+                     136     ;Nap di chi vung du lieu 
+00B4                 137     LABEL_2:              
+00B4 E8              138     MOV A,R0            ; Chuyen gia tri thanh ghi R0 vao thanh ghi A
+00B5 93              139     MOVC A,@A+DPTR        ; Lay du lieu tu vung nho
+00B6 7590FF          140     MOV DU_LIEU,#0FFH
+00B9 F5B0            141     MOV DIEU_KHIEN,A
+00BB 75A0FF          142     MOV QUET,#0FFH            
+00BE 317B            143     CALL DELAY_S
+00C0 18              144     DEC R0            ; Lay du lieu ke tiep
+00C1 B800F0          145     CJNE R0,#0,LABEL_2        ; Kiem tra so du trang thai hien thi
+00C4 22              146     RET
+                     147     ;_______________________________SANG_MANG___________________________
+00C5                 148     SANG_TRAI_PHAI:
+00C5 7903            149     MOV R1,#3
+00C7                 150     LAP_TP:
+00C7 315C            151     CALL XOA
+00C9 7800            152     MOV R0,#00H        ;Bien dem so trang thai hien thi
+00CB 900192          153     MOV DPTR,#MA_TRAI_PHAI   ;Nap di chi vung du lieu 
+00CE                 154     LABEL_TP1:              
+00CE E8              155     MOV A,R0            ; Chuyen gia tri thanh ghi R0 vao thanh ghi A
+00CF 93              156     MOVC A,@A+DPTR        ; Lay du lieu tu vung nho
+00D0 F590            157     MOV DU_LIEU,A
+00D2 75B000          158     MOV DIEU_KHIEN,#00H
+00D5 75A0FF          159     MOV QUET,#0FFH            
+00D8 317B            160     CALL DELAY_S
+00DA 08              161     INC R0            ; Lay du lieu ke tiep
+00DB B807C2          162     CJNE R0,#7,LABEL_1        ; Kiem tra so du trang thai hien thi
+                     163     ;/////////////////
+00DE 315C            164     CALL XOA
+00E0 7807            165     MOV R0,#7       ;Bien dem so trang thai hien thi
+                     166     ;//MOV DPTR,#MA_MANG    ;Nap di chi vung du lieu 
+00E2                 167     LABEL_TP2:              
+00E2 E8              168     MOV A,R0            ; Chuyen gia tri thanh ghi R0 vao thanh ghi A
+00E3 93              169     MOVC A,@A+DPTR        ; Lay du lieu tu vung nho
+00E4 F590            170     MOV DU_LIEU,A
+00E6 75B000          171     MOV DIEU_KHIEN,#00H
+00E9 75A0FF          172     MOV QUET,#0FFH            
+00EC 317B            173     CALL DELAY_S
+00EE 18              174     DEC R0            ; Lay du lieu ke tiep
+00EF B800C2          175     CJNE R0,#0,LABEL_2        ; Kiem tra so du trang thai hien thi
+00F2 D9D3            176     DJNZ R1,LAP_TP
+00F4 22              177     RET
+                     178     ;__________________________SANG_DUOI_LOP_______________________________
+00F5                 179     SANG_DUOI_LOP:
+00F5 7902            180     MOV R1,#SO_LAN_LAP
+00F7                 181     LAP_LAI:
+00F7 315C            182     CALL XOA
+00F9 7480            183     MOV A,#10000000B
+00FB                 184     LAP_2:
+00FB 7590FF          185     MOV DU_LIEU,#0FFH
+00FE 75B000          186     MOV DIEU_KHIEN,#00H
+0101 F5A0            187     MOV QUET,A
+0103 03              188     RR A
+0104 317B            189     CALL DELAY_S
+0106 B480F2          190     CJNE A,#10000000B,LAP_2
+A51 MACRO ASSEMBLER  CODEASMCUBE                                                          06/06/2015 11:35:15 PAGE     4
+
+                     191     ;__________________________________________________________
+0109 315C            192     CALL XOA
+010B 7401            193     MOV A,#00000001B
+010D                 194     LAP_3:
+010D 7590FF          195     MOV DU_LIEU,#0FFH
+0110 75B000          196     MOV DIEU_KHIEN,#00H
+0113 F5A0            197     MOV QUET,A
+0115 23              198     RL A
+0116 317B            199     CALL DELAY_S
+0118 B401F2          200     CJNE A,#00000001B,LAP_3
+011B D9DA            201     DJNZ R1,LAP_LAI
+011D 22              202     RET
+                     203     
+                     204     ;___________________SANG DAN LOP_________________________
+011E                 205     SANG_DAN_LOP:
+011E 7400            206     MOV A,#00H
+0120                 207     DICH_1:
+0120 D3              208     SETB C
+0121 13              209     RRC A
+0122 7590FF          210     MOV DU_LIEU,#0FFH
+0125 75B000          211     MOV DIEU_KHIEN,#00H
+0128 F5A0            212     MOV QUET,A
+012A 317B            213     CALL DELAY_S
+012C B4FFF1          214     CJNE A,#0FFH,DICH_1
+                     215     ;____________________________________
+012F 7400            216     MOV A,#00H
+0131                 217     DICH_2:
+0131 D3              218     SETB C
+0132 33              219     RLC A
+0133 7590FF          220     MOV DU_LIEU,#0FFH
+0136 75B000          221     MOV DIEU_KHIEN,#00H
+0139 F5A0            222     MOV QUET,A
+013B 317B            223     CALL DELAY_S
+013D B4FFF1          224     CJNE A,#0FFH,DICH_2
+0140 22              225     RET
+                     226     ;/////////____________NHAP NHAY______________________
+0141                 227     NHAP_NHAY:
+0141 7A03            228     MOV R2,#3
+0143                 229     LAP_1:
+0143 7590FF          230     MOV DU_LIEU,#0FFH
+0146 75B000          231     MOV DIEU_KHIEN,#00H
+0149 75A0FF          232     MOV QUET,#0FFH
+014C 317B            233     CALL DELAY_S
+014E 759000          234     MOV DU_LIEU,#00H
+0151 75B000          235     MOV DIEU_KHIEN,#00H
+0154 75A000          236     MOV QUET,#00H
+0157 317B            237     CALL DELAY_S 
+0159 DAE8            238     DJNZ R2,LAP_1
+015B 22              239     RET
+                     240     ;_____________HAM XOA CHONG NHIEU_____________________
+015C                 241     XOA:
+015C 759000          242     MOV DU_LIEU,#00H
+015F 75B000          243     MOV DIEU_KHIEN,#00H
+0162 75A000          244     MOV QUET,#00H
+0165 3168            245     CALL DELAY_MS
+0167 22              246     RET
+                     247     ;/____________HAM DELAY_MS_____________________
+0168                 248     DELAY_MS:
+0168 758901          249     MOV TMOD,#01H
+016B 758CFA          250     MOV TH0,#HIGH(-1500)
+016E 758A24          251     MOV TL0,#LOW(-1500)
+0171 D28C            252     SETB TR0
+0173 308DFD          253     JNB TF0,$
+0176 C28C            254     CLR TR0
+0178 C28D            255     CLR TF0
+017A 22              256     RET
+A51 MACRO ASSEMBLER  CODEASMCUBE                                                          06/06/2015 11:35:15 PAGE     5
+
+                     257     ;________________HAM DELAY_S_______________
+017B                 258     DELAY_S:
+017B 7A0A            259     MOV R2,#10
+017D                 260     DELAY_1:
+017D 758910          261     MOV TMOD,#10H
+0180 758D3C          262     MOV TH1,#HIGH(-50000)
+0183 758BB0          263     MOV TL1,#LOW(-50000)
+0186 D28E            264     SETB TR1
+0188 308FFD          265     JNB TF1,$
+018B C28F            266     CLR TF1
+018D C28E            267     CLR TR1
+018F DAEC            268     DJNZ R2,DELAY_1
+0191 22              269     RET
+                     270     ;_____________________BANG MA_______________________________________________
+0192 01020408        271     MA_TRAI_PHAI:   DB 001H,002H,004H,008H,010H,020H,040H,080H ;     MA_MANG
+0196 10204080                
+019A FEFDFBF7        272     MA_DIEU_KHIEN:  DB 0FEH,0FDH,0FBH,0F7H,0EFH,0DFH,0BFH,07FH; MA DIEU KHIEN
+019E EFDFBF7F                
+01A2 66FFFFDB        273     MA_CHU_M:       DB 066H,0FFH,0FFH,0DBH,0DBH,0C3H,0C3H,000H;
+01A6 DBC3C300                
+01AA 1F33331F        274     MA_CHU_R:       DB 01FH,033H,033H,01FH,00FH,01BH,033H,000H      
+01AE 0F1B3300                
+01B2 7E181818        275     MA_CHU_T:       DB 07EH,018H,018H,018H,018H,018H,018H,000H      
+01B6 18181800                
+01BA 66666666        276     MA_CHU_U:       DB 066H,066H,066H,066H,066H,066H,03CH,000H      
+01BE 66663C00                
+                     277     
+01C2 66FFFFDB        278     MA_CHU_MRTU:    DB 066H,0FFH,0FFH,0DBH,0DBH,0C3H,0C3H,000H;
+01C6 DBC3C300                
+01CA 1F33331F        279                                     DB 01FH,033H,033H,01FH,00FH,01BH,033H,000H      
+01CE 0F1B3300                
+01D2 7E181818        280                                     DB 07EH,018H,018H,018H,018H,018H,018H,000H      
+01D6 18181800                
+01DA 66666666        281                                     DB 066H,066H,066H,066H,066H,066H,03CH,000H
+01DE 66663C00                
+                     282     END
+                             ;_____________________________________________________________________________________
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+A51 MACRO ASSEMBLER  CODEASMCUBE                                                          06/06/2015 11:35:15 PAGE     6
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CHAY_CHU . . . . .  C ADDR   0077H   A   
+CHAY_CHU_DUOI_LEN.  C ADDR   0072H   A   
+DELAY_1. . . . . .  C ADDR   017DH   A   
+DELAY_MS . . . . .  C ADDR   0168H   A   
+DELAY_S. . . . . .  C ADDR   017BH   A   
+DICH . . . . . . .  C ADDR   0014H   A   
+DICH_1 . . . . . .  C ADDR   0120H   A   
+DICH_2 . . . . . .  C ADDR   0131H   A   
+DICH_CHU . . . . .  C ADDR   0012H   A   
+DIEU_KHIEN . . . .  D ADDR   00B0H   A   
+DU_LIEU. . . . . .  D ADDR   0090H   A   
+HIEN_CHU_MRTU. . .  C ADDR   003EH   A   
+HIEN_THI_CHU . . .  C ADDR   0053H   A   
+LABEL_1. . . . . .  C ADDR   00A0H   A   
+LABEL_2. . . . . .  C ADDR   00B4H   A   
+LABEL_TP1. . . . .  C ADDR   00CEH   A   
+LABEL_TP2. . . . .  C ADDR   00E2H   A   
+LAP_1. . . . . . .  C ADDR   0143H   A   
+LAP_2. . . . . . .  C ADDR   00FBH   A   
+LAP_3. . . . . . .  C ADDR   010DH   A   
+LAP_LAI. . . . . .  C ADDR   00F7H   A   
+LAP_TP . . . . . .  C ADDR   00C7H   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+MA_CHU_M . . . . .  C ADDR   01A2H   A   
+MA_CHU_MRTU. . . .  C ADDR   01C2H   A   
+MA_CHU_R . . . . .  C ADDR   01AAH   A   
+MA_CHU_T . . . . .  C ADDR   01B2H   A   
+MA_CHU_U . . . . .  C ADDR   01BAH   A   
+MA_DIEU_KHIEN. . .  C ADDR   019AH   A   
+MA_TRAI_PHAI . . .  C ADDR   0192H   A   
+NHAP_NHAY. . . . .  C ADDR   0141H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+QUET . . . . . . .  D ADDR   00A0H   A   
+QUET_LED . . . . .  C ADDR   0059H   A   
+QUET_LED2. . . . .  C ADDR   007DH   A   
+QUET_LED_DICH. . .  C ADDR   001AH   A   
+SANG_DAN_LOP . . .  C ADDR   011EH   A   
+SANG_DUOI_LOP. . .  C ADDR   00F5H   A   
+SANG_DUOI_MANG . .  C ADDR   0099H   A   
+SANG_TRAI_PHAI . .  C ADDR   00C5H   A   
+SO_LAN_LAP . . . .  N NUMB   0002H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TOC_DO . . . . . .  C ADDR   0055H   A   
+TOC_DO2. . . . . .  C ADDR   0079H   A   
+TOC_DO_DICH. . . .  C ADDR   0016H   A   
+TOC_DO_HIEN_THI. .  N NUMB   0014H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+XOA. . . . . . . .  C ADDR   015CH   A   
+
+
+REGISTER BANK(S) USED: 0 
+A51 MACRO ASSEMBLER  CODEASMCUBE                                                          06/06/2015 11:35:15 PAGE     7
+
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

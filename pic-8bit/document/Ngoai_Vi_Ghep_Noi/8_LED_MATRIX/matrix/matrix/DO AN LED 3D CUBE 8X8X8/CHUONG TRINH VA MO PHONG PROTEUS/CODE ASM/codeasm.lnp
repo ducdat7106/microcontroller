@@ -1,0 +1,3 @@
+"codeasmcube.obj" 
+TO "codeasm.asm" 
+RAMSIZE(256) 

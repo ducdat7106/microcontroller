@@ -1,0 +1,116 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"16 E:\PIC16F877A\220V AC Lamp dimmer using TRIAC\programming\triac.X/adc.h
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"30
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"31 E:\PIC16F877A\220V AC Lamp dimmer using TRIAC\programming\triac.X\main_triac.c
+[v _ExtInt ExtInt `(v  1 e 1 0 ]
+"38
+[v _ISR ISR `II(v  1 e 1 0 ]
+"48
+[v _main main `(v  1 e 1 0 ]
+"83
+[v _delay_us delay_us `(v  1 e 1 0 ]
+[s S57 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"357 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[u S66 . 1 `S57 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES66  1 e 1 @8 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S36 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1516
+[u S45 . 1 `S36 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES45  1 e 1 @136 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2578
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @250 ]
+"2599
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"2605
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"25 E:\PIC16F877A\220V AC Lamp dimmer using TRIAC\programming\triac.X\main_triac.c
+[v _ZC ZC `i  1 e 2 0 ]
+"26
+[v _alpha alpha `i  1 e 2 0 ]
+"48
+[v _main main `(v  1 e 1 0 ]
+{
+"81
+} 0
+"83
+[v _delay_us delay_us `(v  1 e 1 0 ]
+{
+[v delay_us@value value `ui  1 p 2 2 ]
+"92
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 0 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 7 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 9 ]
+"53
+} 0
+"31 E:\PIC16F877A\220V AC Lamp dimmer using TRIAC\programming\triac.X\main_triac.c
+[v _ExtInt ExtInt `(v  1 e 1 0 ]
+{
+"36
+} 0
+"30 E:\PIC16F877A\220V AC Lamp dimmer using TRIAC\programming\triac.X/adc.h
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+"32
+[v ADC_Read@channel channel `uc  1 a 1 6 ]
+"45
+} 0
+"16
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"20
+} 0
+"38 E:\PIC16F877A\220V AC Lamp dimmer using TRIAC\programming\triac.X\main_triac.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"45
+} 0

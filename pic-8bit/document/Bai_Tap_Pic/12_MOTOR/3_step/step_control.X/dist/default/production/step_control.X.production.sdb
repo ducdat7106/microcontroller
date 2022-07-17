@@ -1,0 +1,123 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"40 G:\My Drive\Bai_Lam\1_PIC16F\12_MOTOR\3_step\step_control.X\main_step.c
+[v _External_Interrup_PortB External_Interrup_PortB `(v  1 e 1 0 ]
+"46
+[v _isr isr `II(v  1 e 1 0 ]
+"69
+[v _main main `(v  1 e 1 0 ]
+"92
+[v _Config_Init Config_Init `(v  1 e 1 0 ]
+"3 G:\My Drive\Bai_Lam\1_PIC16F\12_MOTOR\3_step\step_control.X\step_motor.c
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"9
+[v _Step_Motor_Init Step_Motor_Init `(v  1 e 1 0 ]
+"49
+[v _Full_Drive_Mode Full_Drive_Mode `(v  1 e 1 0 ]
+"216 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S26 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S35 . 1 `S26 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES35  1 e 1 @6 ]
+[s S113 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"357
+[u S122 . 1 `S113 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES122  1 e 1 @8 ]
+[s S92 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1516
+[u S101 . 1 `S92 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES101  1 e 1 @136 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2698
+[v _RBIE RBIE `VEb  1 e 0 @91 ]
+"2701
+[v _RBIF RBIF `VEb  1 e 0 @88 ]
+"32 G:\My Drive\Bai_Lam\1_PIC16F\12_MOTOR\3_step\step_control.X\main_step.c
+[v _mode mode `i  1 e 2 0 ]
+"33
+[v _ready ready `i  1 e 2 0 ]
+"34
+[v _dummy dummy `i  1 e 2 0 ]
+"69
+[v _main main `(v  1 e 1 0 ]
+{
+"89
+} 0
+"49 G:\My Drive\Bai_Lam\1_PIC16F\12_MOTOR\3_step\step_control.X\step_motor.c
+[v _Full_Drive_Mode Full_Drive_Mode `(v  1 e 1 0 ]
+{
+[v Full_Drive_Mode@mode1 mode1 `uc  1 a 1 wreg ]
+[v Full_Drive_Mode@mode1 mode1 `uc  1 a 1 wreg ]
+[v Full_Drive_Mode@delay delay `ui  1 p 2 2 ]
+"51
+[v Full_Drive_Mode@mode1 mode1 `uc  1 a 1 7 ]
+"62
+} 0
+"3
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"4
+[v delay_ms@i i `i  1 a 2 0 ]
+"3
+[v delay_ms@value value `ui  1 p 2 4 ]
+"7
+} 0
+"92 G:\My Drive\Bai_Lam\1_PIC16F\12_MOTOR\3_step\step_control.X\main_step.c
+[v _Config_Init Config_Init `(v  1 e 1 0 ]
+{
+"100
+} 0
+"9 G:\My Drive\Bai_Lam\1_PIC16F\12_MOTOR\3_step\step_control.X\step_motor.c
+[v _Step_Motor_Init Step_Motor_Init `(v  1 e 1 0 ]
+{
+"17
+} 0
+"40 G:\My Drive\Bai_Lam\1_PIC16F\12_MOTOR\3_step\step_control.X\main_step.c
+[v _External_Interrup_PortB External_Interrup_PortB `(v  1 e 1 0 ]
+{
+"43
+} 0
+"46
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"65
+} 0

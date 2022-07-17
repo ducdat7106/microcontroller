@@ -1,0 +1,379 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\counter_timer0.X.production.o
+cinit CODE 0 7E8 7E8 18 2
+text1 CODE 0 79B 79B 4D 2
+text2 CODE 0 71D 71D 3A 2
+text3 CODE 0 757 757 44 2
+text4 CODE 0 6C7 6C7 6 2
+nvBANK0 BANK0 1 2A 2A 4 1
+maintext CODE 0 6EA 6EA 33 2
+cstackCOMMON COMMON 1 70 70 B 1
+inittext CODE 0 6D7 6D7 13 2
+bssBANK0 BANK0 1 2E 2E 4 1
+idataBANK0 CODE 0 6CD 6CD A 2
+dataBANK0 BANK0 1 20 20 A 1
+bssCOMMON COMMON 1 7B 7B 2 1
+config CONFIG 4 2007 2007 1 2
+$C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+end_init CODE 0 0 0 3 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 32-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 32-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-6C6 2
+CONST 800-1FFF 2
+ENTRY 3-6C6 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-6C6 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7D-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-6C6 2
+STRCODE 800-1FFF 2
+STRING 3-6C6 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\counter_timer0.X.production.o
+7E8 cinit CODE >399:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7E8 cinit CODE >402:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7E8 cinit CODE >458:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7E9 cinit CODE >459:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7EA cinit CODE >460:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7EB cinit CODE >461:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7EC cinit CODE >462:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7ED cinit CODE >463:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7EE cinit CODE >464:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7EF cinit CODE >465:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7F0 cinit CODE >466:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7F1 cinit CODE >467:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7F6 cinit CODE >471:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7F7 cinit CODE >472:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7F8 cinit CODE >473:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7F9 cinit CODE >474:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7FA cinit CODE >477:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7FB cinit CODE >478:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7FC cinit CODE >484:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7FC cinit CODE >486:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+7FD cinit CODE >487:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6C7 text4 CODE >28:D:\pic16f877a\timer\counter_timer0.X\main.c
+6C7 text4 CODE >30:D:\pic16f877a\timer\counter_timer0.X\main.c
+6CA text4 CODE >31:D:\pic16f877a\timer\counter_timer0.X\main.c
+6CB text4 CODE >32:D:\pic16f877a\timer\counter_timer0.X\main.c
+6CC text4 CODE >33:D:\pic16f877a\timer\counter_timer0.X\main.c
+757 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+757 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+759 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+75F text3 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+761 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+762 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+769 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+76D text3 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+771 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+778 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+782 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+788 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+789 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+790 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+796 text3 CODE >29:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+79A text3 CODE >30:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+71D text2 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+71D text2 CODE >12:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+723 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+725 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+726 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+72D text2 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+731 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+735 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+73F text2 CODE >20:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+745 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+74C text2 CODE >22:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+752 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+756 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+79B text1 CODE >35:D:\pic16f877a\timer\counter_timer0.X\main.c
+79B text1 CODE >37:D:\pic16f877a\timer\counter_timer0.X\main.c
+7AE text1 CODE >38:D:\pic16f877a\timer\counter_timer0.X\main.c
+7C1 text1 CODE >40:D:\pic16f877a\timer\counter_timer0.X\main.c
+7C7 text1 CODE >41:D:\pic16f877a\timer\counter_timer0.X\main.c
+7C8 text1 CODE >42:D:\pic16f877a\timer\counter_timer0.X\main.c
+7D1 text1 CODE >43:D:\pic16f877a\timer\counter_timer0.X\main.c
+7D4 text1 CODE >45:D:\pic16f877a\timer\counter_timer0.X\main.c
+7DA text1 CODE >46:D:\pic16f877a\timer\counter_timer0.X\main.c
+7DB text1 CODE >47:D:\pic16f877a\timer\counter_timer0.X\main.c
+7E4 text1 CODE >48:D:\pic16f877a\timer\counter_timer0.X\main.c
+7E7 text1 CODE >49:D:\pic16f877a\timer\counter_timer0.X\main.c
+6EA maintext CODE >51:D:\pic16f877a\timer\counter_timer0.X\main.c
+6EA maintext CODE >53:D:\pic16f877a\timer\counter_timer0.X\main.c
+6EE maintext CODE >55:D:\pic16f877a\timer\counter_timer0.X\main.c
+6EF maintext CODE >56:D:\pic16f877a\timer\counter_timer0.X\main.c
+6F2 maintext CODE >57:D:\pic16f877a\timer\counter_timer0.X\main.c
+6F5 maintext CODE >58:D:\pic16f877a\timer\counter_timer0.X\main.c
+6F6 maintext CODE >59:D:\pic16f877a\timer\counter_timer0.X\main.c
+6FA maintext CODE >61:D:\pic16f877a\timer\counter_timer0.X\main.c
+6FF maintext CODE >64:D:\pic16f877a\timer\counter_timer0.X\main.c
+704 maintext CODE >65:D:\pic16f877a\timer\counter_timer0.X\main.c
+70D maintext CODE >66:D:\pic16f877a\timer\counter_timer0.X\main.c
+716 maintext CODE >68:D:\pic16f877a\timer\counter_timer0.X\main.c
+717 maintext CODE >69:D:\pic16f877a\timer\counter_timer0.X\main.c
+6D7 inittext CODE >432:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6D7 inittext CODE >433:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6D8 inittext CODE >434:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6D9 inittext CODE >435:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6DA inittext CODE >436:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6DB inittext CODE >443:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6DB inittext CODE >444:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E0 inittext CODE >445:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E1 inittext CODE >446:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E2 inittext CODE >447:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E3 inittext CODE >448:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E4 inittext CODE >449:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E5 inittext CODE >450:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E6 inittext CODE >451:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E7 inittext CODE >452:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E8 inittext CODE >453:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+6E9 inittext CODE >454:C:\Users\DATNGU~1\AppData\Local\Temp\sar0.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+___lwmod@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+_T0SE 40C 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+_chuc 2C 0 BANK0 1 nvBANK0 dist/default/production\counter_timer0.X.production.o
+_main DD4 0 CODE 0 maintext dist/default/production\counter_timer0.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+start 0 0 CODE 0 init C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+__size_of_main 0 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON1 9F 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+_display F36 0 CODE 0 text1 dist/default/production\counter_timer0.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+__end_of___lwdiv F36 0 CODE 0 text3 dist/default/production\counter_timer0.X.production.o
+__end_of___lwmod EAE 0 CODE 0 text2 dist/default/production\counter_timer0.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+___stacklo 0 0 ABS 0 - C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+___lwdiv@quotient 74 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+start_initialization FD0 0 CODE 0 cinit dist/default/production\counter_timer0.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 76 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__size_of_couter0 0 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FD0 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 2A 0 BANK0 1 nvBANK0 dist/default/production\counter_timer0.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RC0 38 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+_RC1 39 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__S0 800 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_dem 7B 0 COMMON 1 bssCOMMON dist/default/production\counter_timer0.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DATNGU~1\AppData\Local\Temp\sar0.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\counter_timer0.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_couter0 D9A 0 CODE 0 text4 dist/default/production\counter_timer0.X.production.o
+_number 20 0 BANK0 1 dataBANK0 dist/default/production\counter_timer0.X.production.o
+___lwdiv EAE 0 CODE 0 text3 dist/default/production\counter_timer0.X.production.o
+___lwmod E3A 0 CODE 0 text2 dist/default/production\counter_timer0.X.production.o
+__pmaintext DD4 0 CODE 0 maintext dist/default/production\counter_timer0.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+__size_of_display 0 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7B 0 COMMON 1 bssCOMMON dist/default/production\counter_timer0.X.production.o
+init_fetch0 DAE 0 CODE 0 inittext dist/default/production\counter_timer0.X.production.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\counter_timer0.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+?___lwmod 70 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 F36 0 CODE 0 text1 dist/default/production\counter_timer0.X.production.o
+__ptext2 E3A 0 CODE 0 text2 dist/default/production\counter_timer0.X.production.o
+__ptext3 EAE 0 CODE 0 text3 dist/default/production\counter_timer0.X.production.o
+__ptext4 D8E 0 CODE 0 text4 dist/default/production\counter_timer0.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\counter_timer0.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_display FD0 0 CODE 0 text1 dist/default/production\counter_timer0.X.production.o
+__pidataBANK0 D9A 0 CODE 0 idataBANK0 dist/default/production\counter_timer0.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\counter_timer0.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 DB6 0 CODE 0 inittext dist/default/production\counter_timer0.X.production.o
+__end_of_main E3A 0 CODE 0 maintext dist/default/production\counter_timer0.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\counter_timer0.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_donvi 2A 0 BANK0 1 nvBANK0 dist/default/production\counter_timer0.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FD0 0 CODE 0 cinit dist/default/production\counter_timer0.X.production.o
+__pbssBANK0 2E 0 BANK0 1 bssBANK0 dist/default/production\counter_timer0.X.production.o
+_couter0 D8E 0 CODE 0 text4 dist/default/production\counter_timer0.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E8 FD0 18 2
+text1 0 79B F36 4D 2
+text2 0 71D E3A 3A 2
+text3 0 757 EAE 44 2
+text4 0 6C7 D8E 6 2
+maintext 0 6EA DD4 33 2
+cstackCOMMON 1 70 70 D 1
+inittext 0 6D7 DAE 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 6CD D9A A 2
+dataBANK0 1 20 20 12 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

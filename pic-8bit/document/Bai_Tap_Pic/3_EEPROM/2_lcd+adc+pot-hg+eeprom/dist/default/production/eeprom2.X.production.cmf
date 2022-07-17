@@ -1,0 +1,551 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+end_init CODE 0 0 0 3 2
+config CONFIG 4 2007 2007 1 2
+$dist/default/production\eeprom2.X.production.o
+cinit CODE 0 7FC 7FC 4 2
+text1 CODE 0 59C 59C 59 2
+text2 CODE 0 5F5 5F5 67 2
+text3 CODE 0 547 547 55 2
+text4 CODE 0 4F5 4F5 52 2
+text5 CODE 0 476 476 29 2
+text6 CODE 0 4CA 4CA 2B 2
+text7 CODE 0 401 401 D 2
+text8 CODE 0 41F 41F 1A 2
+text9 CODE 0 454 454 22 2
+text10 CODE 0 439 439 1B 2
+text11 CODE 0 40E 40E 11 2
+text12 CODE 0 49F 49F 2B 2
+text13 CODE 0 3F8 3F8 9 2
+maintext CODE 0 65C 65C 1A0 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 19 1
+strings STRING 0 3 3 11 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 39-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 39-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 14-3F7 2
+CONST 800-1FFF 2
+ENTRY 14-3F7 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 14-3F7 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 14-3F7 2
+STRCODE 800-1FFF 2
+STRING 14-3F7 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\eeprom2.X.production.o
+7FC cinit CODE >800:C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.s
+7FC cinit CODE >803:C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.s
+7FC cinit CODE >809:C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.s
+7FC cinit CODE >811:C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.s
+7FD cinit CODE >812:C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.s
+3F8 text13 CODE >5:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+3F8 text13 CODE >7:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+3FC text13 CODE >8:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+400 text13 CODE >9:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+49F text12 CODE >11:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+4A0 text12 CODE >13:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+4A6 text12 CODE >14:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+4B3 text12 CODE >15:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+4BC text12 CODE >16:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+4BF text12 CODE >17:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+4C3 text12 CODE >18:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+4C9 text12 CODE >19:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\adc.c
+40E text11 CODE >35:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+40F text11 CODE >38:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+413 text11 CODE >39:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+416 text11 CODE >40:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+417 text11 CODE >41:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+41D text11 CODE >42:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+41E text11 CODE >43:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+439 text10 CODE >6:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+43A text10 CODE >8:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+440 text10 CODE >9:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+444 text10 CODE >10:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+446 text10 CODE >11:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+449 text10 CODE >12:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+44A text10 CODE >13:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+44B text10 CODE >14:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+44D text10 CODE >15:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+44F text10 CODE >16:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+450 text10 CODE >17:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+451 text10 CODE >18:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+452 text10 CODE >19:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+453 text10 CODE >20:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\eeprom.c
+454 text9 CODE >5:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+455 text9 CODE >7:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+459 text9 CODE >8:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+45D text9 CODE >9:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+45D text9 CODE >10:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+460 text9 CODE >12:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+464 text9 CODE >13:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+466 text9 CODE >14:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+466 text9 CODE >15:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+467 text9 CODE >17:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+46B text9 CODE >18:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+46D text9 CODE >19:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+46D text9 CODE >20:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+46E text9 CODE >22:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+472 text9 CODE >23:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+474 text9 CODE >24:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+474 text9 CODE >25:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+475 text9 CODE >26:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+41F text8 CODE >28:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+420 text8 CODE >30:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+423 text8 CODE >31:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+429 text8 CODE >32:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+42C text8 CODE >33:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+435 text8 CODE >34:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+438 text8 CODE >35:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+401 text7 CODE >37:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+401 text7 CODE >39:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+407 text7 CODE >40:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+40D text7 CODE >41:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4CA text6 CODE >82:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4CB text6 CODE >85:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4D0 text6 CODE >86:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4D5 text6 CODE >87:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4D8 text6 CODE >88:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4E6 text6 CODE >89:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4E9 text6 CODE >90:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4E9 text6 CODE >91:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4EA text6 CODE >92:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4F0 text6 CODE >93:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4F3 text6 CODE >94:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4F3 text6 CODE >95:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4F4 text6 CODE >96:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+476 text5 CODE >98:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+479 text5 CODE >101:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+47C text5 CODE >102:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+49E text5 CODE >103:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4F5 text4 CODE >43:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4F6 text4 CODE >46:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+4FB text4 CODE >48:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+500 text4 CODE >49:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+50C text4 CODE >50:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+511 text4 CODE >51:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+517 text4 CODE >52:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+51D text4 CODE >53:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+51E text4 CODE >54:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+524 text4 CODE >56:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+529 text4 CODE >57:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+535 text4 CODE >58:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+53A text4 CODE >59:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+540 text4 CODE >60:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+546 text4 CODE >62:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+547 text3 CODE >64:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+547 text3 CODE >66:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+54D text3 CODE >67:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+54D text3 CODE >68:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+553 text3 CODE >69:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+55C text3 CODE >70:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+562 text3 CODE >71:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+56B text3 CODE >72:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+571 text3 CODE >73:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+577 text3 CODE >74:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+57D text3 CODE >75:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+583 text3 CODE >76:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+589 text3 CODE >77:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+58F text3 CODE >78:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+595 text3 CODE >79:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+59B text3 CODE >80:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\lcd.c
+5F5 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5F5 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5F6 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5FA text2 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5FF text2 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+601 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+605 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+60A text2 CODE >20:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+60E text2 CODE >22:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+610 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+616 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+618 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+619 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+620 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+624 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+628 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+62F text2 CODE >31:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+639 text2 CODE >32:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+63F text2 CODE >33:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+640 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+647 text2 CODE >36:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+64D text2 CODE >38:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+652 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+657 text2 CODE >40:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+65B text2 CODE >41:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+59C text1 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+59C text1 CODE >12:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+59D text1 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5A1 text1 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5A6 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5A8 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5AC text1 CODE >18:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5B1 text1 CODE >19:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5B7 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5B9 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5BA text1 CODE >22:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5C1 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5C5 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5C9 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5D3 text1 CODE >27:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5D9 text1 CODE >28:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5E0 text1 CODE >29:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5E6 text1 CODE >31:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5EB text1 CODE >32:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5F0 text1 CODE >33:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5F4 text1 CODE >34:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+65C maintext CODE >15:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+65C maintext CODE >17:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+65C maintext CODE >20:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+660 maintext CODE >23:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+663 maintext CODE >24:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+664 maintext CODE >25:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+665 maintext CODE >27:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+66A maintext CODE >28:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+66F maintext CODE >29:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+674 maintext CODE >33:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+680 maintext CODE >36:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+6A0 maintext CODE >37:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+6C0 maintext CODE >38:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+6E0 maintext CODE >39:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+6F3 maintext CODE >40:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+6FB maintext CODE >41:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+701 maintext CODE >42:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+70A maintext CODE >43:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+713 maintext CODE >44:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+71C maintext CODE >45:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+725 maintext CODE >48:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+747 maintext CODE >49:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+767 maintext CODE >50:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+787 maintext CODE >51:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+79A maintext CODE >52:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7A2 maintext CODE >53:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7A8 maintext CODE >54:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7B1 maintext CODE >55:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7BA maintext CODE >56:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7C3 maintext CODE >57:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7CC maintext CODE >62:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7D2 maintext CODE >64:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7DC maintext CODE >67:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7EA maintext CODE >69:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+7F2 maintext CODE >70:D:\vi_dieu_khien\pic16f877a\eeprom\pot-hg_and_eeprom_internal.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+___awdiv@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+EEPROM_Write@Data 70 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+Lcd_Print_String@a 22 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+Lcd_Print_String@i 20 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+_main CB8 0 CODE 0 maintext dist/default/production\eeprom2.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+start 0 0 CODE 0 init C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_EEPROM_Read 81C 0 CODE 0 text11 dist/default/production\eeprom2.X.production.o
+___awmod@sign 7D 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__size_of_ADC_Read 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_Lcd_Print_String 8EC 0 CODE 0 text5 dist/default/production\eeprom2.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__size_of_Lcd_Set_Cursor 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+___awdiv@sign 75 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON0 1F 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_ADCON1 9F 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+_EECON1bits 18C 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_EECON2 18D 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_EEDATA 10C 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+main@Sa1 2D 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+main@Sa2 2F 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+main@Sa3 31 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+main@Sa4 33 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+main@adc 37 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_ADC_Read 93E 0 CODE 0 text12 dist/default/production\eeprom2.X.production.o
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__end_of___awdiv CB8 0 CODE 0 text2 dist/default/production\eeprom2.X.production.o
+__end_of___awmod BEA 0 CODE 0 text1 dist/default/production\eeprom2.X.production.o
+__end_of_ADC_Read 994 0 CODE 0 text12 dist/default/production\eeprom2.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+___stacklo 0 0 ABS 0 - C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+_Lcd_Print_Char 994 0 CODE 0 text6 dist/default/production\eeprom2.X.production.o
+Lcd_Print_Char@data 74 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+_Lcd_SetBit 8A8 0 CODE 0 text9 dist/default/production\eeprom2.X.production.o
+Lcd_Set_Cursor@temp 79 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__end_of_Lcd_Print_String 93E 0 CODE 0 text5 dist/default/production\eeprom2.X.production.o
+ADC_Read@channel 74 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+start_initialization FF8 0 CODE 0 cinit dist/default/production\eeprom2.X.production.o
+EEPROM_Read@Data 71 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__size_of_Lcd_Print_String 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_GO_nDONE FA 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+_TRISA4 42C 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_TRISB0 430 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+EEPROM_Read@Address 70 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+__end_of_Lcd_Print_Char 9EA 0 CODE 0 text6 dist/default/production\eeprom2.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 10 0 STRING 0 strings dist/default/production\eeprom2.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_Lcd_SetBit 8EC 0 CODE 0 text9 dist/default/production\eeprom2.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FF8 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+EEPROM_Write@Address 71 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RB0 30 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_RD2 42 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_RD3 43 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_RD4 44 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_RD5 45 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_RD6 46 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_RD7 47 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__S0 800 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+?_ADC_Read 70 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__end_of_EEPROM_Read 83E 0 CODE 0 text11 dist/default/production\eeprom2.X.production.o
+_EEPROM_Write 872 0 CODE 0 text10 dist/default/production\eeprom2.X.production.o
+__end_of_Lcd_Clear 81C 0 CODE 0 text7 dist/default/production\eeprom2.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+__stringtab 6 0 STRING 0 strings dist/default/production\eeprom2.X.production.o
+__end_of_Lcd_Start B38 0 CODE 0 text3 dist/default/production\eeprom2.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DATNGU~1\AppData\Local\Temp\sgv8.o
+__size_of_Lcd_Clear 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__size_of_Lcd_Start 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__end_of_Lcd_Cmd 872 0 CODE 0 text8 dist/default/production\eeprom2.X.production.o
+_ADC_Initialize 7F0 0 CODE 0 text13 dist/default/production\eeprom2.X.production.o
+___awmod@counter 7C 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__ptext10 872 0 CODE 0 text10 dist/default/production\eeprom2.X.production.o
+__ptext11 81C 0 CODE 0 text11 dist/default/production\eeprom2.X.production.o
+__ptext12 93E 0 CODE 0 text12 dist/default/production\eeprom2.X.production.o
+__ptext13 7F0 0 CODE 0 text13 dist/default/production\eeprom2.X.production.o
+_Lcd_Clear 802 0 CODE 0 text7 dist/default/production\eeprom2.X.production.o
+_Lcd_Start A8E 0 CODE 0 text3 dist/default/production\eeprom2.X.production.o
+___awdiv BEA 0 CODE 0 text2 dist/default/production\eeprom2.X.production.o
+___awmod B38 0 CODE 0 text1 dist/default/production\eeprom2.X.production.o
+_Lcd_Set_Cursor 9EA 0 CODE 0 text4 dist/default/production\eeprom2.X.production.o
+__pmaintext CB8 0 CODE 0 maintext dist/default/production\eeprom2.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__size_of_EEPROM_Write 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+Lcd_Print_Char@Lower_Nibble 72 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+main@Sadc 35 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+__end_of__stringtab 12 0 STRING 0 strings dist/default/production\eeprom2.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+main@a1 25 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+main@a2 27 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+main@a3 29 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+main@a4 2B 0 BANK0 1 cstackBANK0 dist/default/production\eeprom2.X.production.o
+__end_of_EEPROM_Write 8A8 0 CODE 0 text10 dist/default/production\eeprom2.X.production.o
+__end_of_ADC_Initialize 802 0 CODE 0 text13 dist/default/production\eeprom2.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\eeprom2.X.production.o
+__end_of_Lcd_Set_Cursor A8E 0 CODE 0 text4 dist/default/production\eeprom2.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+Lcd_Set_Cursor@a 76 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+Lcd_Set_Cursor@b 74 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+Lcd_Set_Cursor@y 78 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+Lcd_Set_Cursor@z 77 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__size_of_Lcd_SetBit 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 76 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+?___awmod 78 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+___awmod@dividend 7A 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+Lcd_SetBit@data_bit 70 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__ptext1 B38 0 CODE 0 text1 dist/default/production\eeprom2.X.production.o
+__ptext2 BEA 0 CODE 0 text2 dist/default/production\eeprom2.X.production.o
+__ptext3 A8E 0 CODE 0 text3 dist/default/production\eeprom2.X.production.o
+__ptext4 9EA 0 CODE 0 text4 dist/default/production\eeprom2.X.production.o
+__ptext5 8EC 0 CODE 0 text5 dist/default/production\eeprom2.X.production.o
+__ptext6 994 0 CODE 0 text6 dist/default/production\eeprom2.X.production.o
+__ptext7 802 0 CODE 0 text7 dist/default/production\eeprom2.X.production.o
+__ptext8 83E 0 CODE 0 text8 dist/default/production\eeprom2.X.production.o
+__ptext9 8A8 0 CODE 0 text9 dist/default/production\eeprom2.X.production.o
+__size_of_EEPROM_Read 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+Lcd_Print_Char@Upper_Nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_Lcd_Print_Char 0 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\eeprom2.X.production.o
+___awmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+Lcd_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\eeprom2.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+__end_of_main FF8 0 CODE 0 maintext dist/default/production\eeprom2.X.production.o
+_EEADR 10D 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\eeprom2.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_Lcd_Cmd 83E 0 CODE 0 text8 dist/default/production\eeprom2.X.production.o
+__initialization FF8 0 CODE 0 cinit dist/default/production\eeprom2.X.production.o
+__pstrings 6 0 STRING 0 strings dist/default/production\eeprom2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7FC FF8 4 2
+text1 0 59C B38 59 2
+text2 0 5F5 BEA 67 2
+text3 0 547 A8E 55 2
+text4 0 4F5 9EA 52 2
+text5 0 476 8EC 29 2
+text6 0 4CA 994 2B 2
+text7 0 401 802 D 2
+text8 0 41F 83E 1A 2
+text9 0 454 8A8 22 2
+text10 0 439 872 1B 2
+text11 0 40E 81C 11 2
+text12 0 49F 93E 2B 2
+text13 0 3F8 7F0 9 2
+maintext 0 65C CB8 1A0 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 19 1
+reset_vec 0 0 0 3 2
+strings 0 3 6 11 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

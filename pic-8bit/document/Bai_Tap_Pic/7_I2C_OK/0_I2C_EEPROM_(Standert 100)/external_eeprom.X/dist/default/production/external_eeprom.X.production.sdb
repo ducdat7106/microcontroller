@@ -1,0 +1,203 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"4 G:\My Drive\2_Bai_Lam\1_PIC16F\7_I2C\0_I2C_EEPROM_(Standert 100)\external_eeprom.X\external_eeprom.c
+[v _EEPROM_Init EEPROM_Init `(v  1 e 1 0 ]
+"16
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+"33
+[v _EEPROM_Write_Page EEPROM_Write_Page `(v  1 e 1 0 ]
+"56
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"80
+[v _EEPROM_Read_Page EEPROM_Read_Page `(v  1 e 1 0 ]
+"4 G:\My Drive\2_Bai_Lam\1_PIC16F\7_I2C\0_I2C_EEPROM_(Standert 100)\external_eeprom.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"15
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"21
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"28
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+"35
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"42
+[v _I2C_Master_ACK I2C_Master_ACK `(v  1 e 1 0 ]
+"49
+[v _I2C_Master_NACK I2C_Master_NACK `(v  1 e 1 0 ]
+"56
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+"66
+[v _I2C_Master_Read I2C_Master_Read `(uc  1 e 1 0 ]
+"27 G:\My Drive\2_Bai_Lam\1_PIC16F\7_I2C\0_I2C_EEPROM_(Standert 100)\external_eeprom.X\main_external_eeprom.c
+[v _main main `(i  1 e 2 0 ]
+"67
+[v _write_byte_style_2 write_byte_style_2 `(v  1 e 1 0 ]
+"216 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2087
+[v _CMCON CMCON `VEuc  1 e 1 @156 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2374
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2377
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2380
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2737
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2791
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2806
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2824
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"27 G:\My Drive\2_Bai_Lam\1_PIC16F\7_I2C\0_I2C_EEPROM_(Standert 100)\external_eeprom.X\main_external_eeprom.c
+[v _main main `(i  1 e 2 0 ]
+{
+"43
+} 0
+"67
+[v _write_byte_style_2 write_byte_style_2 `(v  1 e 1 0 ]
+{
+"69
+[v write_byte_style_2@Address Address `uc  1 a 1 9 ]
+"70
+[v write_byte_style_2@Data Data `uc  1 a 1 8 ]
+"84
+} 0
+"16 G:\My Drive\2_Bai_Lam\1_PIC16F\7_I2C\0_I2C_EEPROM_(Standert 100)\external_eeprom.X\external_eeprom.c
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+[v EEPROM_Write@add add `uc  1 a 1 wreg ]
+[v EEPROM_Write@add add `uc  1 a 1 wreg ]
+[v EEPROM_Write@data data `uc  1 p 1 1 ]
+"18
+[v EEPROM_Write@add add `uc  1 a 1 4 ]
+"29
+} 0
+"56
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v EEPROM_Read@add add `uc  1 a 1 wreg ]
+"58
+[v EEPROM_Read@Data Data `uc  1 a 1 3 ]
+"56
+[v EEPROM_Read@add add `uc  1 a 1 wreg ]
+"59
+[v EEPROM_Read@add add `uc  1 a 1 2 ]
+"75
+} 0
+"56 G:\My Drive\2_Bai_Lam\1_PIC16F\7_I2C\0_I2C_EEPROM_(Standert 100)\external_eeprom.X\i2c.c
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Master_Write@data data `uc  1 a 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 a 1 wreg ]
+"58
+[v I2C_Master_Write@data data `uc  1 a 1 0 ]
+"63
+} 0
+"35
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"39
+} 0
+"21
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"25
+} 0
+"28
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+{
+"32
+} 0
+"66
+[v _I2C_Master_Read I2C_Master_Read `(uc  1 e 1 0 ]
+{
+"75
+} 0
+"49
+[v _I2C_Master_NACK I2C_Master_NACK `(v  1 e 1 0 ]
+{
+"54
+} 0
+"15
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"18
+} 0
+"4 G:\My Drive\2_Bai_Lam\1_PIC16F\7_I2C\0_I2C_EEPROM_(Standert 100)\external_eeprom.X\external_eeprom.c
+[v _EEPROM_Init EEPROM_Init `(v  1 e 1 0 ]
+{
+[v EEPROM_Init@I2C_BaudRate I2C_BaudRate `uc  1 a 1 wreg ]
+[v EEPROM_Init@I2C_BaudRate I2C_BaudRate `uc  1 a 1 wreg ]
+"6
+[v EEPROM_Init@I2C_BaudRate I2C_BaudRate `uc  1 a 1 10 ]
+"7
+} 0
+"4 G:\My Drive\2_Bai_Lam\1_PIC16F\7_I2C\0_I2C_EEPROM_(Standert 100)\external_eeprom.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+[v I2C_Master_Init@I2C_BaudRate I2C_BaudRate `uc  1 a 1 wreg ]
+[v I2C_Master_Init@I2C_BaudRate I2C_BaudRate `uc  1 a 1 wreg ]
+"6
+[v I2C_Master_Init@I2C_BaudRate I2C_BaudRate `uc  1 a 1 9 ]
+"12
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 3 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 2 ]
+[v ___aldiv@counter counter `uc  1 a 1 1 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 6 ]
+[v ___aldiv@dividend dividend `l  1 p 4 10 ]
+"41
+} 0

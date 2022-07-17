@@ -1,0 +1,2 @@
+web see:
+https://electrosome.com/spi-pic-microcontroller-mplab-xc8/

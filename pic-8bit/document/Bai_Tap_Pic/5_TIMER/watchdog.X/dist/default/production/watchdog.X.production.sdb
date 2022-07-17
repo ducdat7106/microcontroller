@@ -1,0 +1,45 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"33 G:\My Drive\B  Bai Tap\Mplab xc8 pic16f877a\1  timer\watchdog.X\main_WDT.c
+[v _WDT_Init WDT_Init `(v  1 e 1 0 ]
+"44
+[v _main main `(v  1 e 1 0 ]
+"278 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2635
+[v _PS0 PS0 `VEb  1 e 0 @1032 ]
+"2638
+[v _PS1 PS1 `VEb  1 e 0 @1033 ]
+"2641
+[v _PS2 PS2 `VEb  1 e 0 @1034 ]
+"2644
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"2845
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"2854
+[v _T0SE T0SE `VEb  1 e 0 @1036 ]
+"44 G:\My Drive\B  Bai Tap\Mplab xc8 pic16f877a\1  timer\watchdog.X\main_WDT.c
+[v _main main `(v  1 e 1 0 ]
+{
+"67
+} 0
+"33
+[v _WDT_Init WDT_Init `(v  1 e 1 0 ]
+{
+"42
+} 0

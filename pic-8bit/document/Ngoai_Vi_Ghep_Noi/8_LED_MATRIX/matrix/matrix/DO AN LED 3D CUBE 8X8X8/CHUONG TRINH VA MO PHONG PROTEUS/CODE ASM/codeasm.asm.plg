@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\PROJECT LED CUBE\PROJECT LED CUBE 8X8X8\VERSION_1.0\MO_PHONG_CODE\code ASM\codeasm.asm.uvproj
+Project File Date:  06/05/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling codeasmcube.asm...
+linking...
+Program Size: data=8.0 xdata=0 code=482
+creating hex file from "codeasm.asm"...
+"codeasm.asm" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling codeasmcube.asm...
+linking...
+Program Size: data=8.0 xdata=0 code=482
+creating hex file from "codeasm.asm"...
+"codeasm.asm" - 0 Error(s), 0 Warning(s).

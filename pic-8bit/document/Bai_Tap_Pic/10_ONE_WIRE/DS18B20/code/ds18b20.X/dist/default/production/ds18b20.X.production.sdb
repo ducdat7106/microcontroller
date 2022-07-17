@@ -1,0 +1,298 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"8 E:\Pic16\one wire ds18d20\code\ds18b20.X\ds18b20.c
+[v _ds18b20_start ds18b20_start `(b  1 e 0 0 ]
+"30
+[v _ds18b20_write_bit ds18b20_write_bit `(v  1 e 1 0 ]
+"47
+[v _ds18b20_write_byte ds18b20_write_byte `(v  1 e 1 0 ]
+"56
+[v _ds18b20_read_bit ds18b20_read_bit `(b  1 e 0 0 ]
+"77
+[v _ds18b20_read_byte ds18b20_read_byte `(uc  1 e 1 0 ]
+"91
+[v _ds18b20_read ds18b20_read `(b  1 e 0 0 ]
+"8 E:\Pic16\one wire ds18d20\code\ds18b20.X\i2c_lcd.c
+[v _IO_Expander_Write IO_Expander_Write `(v  1 e 1 0 ]
+"16
+[v _LCD_Write_4Bit LCD_Write_4Bit `(v  1 e 1 0 ]
+"25
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+"33
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"60
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+"67
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+"77
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+"3 E:\Pic16\one wire ds18d20\code\ds18b20.X\i2c_master.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"23
+[v _I2C_Wait I2C_Wait `(v  1 e 1 0 ]
+"31
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"49
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"56
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+"66
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+"76
+[v _I2C_Write_Char I2C_Write_Char `(uc  1 e 1 0 ]
+"26 E:\Pic16\one wire ds18d20\code\ds18b20.X\main_ds18b20.c
+[v _main main `(v  1 e 1 0 ]
+"808 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2087
+[v _CMCON CMCON `VEuc  1 e 1 @156 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2374
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2377
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2380
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2737
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2770
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2791
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2806
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2824
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"3004
+[v _TRISD7 TRISD7 `VEb  1 e 0 @1095 ]
+"3 E:\Pic16\one wire ds18d20\code\ds18b20.X\i2c_lcd.c
+[v _RS RS `uc  1 e 1 0 ]
+[v _BackLight_State BackLight_State `uc  1 e 1 0 ]
+"23 E:\Pic16\one wire ds18d20\code\ds18b20.X\main_ds18b20.c
+[v _raw_temp raw_temp `ui  1 e 2 0 ]
+"24
+[v _temp temp `[11]uc  1 e 11 0 ]
+"26
+[v _main main `(v  1 e 1 0 ]
+{
+"82
+} 0
+"91 E:\Pic16\one wire ds18d20\code\ds18b20.X\ds18b20.c
+[v _ds18b20_read ds18b20_read `(b  1 e 0 0 ]
+{
+[v ds18b20_read@raw_temp_value raw_temp_value `*.4ui  1 a 1 wreg ]
+[v ds18b20_read@raw_temp_value raw_temp_value `*.4ui  1 a 1 wreg ]
+"93
+[v ds18b20_read@raw_temp_value raw_temp_value `*.4ui  1 a 1 7 ]
+"113
+} 0
+"47
+[v _ds18b20_write_byte ds18b20_write_byte `(v  1 e 1 0 ]
+{
+[v ds18b20_write_byte@value value `uc  1 a 1 wreg ]
+"49
+[v ds18b20_write_byte@i i `uc  1 a 1 4 ]
+"47
+[v ds18b20_write_byte@value value `uc  1 a 1 wreg ]
+"49
+[v ds18b20_write_byte@value value `uc  1 a 1 3 ]
+"51
+} 0
+"30
+[v _ds18b20_write_bit ds18b20_write_bit `(v  1 e 1 0 ]
+{
+[v ds18b20_write_bit@value value `uc  1 a 1 wreg ]
+[v ds18b20_write_bit@value value `uc  1 a 1 wreg ]
+"32
+[v ds18b20_write_bit@value value `uc  1 a 1 1 ]
+"41
+} 0
+"8
+[v _ds18b20_start ds18b20_start `(b  1 e 0 0 ]
+{
+"24
+} 0
+"77
+[v _ds18b20_read_byte ds18b20_read_byte `(uc  1 e 1 0 ]
+{
+"81
+[v ds18b20_read_byte@i i `uc  1 a 1 4 ]
+"79
+[v ds18b20_read_byte@value value `uc  1 a 1 3 ]
+"85
+} 0
+"56
+[v _ds18b20_read_bit ds18b20_read_bit `(b  1 e 0 0 ]
+{
+"58
+[v ds18b20_read_bit@value value `b  1 s 0 value ]
+"71
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0
+"67 E:\Pic16\one wire ds18d20\code\ds18b20.X\i2c_lcd.c
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+{
+"69
+[v LCD_Write_String@i i `i  1 a 2 11 ]
+"67
+[v LCD_Write_String@Str Str `*.26uc  1 p 2 6 ]
+"71
+} 0
+"60
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+{
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+"62
+[v LCD_Write_Char@Data Data `uc  1 a 1 5 ]
+"65
+} 0
+"77
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+{
+[v LCD_Set_Cursor@ROW ROW `uc  1 a 1 wreg ]
+[v LCD_Set_Cursor@ROW ROW `uc  1 a 1 wreg ]
+[v LCD_Set_Cursor@COL COL `uc  1 p 1 6 ]
+[v LCD_Set_Cursor@ROW ROW `uc  1 a 1 9 ]
+"94
+} 0
+"33
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+[v LCD_Init@I2C_BaudRate I2C_BaudRate `DCul  1 p 4 8 ]
+"56
+} 0
+"25
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+{
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+"27
+[v LCD_CMD@CMD CMD `uc  1 a 1 5 ]
+"30
+} 0
+"16
+[v _LCD_Write_4Bit LCD_Write_4Bit `(v  1 e 1 0 ]
+{
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 a 1 wreg ]
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 a 1 wreg ]
+"19
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 a 1 3 ]
+"23
+} 0
+"8
+[v _IO_Expander_Write IO_Expander_Write `(v  1 e 1 0 ]
+{
+[v IO_Expander_Write@Data Data `uc  1 a 1 wreg ]
+[v IO_Expander_Write@Data Data `uc  1 a 1 wreg ]
+"10
+[v IO_Expander_Write@Data Data `uc  1 a 1 1 ]
+"14
+} 0
+"76 E:\Pic16\one wire ds18d20\code\ds18b20.X\i2c_master.c
+[v _I2C_Write_Char I2C_Write_Char `(uc  1 e 1 0 ]
+{
+[v I2C_Write_Char@Data Data `uc  1 a 1 wreg ]
+[v I2C_Write_Char@Data Data `uc  1 a 1 wreg ]
+"79
+[v I2C_Write_Char@Data Data `uc  1 a 1 0 ]
+"84
+} 0
+"49
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+"54
+} 0
+"31
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"36
+} 0
+"23
+[v _I2C_Wait I2C_Wait `(v  1 e 1 0 ]
+{
+"26
+} 0
+"3
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+[v I2C_Master_Init@I2C_BaudRate I2C_BaudRate `DCul  1 p 4 0 ]
+"15
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
