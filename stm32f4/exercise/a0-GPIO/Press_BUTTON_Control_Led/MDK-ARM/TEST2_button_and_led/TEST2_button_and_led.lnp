@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"test2_button_and_led\startup_stm32f407xx.o"
+"test2_button_and_led\main.o"
+"test2_button_and_led\stm32f4xx_it.o"
+"test2_button_and_led\stm32f4xx_hal_msp.o"
+"test2_button_and_led\stm32f4xx_hal_tim.o"
+"test2_button_and_led\stm32f4xx_hal_tim_ex.o"
+"test2_button_and_led\stm32f4xx_hal_rcc.o"
+"test2_button_and_led\stm32f4xx_hal_rcc_ex.o"
+"test2_button_and_led\stm32f4xx_hal_flash.o"
+"test2_button_and_led\stm32f4xx_hal_flash_ex.o"
+"test2_button_and_led\stm32f4xx_hal_flash_ramfunc.o"
+"test2_button_and_led\stm32f4xx_hal_gpio.o"
+"test2_button_and_led\stm32f4xx_hal_dma_ex.o"
+"test2_button_and_led\stm32f4xx_hal_dma.o"
+"test2_button_and_led\stm32f4xx_hal_pwr.o"
+"test2_button_and_led\stm32f4xx_hal_pwr_ex.o"
+"test2_button_and_led\stm32f4xx_hal_cortex.o"
+"test2_button_and_led\stm32f4xx_hal.o"
+"test2_button_and_led\stm32f4xx_hal_exti.o"
+"test2_button_and_led\system_stm32f4xx.o"
+"test2_button_and_led\gpio.o"
+--strict --scatter "TEST2_button_and_led\TEST2_button_and_led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST2_button_and_led.map" -o TEST2_button_and_led\TEST2_button_and_led.axf

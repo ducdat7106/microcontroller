@@ -1,0 +1,9 @@
+Mở port, Nat port Modem Viettel cho cammera
+
+192.168.1.1
+
+id: admin
+pw: DSNW28724cf0
+
+31400-314098
+
