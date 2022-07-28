@@ -1,0 +1,155 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"15 G:\My Drive\B  Bai Tap\Mplab xc8 pic16f877a\1 uart\UART in pic\code\uart.X/uart send and get.h
+[v _UART_TX_AND_RX_Init UART_TX_AND_RX_Init `(uc  1 e 1 0 ]
+"86
+[v _UART_Write_Char UART_Write_Char `(v  1 e 1 0 ]
+"105
+[v _UART_Write_String UART_Write_String `(v  1 e 1 0 ]
+"175
+[v _UART_Read_Char UART_Read_Char `(uc  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"43 G:\My Drive\B  Bai Tap\Mplab xc8 pic16f877a\1 uart\UART in pic\code\uart.X\main uart.c
+[v _isr isr `II(v  1 e 1 0 ]
+"57
+[v _main main `(v  1 e 1 0 ]
+[s S62 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[u S71 . 1 `S62 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES71  1 e 1 @6 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+[s S41 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S50 . 1 `S41 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES50  1 e 1 @134 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2614
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2662
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"2740
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2794
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2923
+[v _TRISA2 TRISA2 `VEb  1 e 0 @1066 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3004
+[v _TRISD7 TRISD7 `VEb  1 e 0 @1095 ]
+"3016
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3022
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"34 G:\My Drive\B  Bai Tap\Mplab xc8 pic16f877a\1 uart\UART in pic\code\uart.X\main uart.c
+[v _w_data w_data `[5]uc  1 e 5 0 ]
+"39
+[v _UART_Buffer UART_Buffer `ui  1 e 2 0 ]
+"40
+[v _UART_Array_Buffer UART_Array_Buffer `[10]uc  1 e 10 0 ]
+"41
+[v _m m `i  1 e 2 0 ]
+"57
+[v _main main `(v  1 e 1 0 ]
+{
+"91
+} 0
+"105 G:\My Drive\B  Bai Tap\Mplab xc8 pic16f877a\1 uart\UART in pic\code\uart.X/uart send and get.h
+[v _UART_Write_String UART_Write_String `(v  1 e 1 0 ]
+{
+[v UART_Write_String@text text `*.4uc  1 a 1 wreg ]
+"107
+[v UART_Write_String@i i `i  1 a 2 2 ]
+"105
+[v UART_Write_String@text text `*.4uc  1 a 1 wreg ]
+"108
+[v UART_Write_String@text text `*.4uc  1 a 1 4 ]
+"110
+} 0
+"86
+[v _UART_Write_Char UART_Write_Char `(v  1 e 1 0 ]
+{
+[v UART_Write_Char@data data `uc  1 a 1 wreg ]
+[v UART_Write_Char@data data `uc  1 a 1 wreg ]
+[v UART_Write_Char@data data `uc  1 a 1 0 ]
+"90
+} 0
+"15
+[v _UART_TX_AND_RX_Init UART_TX_AND_RX_Init `(uc  1 e 1 0 ]
+{
+"19
+[v UART_TX_AND_RX_Init@x x `ui  1 a 2 31 ]
+"15
+[v UART_TX_AND_RX_Init@baudrate baudrate `DCl  1 p 4 15 ]
+"64
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 11 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 10 ]
+[v ___aldiv@counter counter `uc  1 a 1 9 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"43 G:\My Drive\B  Bai Tap\Mplab xc8 pic16f877a\1 uart\UART in pic\code\uart.X\main uart.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"55
+} 0

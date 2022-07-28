@@ -1,0 +1,94 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"36 G:\My Drive\Bai tap da lam\PIC\motor\1_servo\1_servo_using_timer.X\main.c
+[v _timer0 timer0 `(v  1 e 1 0 ]
+"51
+[v _change change `(v  1 e 1 0 ]
+"58
+[v _time time `II(v  1 e 1 0 ]
+"95
+[v _main main `(v  1 e 1 0 ]
+"144
+[v _roundDegree roundDegree `(v  1 e 1 0 ]
+"59 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2635
+[v _PS0 PS0 `VEb  1 e 0 @1032 ]
+"2638
+[v _PS1 PS1 `VEb  1 e 0 @1033 ]
+"2641
+[v _PS2 PS2 `VEb  1 e 0 @1034 ]
+"2644
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"2686
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"2689
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"2692
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"2698
+[v _RBIE RBIE `VEb  1 e 0 @91 ]
+"2701
+[v _RBIF RBIF `VEb  1 e 0 @88 ]
+"2770
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2845
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"2854
+[v _T0SE T0SE `VEb  1 e 0 @1036 ]
+"2878
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"2881
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"3004
+[v _TRISD7 TRISD7 `VEb  1 e 0 @1095 ]
+"20 G:\My Drive\Bai tap da lam\PIC\motor\1_servo\1_servo_using_timer.X\main.c
+[v _degree degree `i  1 e 2 0 ]
+"21
+[v _count count `i  1 e 2 0 ]
+"22
+[v _count_s count_s `i  1 e 2 0 ]
+"23
+[v _value value `i  1 e 2 0 ]
+"95
+[v _main main `(v  1 e 1 0 ]
+{
+"117
+} 0
+"36
+[v _timer0 timer0 `(v  1 e 1 0 ]
+{
+"49
+} 0
+"144
+[v _roundDegree roundDegree `(v  1 e 1 0 ]
+{
+"146
+[v roundDegree@m m `i  1 a 2 4 ]
+"153
+} 0
+"51
+[v _change change `(v  1 e 1 0 ]
+{
+"56
+} 0
+"58
+[v _time time `II(v  1 e 1 0 ]
+{
+"93
+} 0

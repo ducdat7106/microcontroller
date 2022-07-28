@@ -1,0 +1,12 @@
+Hướng dẫn cài phần mềm:
+0 _ arduino
+1 _ https://nodejs.org/en/
+2 _ https://www.apachefriends.org/index.html
+3 _ https://developer.android.com/studio
+4 _ http://gekorm.com/dart-windows/
+5 _ https://dart.dev/get-dart -->  flutter download	--> https://docs.flutter.dev/get-started/install/windows
+
+
+1 _ genymotion
+	--> https://windows10freeapps.com/genymotion-download/
+	--> https://www.genymotion.com/download/

@@ -1,0 +1,493 @@
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 1
+
+
+
+
+
+       MCS-51 Family Macro Assembler   A S E M - 5 1   V 1.3
+       =====================================================
+
+
+
+	Source File:	C:\McsTemp\codetest.asm
+	Object File:	C:\McsTemp\codetest.hex
+	List File:	C:\McsTemp\codetest.lst
+
+
+
+ Line  I  Addr  Code            Source
+
+    1:		N      0000	org 00h
+    2:		B	 B0	ic1 bit p3.0
+    3:		B	 B1	ic2 bit p3.1
+    4:		B	 B3	ic3 bit p3.3
+    5:		B	 B3	ic4 bit p3.3
+    6:		B	 B4	ic5 bit p3.4
+    7:		B	 B5	ic6 bit p3.5
+    8:		B	 B6	ic7 bit p3.6
+    9:		B	 B7	ic8 bit p3.7
+   10:	  0000			main:
+   11:
+   12:				;loop1:
+   13:				;mov p1,#00h
+   14:				;call delayms
+   15:				;mov p3,#00h
+   16:				;call delayms
+   17:				;call delay
+   18:				;mov p1,#0ffh
+   19:				;call delayms
+   20:				;call delay
+   21:				;djnz r1,loop1
+   22:	  0000	12 00 0B	call nhapnhay
+   23:	  0003	12 00 2A	call sangdan_cungluc
+   24:	  0006	12 00 79	call sangdan_tungic
+   25:
+   26:
+   27:
+   28:
+   29:
+   30:				;call sangdan
+   31:				;call tesic1
+   32:				;call tesic2
+   33:				;call te
+   34:
+   35:
+   36:
+   37:
+   38:	  0009	80 F5		jmp main
+   39:	  000B			nhapnhay:
+   40:	  000B	75 B0 00	mov p3,#00h
+   41:	  000E	75 90 00	mov p1,#00h
+   42:	  0011	12 02 EA	call delay
+   43:	  0014	75 B0 FF	mov p3,#0ffh
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 2
+
+
+
+ Line  I  Addr  Code            Source
+
+   44:	  0017	12 02 EA	call delay
+   45:	  001A	75 B0 00	mov p3,#00h
+   46:	  001D	75 90 00	mov p1,#00h
+   47:	  0020	12 02 EA	call delay
+   48:	  0023	75 B0 FF	mov p3,#0ffh
+   49:	  0026	12 02 EA	call delay
+   50:	  0029	22		ret
+   51:	  002A			sangdan_cungluc:
+   52:	  002A	75 B0 FF	mov p3,#0ffh
+   53:	  002D	12 02 EA	call delay
+   54:	  0030	75 B0 00	mov p3,#00h
+   55:	  0033	75 90 7F	mov p1,#01111111b
+   56:	  0036	12 02 EA	call delay
+   57:	  0039	75 B0 00	mov p3,#00h
+   58:	  003C	75 90 3F	mov p1,#00111111b
+   59:	  003F	12 02 EA	call delay
+   60:	  0042	75 B0 00	mov p3,#00h
+   61:	  0045	75 90 1F	mov p1,#00011111b
+   62:	  0048	12 02 EA	call delay
+   63:	  004B	75 B0 00	mov p3,#00h
+   64:	  004E	75 90 0F	mov p1,#00001111b
+   65:	  0051	12 02 EA	call delay
+   66:	  0054	75 90 00	mov p1,#00h
+   67:	  0057	75 B0 07	mov p3,#00000111b
+   68:	  005A	12 02 EA	call delay
+   69:	  005D	75 B0 00	mov p3,#00h
+   70:	  0060	75 90 03	mov p1,#00000011b
+   71:	  0063	12 02 EA	call delay
+   72:	  0066	75 B0 00	mov p3,#00h
+   73:	  0069	75 90 01	mov p1,#00000001b
+   74:	  006C	12 02 EA	call delay
+   75:	  006F	75 B0 00	mov p3,#00h
+   76:	  0072	75 90 00	mov p1,#00000000b
+   77:	  0075	12 02 EA	call delay
+   78:	  0078	22		ret
+   79:	  0079			sangdan_tungic:
+   80:	  0079	75 B0 FF	mov p3,#0ffh
+   81:	  007C	12 02 EA	call delay
+   82:	  007F	75 B0 7F	mov p3,#01111111b
+   83:	  0082	75 90 7F	mov p1,#01111111b
+   84:	  0085	12 02 EA	call delay
+   85:	  0088	75 B0 7F	mov p3,#01111111b
+   86:	  008B	75 90 3F	mov p1,#00111111b
+   87:	  008E	12 02 EA	call delay
+   88:	  0091	75 B0 7F	mov p3,#01111111b
+   89:	  0094	75 90 1F	mov p1,#00011111b
+   90:	  0097	12 02 EA	call delay
+   91:	  009A	75 B0 7F	mov p3,#01111111b
+   92:	  009D	75 90 0F	mov p1,#00001111b
+   93:	  00A0	12 02 EA	call delay
+   94:	  00A3	75 B0 7F	mov p3,#01111111b
+   95:	  00A6	75 90 07	mov p1,#00000111b
+   96:	  00A9	12 02 EA	call delay
+   97:	  00AC	75 B0 7F	mov p3,#01111111b
+   98:	  00AF	75 90 03	mov p1,#00000011b
+   99:	  00B2	12 02 EA	call delay
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 3
+
+
+
+ Line  I  Addr  Code            Source
+
+  100:	  00B5	75 B0 7F	mov p3,#01111111b
+  101:	  00B8	75 90 01	mov p1,#00000001b
+  102:	  00BB	12 02 EA	call delay
+  103:	  00BE	75 B0 7F	mov p3,#01111111b
+  104:	  00C1	75 90 00	mov p1,#00000000b
+  105:	  00C4	12 02 EA	call delay
+  106:				;//////////////
+  107:	  00C7	75 B0 FF	mov p3,#0ffh
+  108:	  00CA	12 02 EA	call delay
+  109:	  00CD	75 B0 BF	mov p3,#10111111b
+  110:	  00D0	75 90 7F	mov p1,#01111111b
+  111:	  00D3	12 02 EA	call delay
+  112:	  00D6	75 B0 BF	mov p3,#10111111b
+  113:	  00D9	75 90 3F	mov p1,#00111111b
+  114:	  00DC	12 02 EA	call delay
+  115:	  00DF	75 B0 BF	mov p3,#10111111b
+  116:	  00E2	75 90 1F	mov p1,#00011111b
+  117:	  00E5	12 02 EA	call delay
+  118:	  00E8	75 B0 BF	mov p3,#10111111b
+  119:	  00EB	75 90 0F	mov p1,#00001111b
+  120:	  00EE	12 02 EA	call delay
+  121:	  00F1	75 B0 BF	mov p3,#10111111b
+  122:	  00F4	75 90 07	mov p1,#00000111b
+  123:	  00F7	12 02 EA	call delay
+  124:	  00FA	75 B0 BF	mov p3,#10111111b
+  125:	  00FD	75 90 03	mov p1,#00000011b
+  126:	  0100	12 02 EA	call delay
+  127:	  0103	75 B0 BF	mov p3,#10111111b
+  128:	  0106	75 90 01	mov p1,#00000001b
+  129:	  0109	12 02 EA	call delay
+  130:	  010C	75 B0 BF	mov p3,#10111111b
+  131:	  010F	75 90 00	mov p1,#00000000b
+  132:	  0112	12 02 EA	call delay
+  133:				;;////////
+  134:	  0115	75 B0 FF	mov p3,#0ffh
+  135:	  0118	12 02 EA	call delay
+  136:	  011B	75 B0 DF	mov p3,#11011111b
+  137:	  011E	75 90 7F	mov p1,#01111111b
+  138:	  0121	12 02 EA	call delay
+  139:	  0124	75 B0 DF	mov p3,#11011111b
+  140:	  0127	75 90 3F	mov p1,#00111111b
+  141:	  012A	12 02 EA	call delay
+  142:	  012D	75 B0 DF	mov p3,#11011111b
+  143:	  0130	75 90 1F	mov p1,#00011111b
+  144:	  0133	12 02 EA	call delay
+  145:	  0136	75 B0 DF	mov p3,#11011111b
+  146:	  0139	75 90 0F	mov p1,#00001111b
+  147:	  013C	12 02 EA	call delay
+  148:	  013F	75 B0 DF	mov p3,#11011111b
+  149:	  0142	75 90 07	mov p1,#00000111b
+  150:	  0145	12 02 EA	call delay
+  151:	  0148	75 B0 DF	mov p3,#11011111b
+  152:	  014B	75 90 03	mov p1,#00000011b
+  153:	  014E	12 02 EA	call delay
+  154:	  0151	75 B0 DF	mov p3,#11011111b
+  155:	  0154	75 90 01	mov p1,#00000001b
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 4
+
+
+
+ Line  I  Addr  Code            Source
+
+  156:	  0157	12 02 EA	call delay
+  157:	  015A	75 B0 DF	mov p3,#11011111b
+  158:	  015D	75 90 00	mov p1,#00000000b
+  159:	  0160	12 02 EA	call delay
+  160:				;//////////
+  161:	  0163	75 B0 FF	mov p3,#0ffh
+  162:	  0166	12 02 EA	call delay
+  163:	  0169	75 B0 EF	mov p3,#11101111b
+  164:	  016C	75 90 7F	mov p1,#01111111b
+  165:	  016F	12 02 EA	call delay
+  166:	  0172	75 B0 EF	mov p3,#11101111b
+  167:	  0175	75 90 3F	mov p1,#00111111b
+  168:	  0178	12 02 EA	call delay
+  169:	  017B	75 B0 EF	mov p3,#11101111b
+  170:	  017E	75 90 1F	mov p1,#00011111b
+  171:	  0181	12 02 EA	call delay
+  172:	  0184	75 B0 EF	mov p3,#11101111b
+  173:	  0187	75 90 0F	mov p1,#00001111b
+  174:	  018A	12 02 EA	call delay
+  175:	  018D	75 B0 EF	mov p3,#11101111b
+  176:	  0190	75 90 07	mov p1,#00000111b
+  177:	  0193	12 02 EA	call delay
+  178:	  0196	75 B0 EF	mov p3,#11101111b
+  179:	  0199	75 90 03	mov p1,#00000011b
+  180:	  019C	12 02 EA	call delay
+  181:	  019F	75 B0 EF	mov p3,#11101111b
+  182:	  01A2	75 90 01	mov p1,#00000001b
+  183:	  01A5	12 02 EA	call delay
+  184:	  01A8	75 B0 EF	mov p3,#11101111b
+  185:	  01AB	75 90 00	mov p1,#00000000b
+  186:	  01AE	12 02 EA	call delay
+  187:				;;//////
+  188:	  01B1	75 B0 FF	mov p3,#0ffh
+  189:	  01B4	12 02 EA	call delay
+  190:	  01B7	75 B0 F7	mov p3,#11110111b
+  191:	  01BA	75 90 7F	mov p1,#01111111b
+  192:	  01BD	12 02 EA	call delay
+  193:	  01C0	75 B0 F7	mov p3,#11110111b
+  194:	  01C3	75 90 3F	mov p1,#00111111b
+  195:	  01C6	12 02 EA	call delay
+  196:	  01C9	75 B0 F7	mov p3,#11110111b
+  197:	  01CC	75 90 1F	mov p1,#00011111b
+  198:	  01CF	12 02 EA	call delay
+  199:	  01D2	75 B0 F7	mov p3,#11110111b
+  200:	  01D5	75 90 0F	mov p1,#00001111b
+  201:	  01D8	12 02 EA	call delay
+  202:	  01DB	75 B0 F7	mov p3,#11110111b
+  203:	  01DE	75 90 07	mov p1,#00000111b
+  204:	  01E1	12 02 EA	call delay
+  205:	  01E4	75 B0 F7	mov p3,#11110111b
+  206:	  01E7	75 90 03	mov p1,#00000011b
+  207:	  01EA	12 02 EA	call delay
+  208:	  01ED	75 B0 F7	mov p3,#11110111b
+  209:	  01F0	75 90 01	mov p1,#00000001b
+  210:	  01F3	12 02 EA	call delay
+  211:	  01F6	75 B0 F7	mov p3,#11110111b
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 5
+
+
+
+ Line  I  Addr  Code            Source
+
+  212:	  01F9	75 90 00	mov p1,#00000000b
+  213:	  01FC	12 02 EA	call delay
+  214:				;////////
+  215:	  01FF	75 B0 FF	mov p3,#0ffh
+  216:	  0202	12 02 EA	call delay
+  217:	  0205	75 B0 FB	mov p3,#11111011b
+  218:	  0208	75 90 7F	mov p1,#01111111b
+  219:	  020B	12 02 EA	call delay
+  220:	  020E	75 B0 FB	mov p3,#11111011b
+  221:	  0211	75 90 3F	mov p1,#00111111b
+  222:	  0214	12 02 EA	call delay
+  223:	  0217	75 B0 FB	mov p3,#11111011b
+  224:	  021A	75 90 1F	mov p1,#00011111b
+  225:	  021D	12 02 EA	call delay
+  226:	  0220	75 B0 FB	mov p3,#11111011b
+  227:	  0223	75 90 0F	mov p1,#00001111b
+  228:	  0226	12 02 EA	call delay
+  229:	  0229	75 B0 FB	mov p3,#11111011b
+  230:	  022C	75 90 07	mov p1,#00000111b
+  231:	  022F	12 02 EA	call delay
+  232:	  0232	75 B0 FB	mov p3,#11111011b
+  233:	  0235	75 90 03	mov p1,#00000011b
+  234:	  0238	12 02 EA	call delay
+  235:	  023B	75 B0 FB	mov p3,#11111011b
+  236:	  023E	75 90 01	mov p1,#00000001b
+  237:	  0241	12 02 EA	call delay
+  238:	  0244	75 B0 FB	mov p3,#11111011b
+  239:	  0247	75 90 00	mov p1,#00000000b
+  240:	  024A	12 02 EA	call delay
+  241:				;;/////
+  242:	  024D	75 B0 FF	mov p3,#0ffh
+  243:	  0250	12 02 EA	call delay
+  244:	  0253	75 B0 FD	mov p3,#11111101b
+  245:	  0256	75 90 7F	mov p1,#01111111b
+  246:	  0259	12 02 EA	call delay
+  247:	  025C	75 B0 FD	mov p3,#11111101b
+  248:	  025F	75 90 3F	mov p1,#00111111b
+  249:	  0262	12 02 EA	call delay
+  250:	  0265	75 B0 FD	mov p3,#11111101b
+  251:	  0268	75 90 1F	mov p1,#00011111b
+  252:	  026B	12 02 EA	call delay
+  253:	  026E	75 B0 FD	mov p3,#11111101b
+  254:	  0271	75 90 0F	mov p1,#00001111b
+  255:	  0274	12 02 EA	call delay
+  256:	  0277	75 B0 FD	mov p3,#11111101b
+  257:	  027A	75 90 07	mov p1,#00000111b
+  258:	  027D	12 02 EA	call delay
+  259:	  0280	75 B0 FD	mov p3,#11111101b
+  260:	  0283	75 90 03	mov p1,#00000011b
+  261:	  0286	12 02 EA	call delay
+  262:	  0289	75 B0 FD	mov p3,#11111101b
+  263:	  028C	75 90 01	mov p1,#00000001b
+  264:	  028F	12 02 EA	call delay
+  265:	  0292	75 B0 FD	mov p3,#11111101b
+  266:	  0295	75 90 00	mov p1,#00000000b
+  267:	  0298	12 02 EA	call delay
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 6
+
+
+
+ Line  I  Addr  Code            Source
+
+  268:				;;///
+  269:	  029B	75 B0 FF	mov p3,#0ffh
+  270:	  029E	12 02 EA	call delay
+  271:	  02A1	75 B0 FE	mov p3,#11111110b
+  272:	  02A4	75 90 7F	mov p1,#01111111b
+  273:	  02A7	12 02 EA	call delay
+  274:	  02AA	75 B0 FE	mov p3,#11111110b
+  275:	  02AD	75 90 3F	mov p1,#00111111b
+  276:	  02B0	12 02 EA	call delay
+  277:	  02B3	75 B0 FE	mov p3,#11111110b
+  278:	  02B6	75 90 1F	mov p1,#00011111b
+  279:	  02B9	12 02 EA	call delay
+  280:	  02BC	75 B0 FE	mov p3,#11111110b
+  281:	  02BF	75 90 0F	mov p1,#00001111b
+  282:	  02C2	12 02 EA	call delay
+  283:	  02C5	75 B0 FE	mov p3,#11111110b
+  284:	  02C8	75 90 07	mov p1,#00000111b
+  285:	  02CB	12 02 EA	call delay
+  286:	  02CE	75 B0 FE	mov p3,#11111110b
+  287:	  02D1	75 90 03	mov p1,#00000011b
+  288:	  02D4	12 02 EA	call delay
+  289:	  02D7	75 B0 FE	mov p3,#11111110b
+  290:	  02DA	75 90 01	mov p1,#00000001b
+  291:	  02DD	12 02 EA	call delay
+  292:	  02E0	75 B0 FE	mov p3,#11111110b
+  293:	  02E3	75 90 00	mov p1,#00000000b
+  294:	  02E6	12 02 EA	call delay
+  295:
+  296:
+  297:	  02E9	22		ret
+  298:
+  299:
+  300:
+  301:
+  302:	  02EA			delay:
+  303:	  02EA	79 0F		mov r1,#15
+  304:
+  305:	  02EC			het_1s:
+  306:	  02EC	75 89 01	mov tmod,#01h
+  307:	  02EF	75 8C 3C	mov th0,#high(-50000)
+  308:	  02F2	75 8A B0	mov tl0,#low(-50000)
+  309:	  02F5	D2 8C		setb tr0
+  310:	  02F7	30 8D FD	jnb tf0,$
+  311:	  02FA	C2 8C		clr tr0
+  312:	  02FC	C2 8D		clr tf0
+  313:	  02FE	D9 EC		djnz r1,het_1s
+  314:	  0300	22		ret
+  315:				end
+  316:
+  317:
+
+
+
+
+
+                     register banks used:  ---
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 7
+
+
+
+
+                     no errors
+
+
+
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 8
+
+
+
+
+
+	       L I S T   O F   S Y M B O L S
+	       =============================
+
+
+SYMBOL				  TYPE     VALUE	LINE
+------------------------------------------------------------
+??ASEM_51			  NUMBER    8051
+??VERSION			  NUMBER    0130
+AC				  BIT	      D6
+ACC				  DATA	      E0
+B				  DATA	      F0
+CY				  BIT	      D7
+DELAY				  CODE	    02EA	 302
+DPH				  DATA	      83
+DPL				  DATA	      82
+EA				  BIT	      AF
+ES				  BIT	      AC
+ET0				  BIT	      A9
+ET1				  BIT	      AB
+EX0				  BIT	      A8
+EX1				  BIT	      AA
+EXTI0				  CODE	    0003
+EXTI1				  CODE	    0013
+F0				  BIT	      D5
+HET_1S				  CODE	    02EC	 305
+IC1				  BIT	      B0	   2
+IC2				  BIT	      B1	   3
+IC3				  BIT	      B3	   4
+IC4				  BIT	      B3	   5
+IC5				  BIT	      B4	   6
+IC6				  BIT	      B5	   7
+IC7				  BIT	      B6	   8
+IC8				  BIT	      B7	   9
+IE				  DATA	      A8
+IE0				  BIT	      89
+IE1				  BIT	      8B
+INT0				  BIT	      B2
+INT1				  BIT	      B3
+IP				  DATA	      B8
+IT0				  BIT	      88
+IT1				  BIT	      8A
+MAIN				  CODE	    0000	  10
+NHAPNHAY			  CODE	    000B	  39
+OV				  BIT	      D2
+P				  BIT	      D0
+P0				  DATA	      80
+P1				  DATA	      90
+P2				  DATA	      A0
+P3				  DATA	      B0
+PCON				  DATA	      87
+PS				  BIT	      BC
+PSW				  DATA	      D0
+PT0				  BIT	      B9
+PT1				  BIT	      BB
+PX0				  BIT	      B8
+PX1				  BIT	      BA
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 9
+
+
+
+SYMBOL				  TYPE     VALUE	LINE
+------------------------------------------------------------
+RB8				  BIT	      9A
+RD				  BIT	      B7
+REN				  BIT	      9C
+RESET				  CODE	    0000
+RI				  BIT	      98
+RS0				  BIT	      D3
+RS1				  BIT	      D4
+RXD				  BIT	      B0
+SANGDAN_CUNGLUC			  CODE	    002A	  51
+SANGDAN_TUNGIC			  CODE	    0079	  79
+SBUF				  DATA	      99
+SCON				  DATA	      98
+SINT				  CODE	    0023
+SM0				  BIT	      9F
+SM1				  BIT	      9E
+SM2				  BIT	      9D
+SP				  DATA	      81
+T0				  BIT	      B4
+T1				  BIT	      B5
+TB8				  BIT	      9B
+TCON				  DATA	      88
+TF0				  BIT	      8D
+TF1				  BIT	      8F
+TH0				  DATA	      8C
+TH1				  DATA	      8D
+TI				  BIT	      99
+TIMER0				  CODE	    000B
+TIMER1				  CODE	    001B
+TL0				  DATA	      8A
+TL1				  DATA	      8B
+TMOD				  DATA	      89
+TR0				  BIT	      8C
+TR1				  BIT	      8E
+TXD				  BIT	      B1
+WR				  BIT	      B6

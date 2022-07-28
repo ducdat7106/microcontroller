@@ -1,0 +1,513 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\dem_san_pham.X.production.o
+cinit CODE 0 F F 1C 2
+text1 CODE 0 35F 35F 10 2
+text2 CODE 0 1D0 1D0 85 2
+text3 CODE 0 312 312 3A 2
+text4 CODE 0 2CE 2CE 44 2
+text5 CODE 0 381 381 4 2
+text6 CODE 0 255 255 79 2
+text7 CODE 0 10B 10B C5 2
+maintext CODE 0 2B 2B E0 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 38 38 10 1
+inittext CODE 0 34C 34C 13 2
+intentry CODE 0 4 4 8 2
+bssBANK0 BANK0 1 20 20 18 1
+idataBANK0 CODE 0 36F 36F A 2
+dataBANK0 BANK0 1 48 48 A 1
+clrtext CODE 0 379 379 8 2
+bssCOMMON COMMON 1 7A 7A 2 1
+config CONFIG 4 2007 2007 1 2
+$C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 52-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 52-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 385-1FFF 2
+ENTRY 3-3 2
+ENTRY 385-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 385-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7C-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 385-1FFF 2
+STRING 3-3 2
+STRING 385-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\dem_san_pham.X.production.o
+F cinit CODE >430:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+F cinit CODE >433:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+F cinit CODE >519:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+10 cinit CODE >520:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+11 cinit CODE >521:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+12 cinit CODE >522:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+13 cinit CODE >523:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+14 cinit CODE >524:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+15 cinit CODE >525:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+16 cinit CODE >526:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+17 cinit CODE >527:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+18 cinit CODE >528:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+1D cinit CODE >547:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+1E cinit CODE >548:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+1F cinit CODE >549:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+20 cinit CODE >550:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+25 cinit CODE >553:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+26 cinit CODE >554:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+27 cinit CODE >560:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+27 cinit CODE >562:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+28 cinit CODE >563:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+4 intentry CODE >77:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+10B text7 CODE >77:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+10B text7 CODE >79:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+113 text7 CODE >81:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+119 text7 CODE >84:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+11F text7 CODE >85:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+128 text7 CODE >86:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+12A text7 CODE >89:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+12E text7 CODE >92:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+134 text7 CODE >93:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+13D text7 CODE >94:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+13F text7 CODE >97:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+143 text7 CODE >100:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+145 text7 CODE >103:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+149 text7 CODE >106:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+14B text7 CODE >108:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+14C text7 CODE >111:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+154 text7 CODE >114:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+166 text7 CODE >115:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+167 text7 CODE >118:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+177 text7 CODE >119:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+178 text7 CODE >122:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+17E text7 CODE >123:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+187 text7 CODE >124:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+189 text7 CODE >125:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+193 text7 CODE >127:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+19C text7 CODE >128:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+19E text7 CODE >129:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+19E text7 CODE >130:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+19F text7 CODE >134:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1A5 text7 CODE >135:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1AE text7 CODE >136:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1B0 text7 CODE >137:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1BA text7 CODE >139:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1C3 text7 CODE >140:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1C5 text7 CODE >141:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1C5 text7 CODE >142:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1C6 text7 CODE >146:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1C8 text7 CODE >147:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1C9 text7 CODE >149:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+255 text6 CODE >153:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+255 text6 CODE >155:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+259 text6 CODE >156:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+25E text6 CODE >157:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+264 text6 CODE >158:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+26D text6 CODE >160:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+271 text6 CODE >161:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+276 text6 CODE >162:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+27C text6 CODE >163:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+285 text6 CODE >165:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+289 text6 CODE >166:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+28E text6 CODE >167:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+294 text6 CODE >168:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+29D text6 CODE >170:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2A1 text6 CODE >171:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2A6 text6 CODE >172:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2AC text6 CODE >173:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2B5 text6 CODE >175:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2B9 text6 CODE >176:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2BE text6 CODE >177:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2C4 text6 CODE >178:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2CD text6 CODE >179:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+381 text5 CODE >54:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+381 text5 CODE >56:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+382 text5 CODE >57:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+383 text5 CODE >58:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+384 text5 CODE >59:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2CE text4 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2CE text4 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2D0 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2D6 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2D8 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2D9 text4 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2E0 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2E4 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2E8 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2EF text4 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2F9 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2FF text4 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+300 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+307 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+30D text4 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+311 text4 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+312 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+312 text3 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+318 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+31A text3 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+31B text3 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+322 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+326 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+32A text3 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+334 text3 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+33A text3 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+341 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+347 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+34B text3 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+1D0 text2 CODE >182:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1D0 text2 CODE >184:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1D0 text2 CODE >185:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1E9 text2 CODE >186:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+1FC text2 CODE >187:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+213 text2 CODE >188:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+226 text2 CODE >189:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+23D text2 CODE >190:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+254 text2 CODE >191:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+35F text1 CODE >61:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+35F text1 CODE >63:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+364 text1 CODE >65:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+365 text1 CODE >66:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+366 text1 CODE >67:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+367 text1 CODE >69:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+368 text1 CODE >71:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+36C text1 CODE >73:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+36D text1 CODE >74:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+36E text1 CODE >75:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2B maintext CODE >194:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2B maintext CODE >196:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+2F maintext CODE >198:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+33 maintext CODE >200:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+36 maintext CODE >201:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+3A maintext CODE >203:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+3D maintext CODE >204:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+40 maintext CODE >206:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+47 maintext CODE >207:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+72 maintext CODE >209:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+77 maintext CODE >210:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+7C maintext CODE >215:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+97 maintext CODE >216:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+B2 maintext CODE >217:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+BA maintext CODE >218:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+C1 maintext CODE >220:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+C3 maintext CODE >223:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+D0 maintext CODE >224:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+EC maintext CODE >226:E:\Pic16\Quang_Long\Bai 1 bo dem san pham\code\dem san pham.X\main dem sp.c
+379 clrtext CODE >534:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+379 clrtext CODE >535:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+37A clrtext CODE >536:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+37A clrtext CODE >537:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+37B clrtext CODE >538:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+37C clrtext CODE >539:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+37D clrtext CODE >540:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+37E clrtext CODE >541:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+37F clrtext CODE >542:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+380 clrtext CODE >543:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+34C inittext CODE >493:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+34C inittext CODE >494:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+34D inittext CODE >495:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+34E inittext CODE >496:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+34F inittext CODE >497:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+350 inittext CODE >504:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+350 inittext CODE >505:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+355 inittext CODE >506:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+356 inittext CODE >507:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+357 inittext CODE >508:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+358 inittext CODE >509:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+359 inittext CODE >510:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+35A inittext CODE >511:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+35B inittext CODE >512:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+35C inittext CODE >513:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+35D inittext CODE >514:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+35E inittext CODE >515:C:\Users\NGUYEN~1\AppData\Local\Temp\sckgx.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+___lwmod@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 385 0 ABS 0 - -
+__Hspace_1 7C 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+_timeLon 22 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+_timeNho 7A 0 COMMON 1 bssCOMMON dist/default/production\dem_san_pham.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+DisplayLed7Seg@donvi 3E 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+DisplayLed7Seg@nghin 38 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+DisplayLed7Seg@viTri 40 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_RBIE 5B 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_RBIF 58 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_T0CS 40D 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_T0SE 40C 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+_main 56 0 CODE 0 maintext dist/default/production\dem_san_pham.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+start 18 0 CODE 0 init C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+__size_of_main 0 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+_DisplayLed7Seg 4AA 0 CODE 0 text6 dist/default/production\dem_san_pham.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON1 9F 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+numbers@chuc 3C 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+numbers@temp 3E 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+numbers@tram 3B 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_DisplayLed7Seg 59C 0 CODE 0 text6 dist/default/production\dem_san_pham.X.production.o
+___lwmod@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+__end_of___lwdiv 624 0 CODE 0 text4 dist/default/production\dem_san_pham.X.production.o
+__end_of___lwmod 698 0 CODE 0 text3 dist/default/production\dem_san_pham.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+___stacklo 0 0 ABS 0 - C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+___lwdiv@quotient 78 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+__size_of_time0 0 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+main@count_s 46 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+___lwmod@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\dem_san_pham.X.production.o
+_numbers 3A0 0 CODE 0 text2 dist/default/production\dem_san_pham.X.production.o
+_TRISAbits 85 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_TRISEbits 89 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+clear_ram0 6F2 0 CODE 0 clrtext dist/default/production\dem_san_pham.X.production.o
+__pcstackBANK0 38 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+_TMR0IE 5D 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_TMR0IF 5A 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__end_of_external_interrupt 70A 0 CODE 0 text5 dist/default/production\dem_san_pham.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 56 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_PORTAbits 5 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_PORTBbits 6 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_PORTCbits 7 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_PORTEbits 9 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_external_interrupt 702 0 CODE 0 text5 dist/default/production\dem_san_pham.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_ISR 216 0 CODE 0 text7 dist/default/production\dem_san_pham.X.production.o
+_PS0 408 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_PS1 409 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_PS2 40A 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_PSA 40B 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__S0 385 0 ABS 0 - -
+__S1 7C 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+saved_w 7E 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_donvi1 30 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+_donvi2 28 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+__end_of_ISR 3A0 0 CODE 0 text7 dist/default/production\dem_san_pham.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\NGUYEN~1\AppData\Local\Temp\sckgxb.o
+__pdataBANK0 48 0 BANK0 1 dataBANK0 dist/default/production\dem_san_pham.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+numbers@donvi 3D 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+numbers@nghin 3A 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+numbers@value 38 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+_nghin1 36 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+_nghin2 2E 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+_number 48 0 BANK0 1 dataBANK0 dist/default/production\dem_san_pham.X.production.o
+___lwdiv 59C 0 CODE 0 text4 dist/default/production\dem_san_pham.X.production.o
+___lwmod 624 0 CODE 0 text3 dist/default/production\dem_san_pham.X.production.o
+__pmaintext 56 0 CODE 0 maintext dist/default/production\dem_san_pham.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+___lwdiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+DisplayLed7Seg@chuc 3C 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+DisplayLed7Seg@tram 3A 0 BANK0 1 cstackBANK0 dist/default/production\dem_san_pham.X.production.o
+__size_of_DisplayLed7Seg 0 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_value1 26 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+_value2 24 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\dem_san_pham.X.production.o
+init_fetch0 698 0 CODE 0 inittext dist/default/production\dem_san_pham.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 4E 0 CODE 0 cinit dist/default/production\dem_san_pham.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+?___lwdiv 72 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+?___lwmod 72 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 6BE 0 CODE 0 text1 dist/default/production\dem_san_pham.X.production.o
+__ptext2 3A0 0 CODE 0 text2 dist/default/production\dem_san_pham.X.production.o
+__ptext3 624 0 CODE 0 text3 dist/default/production\dem_san_pham.X.production.o
+__ptext4 59C 0 CODE 0 text4 dist/default/production\dem_san_pham.X.production.o
+__ptext5 702 0 CODE 0 text5 dist/default/production\dem_san_pham.X.production.o
+__ptext6 4AA 0 CODE 0 text6 dist/default/production\dem_san_pham.X.production.o
+__ptext7 216 0 CODE 0 text7 dist/default/production\dem_san_pham.X.production.o
+__size_of_numbers 0 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_external_interrupt 0 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__end_of__initialization 4E 0 CODE 0 cinit dist/default/production\dem_san_pham.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 6DE 0 CODE 0 idataBANK0 dist/default/production\dem_san_pham.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\dem_san_pham.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+init_ram0 6A0 0 CODE 0 inittext dist/default/production\dem_san_pham.X.production.o
+__end_of_main 216 0 CODE 0 maintext dist/default/production\dem_san_pham.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__end_of_time0 6DE 0 CODE 0 text1 dist/default/production\dem_san_pham.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_chuc1 32 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+_chuc2 2A 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\dem_san_pham.X.production.o
+_time0 6BE 0 CODE 0 text1 dist/default/production\dem_san_pham.X.production.o
+_tram1 34 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+_tram2 2C 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\dem_san_pham.X.production.o
+__size_of_ISR 0 0 ABS 0 - dist/default/production\dem_san_pham.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 1E 0 CODE 0 cinit dist/default/production\dem_san_pham.X.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\dem_san_pham.X.production.o
+__end_of_numbers 4AA 0 CODE 0 text2 dist/default/production\dem_san_pham.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 C 1
+intentry 0 4 8 381 2
+reset_vec 0 0 0 3 2
+bssBANK0 1 20 20 32 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

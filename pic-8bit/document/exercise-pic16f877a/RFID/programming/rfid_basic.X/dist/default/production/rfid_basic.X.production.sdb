@@ -1,0 +1,286 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"15 E:\Pic16\RFID\programming\rfid_basic.X/uart send and get.h
+[v _UART_TX_AND_RX_Init UART_TX_AND_RX_Init `(uc  1 e 1 0 ]
+"86
+[v _UART_Write_Char UART_Write_Char `(v  1 e 1 0 ]
+"105
+[v _UART_Write_String UART_Write_String `(v  1 e 1 0 ]
+"175
+[v _UART_Read_Char UART_Read_Char `(uc  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"8 E:\Pic16\RFID\programming\rfid_basic.X\i2c_lcd.c
+[v _IO_Expander_Write IO_Expander_Write `(v  1 e 1 0 ]
+"16
+[v _LCD_Write_4Bit LCD_Write_4Bit `(v  1 e 1 0 ]
+"25
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+"33
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"60
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+"67
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+"77
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+"3 E:\Pic16\RFID\programming\rfid_basic.X\i2c_master.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"23
+[v _I2C_Wait I2C_Wait `(v  1 e 1 0 ]
+"31
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"49
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"56
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+"66
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+"76
+[v _I2C_Write_Char I2C_Write_Char `(uc  1 e 1 0 ]
+"24 E:\Pic16\RFID\programming\rfid_basic.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"52
+[v _System_Configure System_Configure `(v  1 e 1 0 ]
+"808 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2374
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2377
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2380
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2614
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2737
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2791
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2794
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"2806
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2824
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3016
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3022
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"3 E:\Pic16\RFID\programming\rfid_basic.X\i2c_lcd.c
+[v _RS RS `uc  1 e 1 0 ]
+[v _BackLight_State BackLight_State `uc  1 e 1 0 ]
+"24 E:\Pic16\RFID\programming\rfid_basic.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"27
+[v main@id id `[12]uc  1 a 12 22 ]
+"26
+[v main@i i `i  1 a 2 34 ]
+"50
+} 0
+"105 E:\Pic16\RFID\programming\rfid_basic.X/uart send and get.h
+[v _UART_Write_String UART_Write_String `(v  1 e 1 0 ]
+{
+[v UART_Write_String@text text `*.24uc  1 a 1 wreg ]
+"107
+[v UART_Write_String@i i `i  1 a 2 1 ]
+"105
+[v UART_Write_String@text text `*.24uc  1 a 1 wreg ]
+"108
+[v UART_Write_String@text text `*.24uc  1 a 1 3 ]
+"110
+} 0
+"86
+[v _UART_Write_Char UART_Write_Char `(v  1 e 1 0 ]
+{
+[v UART_Write_Char@data data `uc  1 a 1 wreg ]
+[v UART_Write_Char@data data `uc  1 a 1 wreg ]
+[v UART_Write_Char@data data `uc  1 a 1 0 ]
+"90
+} 0
+"175
+[v _UART_Read_Char UART_Read_Char `(uc  1 e 1 0 ]
+{
+"189
+} 0
+"52 E:\Pic16\RFID\programming\rfid_basic.X\main.c
+[v _System_Configure System_Configure `(v  1 e 1 0 ]
+{
+"56
+} 0
+"15 E:\Pic16\RFID\programming\rfid_basic.X/uart send and get.h
+[v _UART_TX_AND_RX_Init UART_TX_AND_RX_Init `(uc  1 e 1 0 ]
+{
+"19
+[v UART_TX_AND_RX_Init@x x `ui  1 a 2 9 ]
+"15
+[v UART_TX_AND_RX_Init@baudrate baudrate `DCl  1 p 4 6 ]
+"64
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"33 E:\Pic16\RFID\programming\rfid_basic.X\i2c_lcd.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+[v LCD_Init@I2C_BaudRate I2C_BaudRate `DCul  1 p 4 8 ]
+"56
+} 0
+"3 E:\Pic16\RFID\programming\rfid_basic.X\i2c_master.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+[v I2C_Master_Init@I2C_BaudRate I2C_BaudRate `DCul  1 p 4 0 ]
+"15
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"67 E:\Pic16\RFID\programming\rfid_basic.X\i2c_lcd.c
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+{
+[v LCD_Write_String@Str Str `*.24uc  1 a 1 wreg ]
+"69
+[v LCD_Write_String@i i `i  1 a 2 6 ]
+"67
+[v LCD_Write_String@Str Str `*.24uc  1 a 1 wreg ]
+"69
+[v LCD_Write_String@Str Str `*.24uc  1 a 1 8 ]
+"71
+} 0
+"60
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+{
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+"62
+[v LCD_Write_Char@Data Data `uc  1 a 1 5 ]
+"65
+} 0
+"77
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+{
+[v LCD_Set_Cursor@ROW ROW `uc  1 a 1 wreg ]
+[v LCD_Set_Cursor@ROW ROW `uc  1 a 1 wreg ]
+[v LCD_Set_Cursor@COL COL `uc  1 p 1 6 ]
+[v LCD_Set_Cursor@ROW ROW `uc  1 a 1 9 ]
+"94
+} 0
+"25
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+{
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+"27
+[v LCD_CMD@CMD CMD `uc  1 a 1 5 ]
+"30
+} 0
+"16
+[v _LCD_Write_4Bit LCD_Write_4Bit `(v  1 e 1 0 ]
+{
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 a 1 wreg ]
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 a 1 wreg ]
+"19
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 a 1 3 ]
+"23
+} 0
+"8
+[v _IO_Expander_Write IO_Expander_Write `(v  1 e 1 0 ]
+{
+[v IO_Expander_Write@Data Data `uc  1 a 1 wreg ]
+[v IO_Expander_Write@Data Data `uc  1 a 1 wreg ]
+"10
+[v IO_Expander_Write@Data Data `uc  1 a 1 1 ]
+"14
+} 0
+"76 E:\Pic16\RFID\programming\rfid_basic.X\i2c_master.c
+[v _I2C_Write_Char I2C_Write_Char `(uc  1 e 1 0 ]
+{
+[v I2C_Write_Char@Data Data `uc  1 a 1 wreg ]
+[v I2C_Write_Char@Data Data `uc  1 a 1 wreg ]
+"79
+[v I2C_Write_Char@Data Data `uc  1 a 1 0 ]
+"84
+} 0
+"49
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+"54
+} 0
+"31
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"36
+} 0
+"23
+[v _I2C_Wait I2C_Wait `(v  1 e 1 0 ]
+{
+"26
+} 0

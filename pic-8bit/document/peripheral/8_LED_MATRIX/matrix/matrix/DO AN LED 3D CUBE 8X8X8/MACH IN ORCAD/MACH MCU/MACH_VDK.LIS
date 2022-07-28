@@ -1,0 +1,106 @@
+AutoECO Report
+FILE-A: D:\PROJECT LED CUBE\VE LAI\MACH MCU\MACH_VDK.MAX
+FILE-B: D:\PROJECT LED CUBE\VE LAI\MACH MCU\MACH_VDK.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding package ULN2802A.CAOVANHUONG_
+Adding package SW_PUSHBUTTON
+Adding package CAPACITOR
+Adding package DIODE
+Adding package CON10
+Adding package RESISTOR
+Adding package LED
+Adding package LM7805_1
+Adding package CON6
+Adding package CRYSTAL
+Adding package CON8
+Adding package RESISTOR_SIP_9
+Adding package CAPACITOR_NON-POL
+Adding package 89S52
+Adding package CON2
+Adding component IC1
+Adding component S1
+Found footprint BUTTON 4 PIN from PRT file for part SW_PUSHBUTTON, comp S1
+Adding component IN4007
+Found footprint CAPACITOR 1000UF TO UNDER 3300UF from PRT file for part CAPACITOR, comp IN4007
+Adding component D3
+Found footprint DIODE LONG from PRT file for part DIODE, comp D3
+Adding component J13
+Found library footprint with same name as part CON10
+Adding component R4
+Found footprint R_1/4W from PRT file for part RESISTOR, comp R4
+Adding component D4
+Found library footprint with same name as part LED
+Adding component U17
+Found footprint TO220+TAN NHIET from PRT file for part LM7805_1, comp U17
+Adding component J12
+Found library footprint with same name as part CON6
+Adding component C5
+Adding component Q1
+Found library footprint with same name as part CRYSTAL
+Adding component J15
+Found library footprint with same name as part CON8
+Adding component R6
+Found footprint RESISTOR ARRAY 9 PIN from PRT file for part RESISTOR_SIP_9, comp R6
+Adding component C1
+Found footprint C_PI from PRT file for part CAPACITOR_NON-POL, comp C1
+Adding component C7
+Adding component J9
+Adding component J1
+Adding component U9
+Found footprint IC 40 PIN from PRT file for part 89S52, comp U9
+Adding component J17
+Found library footprint with same name as part CON2
+Adding component C2
+Adding component C3
+Adding component R1
+Adding net SCK
+Adding net N129791
+Adding net N129787
+Adding net N129789
+Adding net N129785
+Adding net RST
+Adding net N129783
+Adding net N129781
+Adding net N60831
+Adding net N129779
+Adding net N58920
+Adding net N129777
+Adding net N92676
+Adding net N62615
+Adding net N62710
+Adding net N42954
+Adding net N60587
+Adding net N42844
+Adding net N63956
+Adding net N59046
+Adding net N59260
+Adding net MISO
+Adding net N64078
+Adding net N59603
+Adding net N62805
+Adding net N59386
+Adding net MOSI
+Adding net N93160
+Adding net N52435
+Adding net N60343
+Adding net N60221
+Adding net N61075
+Adding net N60953
+Adding net N60465
+Adding net N62493
+Adding net N62900
+Adding net N60709
+Adding net GND
+Adding net VCC
+Adding net N64490
+Adding net N19469
+Adding net N19393
+Adding net N19317
+Adding net N19241
+Adding net N19165
+Adding net N19089
+Adding net N19013
+Adding net N41489
+Deleting net DEFAULT
+*EOF*
+No errors found

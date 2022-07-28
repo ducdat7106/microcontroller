@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+  <html>
+   <head> 
+       <title>HOME PAGE</title> 
+       <meta charset="UTF-8">
+       
+       <style> 
+          body {
+              text-align:left;
+            }
+
+          h1 {
+              color: blue;
+            }
+          a {
+              text-decoration: none;
+              color: white;
+            } 
+
+          .button_on {
+              height:50px; 
+              width:100px; 
+              margin:10px 0;
+              background-color: red;
+              border-radius:5px;
+            }
+
+          .button_off {
+              height:50px; 
+              width:100px; 
+              margin:10px 0;
+              background-color: green;
+              border-radius:5px;
+            }
+
+       </style>
+
+      
+   </head>
+
+   <body> 
+
+      <h1>ESP32 WebServer</h1> 
+      <div>State Led 1: <b>OFF</b> </div>
+      <div>
+        <button class="button_on"> <a href="/onD1"> ON </a> </button>
+        <button class="button_off"> <a href="/offD1">OFF</a> </button>
+      </div>
+      <div>State Led 2 <b>OFF</b></div>
+      <div>
+        <button class="button_on"><a href="/onD2">ON</a></button>
+        <button class="button_off"><a href="/offD2">OFF</a></button>
+      </div>
+
+   </body> 
+  </html>
+  

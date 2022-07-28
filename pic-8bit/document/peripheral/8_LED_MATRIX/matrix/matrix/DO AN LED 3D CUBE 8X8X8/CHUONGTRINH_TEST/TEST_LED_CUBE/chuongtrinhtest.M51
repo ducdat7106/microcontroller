@@ -1,0 +1,392 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/23/2015  11:21:44  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE chuongtrinhtest.obj TO chuongtrinhtest RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  chuongtrinhtest.obj (CHUONGTRINHTEST)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  chuongtrinhtest (CHUONGTRINHTEST)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     003DH     UNIT         ?DT?CHUONGTRINHTEST
+            DATA    0045H     0004H     UNIT         ?DT?_SONG_NGANG2?CHUONGTRINHTEST
+            IDATA   0049H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0300H     UNIT         ?CO?CHUONGTRINHTEST
+            CODE    0303H     0092H     UNIT         ?PR?_SONG_NGANG2?CHUONGTRINHTEST
+            CODE    0395H     008CH     UNIT         ?C_C51STARTUP
+            CODE    0421H     0047H     UNIT         ?PR?TESTLOP?CHUONGTRINHTEST
+            CODE    0468H     0047H     UNIT         ?C_INITSEG
+            CODE    04AFH     003FH     UNIT         ?PR?TESTTUNGLED?CHUONGTRINHTEST
+            CODE    04EEH     003AH     UNIT         ?PR?TESTHANG?CHUONGTRINHTEST
+            CODE    0528H     0038H     UNIT         ?PR?TESTCOT?CHUONGTRINHTEST
+            CODE    0560H     0026H     UNIT         ?PR?_DELAY_S?CHUONGTRINHTEST
+            CODE    0586H     0026H     UNIT         ?PR?MAIN?CHUONGTRINHTEST
+            CODE    05ACH     001EH     UNIT         ?PR?_DELAY_QUET?CHUONGTRINHTEST
+            CODE    05CAH     001DH     UNIT         ?PR?XOA?CHUONGTRINHTEST
+            CODE    05E7H     001DH     UNIT         ?PR?TEST_MANG?CHUONGTRINHTEST
+            CODE    0604H     0016H     UNIT         ?PR?_DELAY?CHUONGTRINHTEST
+            CODE    061AH     000FH     UNIT         ?PR?SANGHET?CHUONGTRINHTEST
+            CODE    0629H     000AH     UNIT         ?PR?TATHET?CHUONGTRINHTEST
+
+
+
+OVERLAY MAP OF MODULE:   chuongtrinhtest (CHUONGTRINHTEST)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?CHUONGTRINHTEST
+  +--> ?C_INITSEG
+
+?PR?MAIN?CHUONGTRINHTEST
+  +--> ?PR?SANGHET?CHUONGTRINHTEST
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/23/2015  11:21:44  PAGE 2
+
+
+  +--> ?PR?XOA?CHUONGTRINHTEST
+  +--> ?PR?TATHET?CHUONGTRINHTEST
+  +--> ?PR?TESTLOP?CHUONGTRINHTEST
+  +--> ?PR?TEST_MANG?CHUONGTRINHTEST
+  +--> ?PR?TESTCOT?CHUONGTRINHTEST
+  +--> ?PR?TESTTUNGLED?CHUONGTRINHTEST
+
+?PR?SANGHET?CHUONGTRINHTEST
+  +--> ?PR?_DELAY_S?CHUONGTRINHTEST
+
+?PR?_DELAY_S?CHUONGTRINHTEST
+  +--> ?PR?XOA?CHUONGTRINHTEST
+
+?PR?XOA?CHUONGTRINHTEST
+  +--> ?PR?_DELAY_QUET?CHUONGTRINHTEST
+
+?PR?TATHET?CHUONGTRINHTEST
+  +--> ?PR?XOA?CHUONGTRINHTEST
+  +--> ?PR?_DELAY_S?CHUONGTRINHTEST
+
+?PR?TESTLOP?CHUONGTRINHTEST
+  +--> ?PR?_DELAY_S?CHUONGTRINHTEST
+  +--> ?PR?XOA?CHUONGTRINHTEST
+  +--> ?PR?_DELAY?CHUONGTRINHTEST
+
+?PR?TEST_MANG?CHUONGTRINHTEST
+  +--> ?PR?XOA?CHUONGTRINHTEST
+  +--> ?PR?_DELAY?CHUONGTRINHTEST
+
+?PR?TESTCOT?CHUONGTRINHTEST
+  +--> ?PR?XOA?CHUONGTRINHTEST
+  +--> ?PR?_DELAY?CHUONGTRINHTEST
+
+?PR?TESTTUNGLED?CHUONGTRINHTEST
+  +--> ?PR?XOA?CHUONGTRINHTEST
+  +--> ?PR?_DELAY?CHUONGTRINHTEST
+
+
+
+SYMBOL TABLE OF MODULE:  chuongtrinhtest (CHUONGTRINHTEST)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        CHUONGTRINHTEST
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0008H         PUBLIC        mangdktestcot
+  D:0010H         PUBLIC        mangtesthang
+  C:0528H         PUBLIC        testcot
+  D:0090H         PUBLIC        dulieu
+  C:0629H         PUBLIC        tathet
+  D:00A0H         PUBLIC        quetlop
+  C:0421H         PUBLIC        testlop
+  C:0608H         PUBLIC        _delay
+  C:0586H         PUBLIC        main
+  D:0018H         PUBLIC        mangtestcot
+  C:05ACH         PUBLIC        _delay_quet
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/23/2015  11:21:44  PAGE 3
+
+
+  D:0089H         PUBLIC        TMOD
+  D:0020H         PUBLIC        mangtestlop
+  C:04AFH         PUBLIC        testtungled
+  D:00B0H         PUBLIC        dieukhien
+  C:05E7H         PUBLIC        test_mang
+  C:05D9H         PUBLIC        xoa
+  B:0088H.5       PUBLIC        TF0
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  B:0088H.4       PUBLIC        TR0
+  C:0303H         PUBLIC        _song_ngang2
+  D:0028H         PUBLIC        a
+  D:0029H         PUBLIC        mangtesttungled
+  D:0031H         PUBLIC        b
+  D:0032H         PUBLIC        c
+  C:04EEH         PUBLIC        testhang
+  D:0033H         PUBLIC        d
+  C:0567H         PUBLIC        _delay_s
+  D:0034H         PUBLIC        i
+  C:061AH         PUBLIC        sanghet
+  D:0035H         PUBLIC        chonlop
+  D:003DH         PUBLIC        chonic
+  C:0604H         SYMBOL        L?0083
+  -------         PROC          L?0082
+  -------         ENDPROC       L?0082
+  C:0604H         SYMBOL        L?0083
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        time
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0608H         LINE#         7
+  C:0608H         LINE#         8
+  C:0608H         LINE#         10
+  C:0619H         LINE#         11
+  -------         ENDPROC       _DELAY
+  -------         PROC          _DELAY_QUET
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0003H         SYMBOL        b
+  -------         ENDDO         
+  C:05ACH         LINE#         13
+  C:05ACH         LINE#         14
+  C:05ACH         LINE#         16
+  C:05C9H         LINE#         17
+  -------         ENDPROC       _DELAY_QUET
+  C:05D2H         SYMBOL        L?0078
+  C:05D4H         SYMBOL        L?0079
+  -------         PROC          L?0077
+  -------         ENDPROC       L?0077
+  C:05D2H         SYMBOL        L?0078
+  C:05D4H         SYMBOL        L?0079
+  -------         PROC          XOA
+  C:05D9H         LINE#         19
+  C:05D9H         LINE#         20
+  C:05D9H         LINE#         21
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/23/2015  11:21:44  PAGE 4
+
+
+  C:05DCH         LINE#         22
+  C:05DFH         LINE#         23
+  C:05E1H         LINE#         24
+  -------         ENDPROC       XOA
+  C:0560H         SYMBOL        L?0081
+  -------         PROC          L?0080
+  -------         ENDPROC       L?0080
+  C:0560H         SYMBOL        L?0081
+  -------         PROC          _DELAY_S
+  D:0006H         SYMBOL        time
+  -------         DO            
+  D:0005H         SYMBOL        a
+  -------         ENDDO         
+  C:0567H         LINE#         26
+  C:0567H         LINE#         27
+  C:0567H         LINE#         28
+  C:0570H         LINE#         29
+  C:0570H         LINE#         30
+  C:0573H         LINE#         31
+  C:0576H         LINE#         32
+  C:0579H         LINE#         33
+  C:057BH         LINE#         34
+  C:057EH         LINE#         35
+  C:0582H         LINE#         36
+  C:0585H         LINE#         37
+  -------         ENDPROC       _DELAY_S
+  -------         PROC          SANGHET
+  C:061AH         LINE#         39
+  C:061AH         LINE#         40
+  C:061AH         LINE#         41
+  C:061DH         LINE#         42
+  C:0620H         LINE#         43
+  C:0623H         LINE#         44
+  -------         ENDPROC       SANGHET
+  -------         PROC          TATHET
+  C:0629H         LINE#         47
+  C:0629H         LINE#         48
+  C:0629H         LINE#         49
+  C:062CH         LINE#         50
+  -------         ENDPROC       TATHET
+  -------         PROC          TESTLOP
+  C:0421H         LINE#         54
+  C:0421H         LINE#         55
+  C:0421H         LINE#         56
+  C:0424H         LINE#         57
+  C:0427H         LINE#         58
+  C:0427H         LINE#         59
+  C:042AH         LINE#         60
+  C:042DH         LINE#         61
+  C:0435H         LINE#         62
+  C:0435H         LINE#         63
+  C:0438H         LINE#         64
+  C:043BH         LINE#         65
+  C:0444H         LINE#         66
+  C:0447H         LINE#         67
+  C:0447H         LINE#         68
+  C:044AH         LINE#         69
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/23/2015  11:21:44  PAGE 5
+
+
+  C:044DH         LINE#         70
+  C:0458H         LINE#         71
+  C:0458H         LINE#         72
+  C:045BH         LINE#         73
+  C:045EH         LINE#         74
+  C:0467H         LINE#         76
+  -------         ENDPROC       TESTLOP
+  -------         PROC          TESTHANG
+  C:04EEH         LINE#         79
+  C:04EEH         LINE#         80
+  C:04EEH         LINE#         81
+  C:04EEH         LINE#         82
+  C:04F1H         LINE#         83
+  C:04F4H         LINE#         84
+  C:04F4H         LINE#         85
+  C:04F7H         LINE#         86
+  C:04FFH         LINE#         87
+  C:0502H         LINE#         88
+  C:0509H         LINE#         89
+  C:0509H         LINE#         90
+  C:050CH         LINE#         91
+  C:050FH         LINE#         92
+  C:050FH         LINE#         93
+  C:0512H         LINE#         94
+  C:051DH         LINE#         95
+  C:0520H         LINE#         96
+  C:0527H         LINE#         97
+  -------         ENDPROC       TESTHANG
+  -------         PROC          TESTCOT
+  C:0528H         LINE#         101
+  C:0528H         LINE#         102
+  C:0528H         LINE#         104
+  C:052BH         LINE#         105
+  C:052BH         LINE#         106
+  C:052EH         LINE#         107
+  C:052EH         LINE#         108
+  C:0531H         LINE#         109
+  C:0534H         LINE#         110
+  C:053CH         LINE#         111
+  C:0545H         LINE#         112
+  C:0547H         LINE#         113
+  C:054AH         LINE#         114
+  C:054DH         LINE#         115
+  C:0556H         LINE#         116
+  C:055FH         LINE#         117
+  -------         ENDPROC       TESTCOT
+  -------         PROC          TESTTUNGLED
+  C:04AFH         LINE#         122
+  C:04AFH         LINE#         123
+  C:04AFH         LINE#         124
+  C:04B2H         LINE#         125
+  C:04B2H         LINE#         126
+  C:04B5H         LINE#         127
+  C:04B5H         LINE#         128
+  C:04B8H         LINE#         129
+  C:04B8H         LINE#         130
+  C:04C0H         LINE#         131
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/23/2015  11:21:44  PAGE 6
+
+
+  C:04C8H         LINE#         132
+  C:04C8H         LINE#         133
+  C:04C8H         LINE#         134
+  C:04CBH         LINE#         135
+  C:04D2H         LINE#         136
+  C:04DBH         LINE#         137
+  C:04E4H         LINE#         138
+  C:04EDH         LINE#         140
+  -------         ENDPROC       TESTTUNGLED
+  -------         PROC          TEST_MANG
+  C:05E7H         LINE#         142
+  C:05E7H         LINE#         143
+  C:05E7H         LINE#         144
+  C:05EAH         LINE#         145
+  C:05EAH         LINE#         146
+  C:05EDH         LINE#         147
+  C:05F0H         LINE#         148
+  C:05F0H         LINE#         149
+  C:05F0H         LINE#         150
+  C:05F3H         LINE#         151
+  C:05FAH         LINE#         152
+  C:0603H         LINE#         153
+  -------         ENDPROC       TEST_MANG
+  -------         PROC          _SONG_NGANG2
+  D:0045H         SYMBOL        lap
+  D:0047H         SYMBOL        toc_do
+  -------         DO            
+  D:0001H         SYMBOL        n
+  D:0005H         SYMBOL        y
+  D:0002H         SYMBOL        z
+  C:0003H         SYMBOL        ma
+  -------         ENDDO         
+  C:0303H         LINE#         156
+  C:030BH         LINE#         157
+  C:030BH         LINE#         220
+  C:031DH         LINE#         221
+  C:031DH         LINE#         222
+  C:031FH         LINE#         223
+  C:031FH         LINE#         224
+  C:0331H         LINE#         225
+  C:0331H         LINE#         226
+  C:0333H         LINE#         227
+  C:0333H         LINE#         228
+  C:0335H         LINE#         229
+  C:0335H         LINE#         230
+  C:0363H         LINE#         231
+  C:036AH         LINE#         232
+  C:036EH         LINE#         233
+  C:0375H         LINE#         234
+  C:037CH         LINE#         235
+  C:0381H         LINE#         237
+  C:0385H         LINE#         239
+  C:0389H         LINE#         240
+  C:038FH         LINE#         241
+  C:0394H         LINE#         242
+  -------         ENDPROC       _SONG_NGANG2
+  -------         PROC          MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/23/2015  11:21:44  PAGE 7
+
+
+  C:0586H         LINE#         244
+  C:0586H         LINE#         245
+  C:0586H         LINE#         246
+  C:0586H         LINE#         247
+  C:0586H         LINE#         248
+  C:0589H         LINE#         249
+  C:058CH         LINE#         250
+  C:058FH         LINE#         251
+  C:0592H         LINE#         252
+  C:0595H         LINE#         253
+  C:0598H         LINE#         254
+  C:059BH         LINE#         255
+  C:059EH         LINE#         256
+  C:05A1H         LINE#         257
+  C:05A4H         LINE#         258
+  C:05A7H         LINE#         259
+  C:05AAH         LINE#         260
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        CHUONGTRINHTEST
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TESTHANG?CHUONGTRINHTEST
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SONG_NGANG2?CHUONGTRINHTEST
+
+Program Size: data=74.0 xdata=0 code=1587
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

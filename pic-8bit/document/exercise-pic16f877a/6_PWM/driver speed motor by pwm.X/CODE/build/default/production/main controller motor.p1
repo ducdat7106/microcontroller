@@ -1,0 +1,390 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"2229 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h
+[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
+"1505
+[s S60 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S60 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
+"1504
+[u S59 `S60 1 ]
+[n S59 . . ]
+"1516
+[v _TRISDbits `VS59 ~T0 @X0 0 e@136 ]
+"2935
+[v _TRISB0 `Vb ~T0 @X0 0 e@1072 ]
+"2674
+[v _RB0 `Vb ~T0 @X0 0 e@48 ]
+"31 ./pwm.h
+[; ;./pwm.h: 31: void PWM1_Init(long freq);
+[v _PWM1_Init `(v ~T0 @X0 0 ef1`l ]
+"37
+[; ;./pwm.h: 37: void PWM1_Start();
+[v _PWM1_Start `(v ~T0 @X0 0 e? ]
+"32
+[; ;./pwm.h: 32: void PWM2_Init(long freq);
+[v _PWM2_Init `(v ~T0 @X0 0 ef1`l ]
+"40
+[; ;./pwm.h: 40: void PWM2_Start();
+[v _PWM2_Start `(v ~T0 @X0 0 e? ]
+"34
+[; ;./pwm.h: 34: void PWM1_Set_Duty(unsigned int duty);
+[v _PWM1_Set_Duty `(v ~T0 @X0 0 ef1`ui ]
+"35
+[; ;./pwm.h: 35: void PWM2_Set_Duty(unsigned int duty);
+[v _PWM2_Set_Duty `(v ~T0 @X0 0 ef1`ui ]
+"346 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"345
+[u S11 `S12 1 ]
+[n S11 . . ]
+"357
+[v _PORTDbits `VS11 ~T0 @X0 0 e@8 ]
+"54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"218
+[; <" PORTB equ 06h ;# ">
+"280
+[; <" PORTC equ 07h ;# ">
+"342
+[; <" PORTD equ 08h ;# ">
+"404
+[; <" PORTE equ 09h ;# ">
+"436
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; <" T1CON equ 010h ;# ">
+"732
+[; <" TMR2 equ 011h ;# ">
+"739
+[; <" T2CON equ 012h ;# ">
+"810
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; <" SSPCON equ 014h ;# ">
+"887
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; <" TXREG equ 019h ;# ">
+"1068
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; <" TRISA equ 085h ;# ">
+"1377
+[; <" TRISB equ 086h ;# ">
+"1439
+[; <" TRISC equ 087h ;# ">
+"1501
+[; <" TRISD equ 088h ;# ">
+"1563
+[; <" TRISE equ 089h ;# ">
+"1620
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; <" PR2 equ 092h ;# ">
+"1825
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; <" EECON2 equ 018Dh ;# ">
+"15 ./config.h
+[p x FOSC = HS ]
+"16
+[p x WDTE = OFF ]
+"17
+[p x PWRTE = ON ]
+"18
+[p x BOREN = ON ]
+"19
+[p x LVP = ON ]
+"20
+[p x CPD = OFF ]
+"21
+[p x WRT = OFF ]
+"22
+[p x CP = OFF ]
+"26 ./pwm.h
+[; ;./pwm.h: 26: long frequency1, frequency2 ;
+[v _frequency1 `l ~T0 @X0 1 e ]
+[v _frequency2 `l ~T0 @X0 1 e ]
+"24 main controller motor.c
+[; ;main controller motor.c: 24: unsigned int value1=0;
+[v _value1 `ui ~T0 @X0 1 e ]
+[i _value1
+-> -> 0 `i `ui
+]
+"25
+[; ;main controller motor.c: 25: unsigned int value2=0;
+[v _value2 `ui ~T0 @X0 1 e ]
+[i _value2
+-> -> 0 `i `ui
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"27
+[; ;main controller motor.c: 27: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"28
+[; ;main controller motor.c: 28: {
+{
+[e :U _main ]
+[f ]
+"29
+[; ;main controller motor.c: 29:     ADCON1 = 0x07;
+[e = _ADCON1 -> -> 7 `i `uc ]
+"31
+[; ;main controller motor.c: 31:     TRISDbits.TRISD1 =1;
+[e = . . _TRISDbits 0 1 -> -> 1 `i `uc ]
+"32
+[; ;main controller motor.c: 32:     TRISDbits.TRISD0 = 1;
+[e = . . _TRISDbits 0 0 -> -> 1 `i `uc ]
+"33
+[; ;main controller motor.c: 33:     TRISDbits.TRISD2 = 1;
+[e = . . _TRISDbits 0 2 -> -> 1 `i `uc ]
+"34
+[; ;main controller motor.c: 34:     TRISDbits.TRISD3 = 1;
+[e = . . _TRISDbits 0 3 -> -> 1 `i `uc ]
+"36
+[; ;main controller motor.c: 36:     TRISB0=0;
+[e = _TRISB0 -> -> 0 `i `b ]
+"37
+[; ;main controller motor.c: 37:     RB0=0;
+[e = _RB0 -> -> 0 `i `b ]
+"39
+[; ;main controller motor.c: 39:     PWM1_Init(5000);
+[e ( _PWM1_Init (1 -> -> 5000 `i `l ]
+"40
+[; ;main controller motor.c: 40:     PWM1_Start();
+[e ( _PWM1_Start ..  ]
+"42
+[; ;main controller motor.c: 42:     PWM2_Init(5000);
+[e ( _PWM2_Init (1 -> -> 5000 `i `l ]
+"43
+[; ;main controller motor.c: 43:     PWM2_Start();
+[e ( _PWM2_Start ..  ]
+"45
+[; ;main controller motor.c: 45:     PWM1_Set_Duty(value1);
+[e ( _PWM1_Set_Duty (1 _value1 ]
+"46
+[; ;main controller motor.c: 46:     PWM2_Set_Duty(value2);
+[e ( _PWM2_Set_Duty (1 _value2 ]
+"47
+[; ;main controller motor.c: 47:     while(1)
+[e :U 97 ]
+"48
+[; ;main controller motor.c: 48:     {
+{
+"51
+[; ;main controller motor.c: 51:         if(PORTDbits.RD0 == 0)
+[e $ ! == -> . . _PORTDbits 0 0 `i -> 0 `i 99  ]
+"52
+[; ;main controller motor.c: 52:         {
+{
+"53
+[; ;main controller motor.c: 53:             while(PORTDbits.RD0 == 0);
+[e $U 100  ]
+[e :U 101 ]
+[e :U 100 ]
+[e $ == -> . . _PORTDbits 0 0 `i -> 0 `i 101  ]
+[e :U 102 ]
+"54
+[; ;main controller motor.c: 54:             RB0=1;
+[e = _RB0 -> -> 1 `i `b ]
+"55
+[; ;main controller motor.c: 55:             value1=value1+10;
+[e = _value1 + _value1 -> -> 10 `i `ui ]
+"56
+[; ;main controller motor.c: 56:             if(value1 > 100)
+[e $ ! > _value1 -> -> 100 `i `ui 103  ]
+"57
+[; ;main controller motor.c: 57:                 value1 = 100;
+[e = _value1 -> -> 100 `i `ui ]
+[e :U 103 ]
+"58
+[; ;main controller motor.c: 58:         }
+}
+[e :U 99 ]
+"60
+[; ;main controller motor.c: 60:         if(PORTDbits.RD1 == 0)
+[e $ ! == -> . . _PORTDbits 0 1 `i -> 0 `i 104  ]
+"61
+[; ;main controller motor.c: 61:         {
+{
+"62
+[; ;main controller motor.c: 62:             while(PORTDbits.RD1 == 0);
+[e $U 105  ]
+[e :U 106 ]
+[e :U 105 ]
+[e $ == -> . . _PORTDbits 0 1 `i -> 0 `i 106  ]
+[e :U 107 ]
+"63
+[; ;main controller motor.c: 63:             RB0=1;
+[e = _RB0 -> -> 1 `i `b ]
+"64
+[; ;main controller motor.c: 64:             value1=value1-10;
+[e = _value1 - _value1 -> -> 10 `i `ui ]
+"65
+[; ;main controller motor.c: 65:             if(value1 <= 0)
+[e $ ! <= _value1 -> -> 0 `i `ui 108  ]
+"66
+[; ;main controller motor.c: 66:                 value1=0;
+[e = _value1 -> -> 0 `i `ui ]
+[e :U 108 ]
+"68
+[; ;main controller motor.c: 68:         }
+}
+[e :U 104 ]
+"71
+[; ;main controller motor.c: 71:          if(PORTDbits.RD2 == 0)
+[e $ ! == -> . . _PORTDbits 0 2 `i -> 0 `i 109  ]
+"72
+[; ;main controller motor.c: 72:         {
+{
+"73
+[; ;main controller motor.c: 73:             while(PORTDbits.RD2 == 0);
+[e $U 110  ]
+[e :U 111 ]
+[e :U 110 ]
+[e $ == -> . . _PORTDbits 0 2 `i -> 0 `i 111  ]
+[e :U 112 ]
+"74
+[; ;main controller motor.c: 74:             RB0=1;
+[e = _RB0 -> -> 1 `i `b ]
+"75
+[; ;main controller motor.c: 75:             value2=value2+10;
+[e = _value2 + _value2 -> -> 10 `i `ui ]
+"76
+[; ;main controller motor.c: 76:             if(value2 >= 100)
+[e $ ! >= _value2 -> -> 100 `i `ui 113  ]
+"77
+[; ;main controller motor.c: 77:                 value2 = 100;
+[e = _value2 -> -> 100 `i `ui ]
+[e :U 113 ]
+"78
+[; ;main controller motor.c: 78:         }
+}
+[e :U 109 ]
+"80
+[; ;main controller motor.c: 80:         if(PORTDbits.RD3 == 0)
+[e $ ! == -> . . _PORTDbits 0 3 `i -> 0 `i 114  ]
+"81
+[; ;main controller motor.c: 81:         {
+{
+"82
+[; ;main controller motor.c: 82:             while(PORTDbits.RD3 == 0);
+[e $U 115  ]
+[e :U 116 ]
+[e :U 115 ]
+[e $ == -> . . _PORTDbits 0 3 `i -> 0 `i 116  ]
+[e :U 117 ]
+"83
+[; ;main controller motor.c: 83:             RB0=1;
+[e = _RB0 -> -> 1 `i `b ]
+"84
+[; ;main controller motor.c: 84:             value2=value2-10;
+[e = _value2 - _value2 -> -> 10 `i `ui ]
+"85
+[; ;main controller motor.c: 85:             if(value2 <= 0)
+[e $ ! <= _value2 -> -> 0 `i `ui 118  ]
+"86
+[; ;main controller motor.c: 86:                 value2=0;
+[e = _value2 -> -> 0 `i `ui ]
+[e :U 118 ]
+"88
+[; ;main controller motor.c: 88:         }
+}
+[e :U 114 ]
+"89
+[; ;main controller motor.c: 89:         RB0=0;
+[e = _RB0 -> -> 0 `i `b ]
+"91
+[; ;main controller motor.c: 91:         PWM1_Set_Duty(value1);
+[e ( _PWM1_Set_Duty (1 _value1 ]
+"92
+[; ;main controller motor.c: 92:         PWM2_Set_Duty(value2);
+[e ( _PWM2_Set_Duty (1 _value2 ]
+"94
+[; ;main controller motor.c: 94:     }
+}
+[e :U 96 ]
+[e $U 97  ]
+[e :U 98 ]
+"95
+[; ;main controller motor.c: 95:     return;
+[e $UE 95  ]
+"96
+[; ;main controller motor.c: 96: }
+[e :UE 95 ]
+}

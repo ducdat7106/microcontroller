@@ -1,0 +1,251 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"21 G:\My Drive\2_Bai_Lam\1_PIC16F\8_UART\1_pic_and_pc_(Stander 100)\uart\uart pic-pc.X/uart send and get.h
+[v _UART_TX_AND_RX_Init UART_TX_AND_RX_Init `(uc  1 e 1 0 ]
+"124
+[v _UART_Write_Char UART_Write_Char `(v  1 e 1 0 ]
+"143
+[v _UART_Write_String UART_Write_String `(v  1 e 1 0 ]
+"210
+[v _UART_Data_Ready UART_Data_Ready `(uc  1 e 1 0 ]
+"216
+[v _UART_Read_Char UART_Read_Char `(uc  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"13 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"4 G:\My Drive\2_Bai_Lam\1_PIC16F\8_UART\1_pic_and_pc_(Stander 100)\uart\uart pic-pc.X\lcd.c
+[v _LCD_DATA LCD_DATA `(v  1 e 1 0 ]
+"28
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+"41
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"49
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+"91
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"119
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+"141
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+"27 G:\My Drive\2_Bai_Lam\1_PIC16F\8_UART\1_pic_and_pc_(Stander 100)\uart\uart pic-pc.X\main-uart.c
+[v _main main `(v  1 e 1 0 ]
+[s S80 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+"414 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[u S84 . 1 `S80 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES84  1 e 1 @9 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+[s S38 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S47 . 1 `S38 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES47  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S59 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"1578
+[u S68 . 1 `S59 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES68  1 e 1 @137 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2614
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2767
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2770
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2794
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"2989
+[v _TRISD2 TRISD2 `VEb  1 e 0 @1090 ]
+"2992
+[v _TRISD3 TRISD3 `VEb  1 e 0 @1091 ]
+"3016
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3022
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"25 G:\My Drive\2_Bai_Lam\1_PIC16F\8_UART\1_pic_and_pc_(Stander 100)\uart\uart pic-pc.X\main-uart.c
+[v _r_data r_data `uc  1 e 1 0 ]
+"27
+[v _main main `(v  1 e 1 0 ]
+{
+"88
+} 0
+"143 G:\My Drive\2_Bai_Lam\1_PIC16F\8_UART\1_pic_and_pc_(Stander 100)\uart\uart pic-pc.X/uart send and get.h
+[v _UART_Write_String UART_Write_String `(v  1 e 1 0 ]
+{
+"145
+[v UART_Write_String@i i `i  1 a 2 6 ]
+"143
+[v UART_Write_String@text text `*.26uc  1 p 2 1 ]
+"148
+} 0
+"124
+[v _UART_Write_Char UART_Write_Char `(v  1 e 1 0 ]
+{
+[v UART_Write_Char@data data `uc  1 a 1 wreg ]
+[v UART_Write_Char@data data `uc  1 a 1 wreg ]
+[v UART_Write_Char@data data `uc  1 a 1 0 ]
+"128
+} 0
+"21
+[v _UART_TX_AND_RX_Init UART_TX_AND_RX_Init `(uc  1 e 1 0 ]
+{
+"24
+[v UART_TX_AND_RX_Init@x x `ui  1 a 2 16 ]
+"21
+[v UART_TX_AND_RX_Init@baudrate baudrate `ul  1 p 4 0 ]
+"74
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"216 G:\My Drive\2_Bai_Lam\1_PIC16F\8_UART\1_pic_and_pc_(Stander 100)\uart\uart pic-pc.X/uart send and get.h
+[v _UART_Read_Char UART_Read_Char `(uc  1 e 1 0 ]
+{
+"230
+} 0
+"210
+[v _UART_Data_Ready UART_Data_Ready `(uc  1 e 1 0 ]
+{
+"213
+} 0
+"141 G:\My Drive\2_Bai_Lam\1_PIC16F\8_UART\1_pic_and_pc_(Stander 100)\uart\uart pic-pc.X\lcd.c
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+{
+[v LCD_Write_String@str str `*.24uc  1 a 1 wreg ]
+"143
+[v LCD_Write_String@i i `i  1 a 2 6 ]
+"141
+[v LCD_Write_String@str str `*.24uc  1 a 1 wreg ]
+"144
+[v LCD_Write_String@str str `*.24uc  1 a 1 8 ]
+"146
+} 0
+"119
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+{
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+"125
+[v LCD_Write_Char@High4 High4 `uc  1 a 1 4 ]
+[v LCD_Write_Char@Low4 Low4 `uc  1 a 1 3 ]
+"119
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+"126
+[v LCD_Write_Char@Data Data `uc  1 a 1 5 ]
+"139
+} 0
+"49
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+{
+[v LCD_Set_Cursor@row row `uc  1 a 1 wreg ]
+"56
+[v LCD_Set_Cursor@Temp Temp `uc  1 a 1 10 ]
+[v LCD_Set_Cursor@High4 High4 `uc  1 a 1 9 ]
+[v LCD_Set_Cursor@Low4 Low4 `uc  1 a 1 8 ]
+"49
+[v LCD_Set_Cursor@row row `uc  1 a 1 wreg ]
+[v LCD_Set_Cursor@column column `uc  1 p 1 4 ]
+"58
+[v LCD_Set_Cursor@row row `uc  1 a 1 7 ]
+"90
+} 0
+"91
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"117
+} 0
+"41
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"48
+} 0
+"28
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+{
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+"33
+[v LCD_CMD@CMD CMD `uc  1 a 1 3 ]
+"38
+} 0
+"4
+[v _LCD_DATA LCD_DATA `(v  1 e 1 0 ]
+{
+[v LCD_DATA@Data Data `uc  1 a 1 wreg ]
+[v LCD_DATA@Data Data `uc  1 a 1 wreg ]
+"9
+[v LCD_DATA@Data Data `uc  1 a 1 0 ]
+"25
+} 0

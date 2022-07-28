@@ -1,0 +1,289 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"4 G:\My Drive\Bai tap da lam\PIC\1  adc\Digital_Volt_and_ampe_DC.X/adc_thay_hai.h
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"11
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 G:\My Drive\Bai tap da lam\PIC\1  adc\Digital_Volt_and_ampe_DC.X\lcd.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"33
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+"54
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+"71
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+"90
+[v _LCD_Write_Number LCD_Write_Number `(v  1 e 1 0 ]
+"120
+[v _LCD_DATA LCD_DATA `(v  1 e 1 0 ]
+"140
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+"15 G:\My Drive\Bai tap da lam\PIC\1  adc\Digital_Volt_and_ampe_DC.X\main_dc_volt.c
+[v _main main `(v  1 e 1 0 ]
+"1152 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2404
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"2482
+[v _CHS0 CHS0 `VEb  1 e 0 @251 ]
+"2485
+[v _CHS1 CHS1 `VEb  1 e 0 @252 ]
+"2488
+[v _CHS2 CHS2 `VEb  1 e 0 @253 ]
+"2575
+[v _GO_DONE GO_DONE `VEb  1 e 0 @250 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2767
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2770
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2989
+[v _TRISD2 TRISD2 `VEb  1 e 0 @1090 ]
+"2992
+[v _TRISD3 TRISD3 `VEb  1 e 0 @1091 ]
+"13 G:\My Drive\Bai tap da lam\PIC\1  adc\Digital_Volt_and_ampe_DC.X\main_dc_volt.c
+[v _voltage voltage `ui  1 e 2 0 ]
+[v _ampe ampe `ui  1 e 2 0 ]
+"15
+[v _main main `(v  1 e 1 0 ]
+{
+"51
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 62 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 61 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 52 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S422 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S427 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S430 . 4 `l 1 i 4 0 `d 1 f 4 0 `S422 1 fAsBytes 4 0 `S427 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S430  1 a 4 20 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 14 ]
+[s S499 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S502 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S499 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S502  1 a 2 24 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 19 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 18 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 13 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 46 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 39 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 44 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 51 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 50 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 43 ]
+"8
+[v ___fldiv@a a `d  1 p 4 26 ]
+[v ___fldiv@b b `d  1 p 4 30 ]
+"185
+} 0
+"71 G:\My Drive\Bai tap da lam\PIC\1  adc\Digital_Volt_and_ampe_DC.X\lcd.c
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+{
+[v LCD_Write_String@str str `*.24uc  1 a 1 wreg ]
+"73
+[v LCD_Write_String@i i `i  1 a 2 6 ]
+"71
+[v LCD_Write_String@str str `*.24uc  1 a 1 wreg ]
+"74
+[v LCD_Write_String@str str `*.24uc  1 a 1 8 ]
+"76
+} 0
+"90
+[v _LCD_Write_Number LCD_Write_Number `(v  1 e 1 0 ]
+{
+"92
+[v LCD_Write_Number@num num `[10]ui  1 a 20 4 ]
+"94
+[v LCD_Write_Number@p p `i  1 a 2 27 ]
+"95
+[v LCD_Write_Number@k k `i  1 a 2 24 ]
+"93
+[v LCD_Write_Number@c c `uc  1 a 1 26 ]
+"90
+[v LCD_Write_Number@number number `ui  1 p 2 0 ]
+"118
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0
+"54 G:\My Drive\Bai tap da lam\PIC\1  adc\Digital_Volt_and_ampe_DC.X\lcd.c
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+{
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+"56
+[v LCD_Write_Char@High4 High4 `uc  1 a 1 4 ]
+[v LCD_Write_Char@Low4 Low4 `uc  1 a 1 3 ]
+"54
+[v LCD_Write_Char@Data Data `uc  1 a 1 wreg ]
+"57
+[v LCD_Write_Char@Data Data `uc  1 a 1 5 ]
+"70
+} 0
+"33
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+{
+[v LCD_Set_Cursor@r r `uc  1 a 1 wreg ]
+"35
+[v LCD_Set_Cursor@Temp Temp `uc  1 a 1 10 ]
+[v LCD_Set_Cursor@High4 High4 `uc  1 a 1 9 ]
+[v LCD_Set_Cursor@Low4 Low4 `uc  1 a 1 8 ]
+"33
+[v LCD_Set_Cursor@r r `uc  1 a 1 wreg ]
+[v LCD_Set_Cursor@c c `uc  1 p 1 4 ]
+"36
+[v LCD_Set_Cursor@r r `uc  1 a 1 7 ]
+"52
+} 0
+"3
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"25
+} 0
+"140
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+{
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+[v LCD_CMD@CMD CMD `uc  1 a 1 wreg ]
+"143
+[v LCD_CMD@CMD CMD `uc  1 a 1 3 ]
+"150
+} 0
+"120
+[v _LCD_DATA LCD_DATA `(v  1 e 1 0 ]
+{
+[v LCD_DATA@Data Data `uc  1 a 1 wreg ]
+[v LCD_DATA@Data Data `uc  1 a 1 wreg ]
+"122
+[v LCD_DATA@Data Data `uc  1 a 1 0 ]
+"138
+} 0
+"11 G:\My Drive\Bai tap da lam\PIC\1  adc\Digital_Volt_and_ampe_DC.X/adc_thay_hai.h
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@Channel Channel `uc  1 a 1 wreg ]
+"13
+[v ADC_Read@value value `ui  1 a 2 4 ]
+"11
+[v ADC_Read@Channel Channel `uc  1 a 1 wreg ]
+[v ADC_Read@Channel Channel `uc  1 a 1 6 ]
+"29
+} 0
+"4
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"9
+} 0
