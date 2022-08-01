@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\Websocket_Server"
+		},
+		{
+			"name": "Websocket Server",
+			"path": "..\\..\\..\\..\\Websocket_Server\\Websocket Server"
+		},
+		{
+			"name": "MQTT_turn_on_off_led_with_Hivemq_Broker",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\onOffLamp"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "onOffLamp-5base"
+	}
+}

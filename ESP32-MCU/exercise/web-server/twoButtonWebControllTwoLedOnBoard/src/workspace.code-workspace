@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp"
+		}
+	}
+}

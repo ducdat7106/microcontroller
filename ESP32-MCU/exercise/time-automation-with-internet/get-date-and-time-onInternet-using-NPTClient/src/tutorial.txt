@@ -1,0 +1,12 @@
+esp8266
+https://randomnerdtutorials.com/esp8266-nodemcu-date-time-ntp-client-server-arduino/
+
+
+esp32
+https://randomnerdtutorials.com/esp32-ntp-client-date-time-arduino-ide/
+
+
+
+all both 2 lib:
+This library doesn’t come with functions to return the date
+
