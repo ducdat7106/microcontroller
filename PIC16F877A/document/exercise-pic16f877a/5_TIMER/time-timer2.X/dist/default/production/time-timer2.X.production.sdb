@@ -1,0 +1,62 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"22 D:\2_PIC16f877A\timer\time-timer2.X\main_time_2.c
+[v _timer2 timer2 `(v  1 e 1 0 ]
+"43
+[v _time2 time2 `II(v  1 e 1 0 ]
+"52
+[v _main main `(v  1 e 1 0 ]
+"1816 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2875
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"2896
+[v _TMR2IE TMR2IE `VEb  1 e 0 @1121 ]
+"2899
+[v _TMR2IF TMR2IF `VEb  1 e 0 @97 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2905
+[v _TOUTPS0 TOUTPS0 `VEb  1 e 0 @147 ]
+"2908
+[v _TOUTPS1 TOUTPS1 `VEb  1 e 0 @148 ]
+"2911
+[v _TOUTPS2 TOUTPS2 `VEb  1 e 0 @149 ]
+"2914
+[v _TOUTPS3 TOUTPS3 `VEb  1 e 0 @150 ]
+"2995
+[v _TRISD4 TRISD4 `VEb  1 e 0 @1092 ]
+"52 D:\2_PIC16f877A\timer\time-timer2.X\main_time_2.c
+[v _main main `(v  1 e 1 0 ]
+{
+"65
+} 0
+"22
+[v _timer2 timer2 `(v  1 e 1 0 ]
+{
+"41
+} 0
+"43
+[v _time2 time2 `II(v  1 e 1 0 ]
+{
+"51
+} 0

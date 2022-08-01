@@ -1,0 +1,727 @@
+
+
+Microchip MPLAB XC8 Assembler V2.20 build 20200408173844 
+                                                                                               Fri Dec 03 10:04:47 2021
+
+Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1 
+     1                           	processor	16F877A
+     2                           	pagewidth 120
+     3                           	opt	flic
+     4                           	psect	strings,global,class=STRING,delta=2,noexec
+     5                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     6                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1,noexec
+     7                           	psect	maintext,global,class=CODE,split=1,delta=2
+     8                           	psect	config,global,abs,ovrld,class=CONFIG,space=4,delta=2,noexec
+     9                           	dabs	1,0x7E,2
+    10  0000                     
+    11                           ; Version 2.20
+    12                           ; Generated 12/02/2020 GMT
+    13                           ; 
+    14                           ; Copyright © 2020, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    15                           ; All rights reserved.
+    16                           ; 
+    17                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    18                           ; 
+    19                           ; Redistribution and use in source and binary forms, with or without modification, are
+    20                           ; permitted provided that the following conditions are met:
+    21                           ; 
+    22                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    23                           ;        conditions and the following disclaimer.
+    24                           ; 
+    25                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    26                           ;        of conditions and the following disclaimer in the documentation and/or other
+    27                           ;        materials provided with the distribution.
+    28                           ; 
+    29                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    30                           ;        software without specific prior written permission.
+    31                           ; 
+    32                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    33                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    34                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    35                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    36                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    37                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    38                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    39                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    40                           ; 
+    41                           ; 
+    42                           ; Code-generator required, PIC16F877A Definitions
+    43                           ; 
+    44                           ; SFR Addresses
+    45  0000                     	;# 
+    46  0001                     	;# 
+    47  0002                     	;# 
+    48  0003                     	;# 
+    49  0004                     	;# 
+    50  0005                     	;# 
+    51  0006                     	;# 
+    52  0007                     	;# 
+    53  0008                     	;# 
+    54  0009                     	;# 
+    55  000A                     	;# 
+    56  000B                     	;# 
+    57  000C                     	;# 
+    58  000D                     	;# 
+    59  000E                     	;# 
+    60  000E                     	;# 
+    61  000F                     	;# 
+    62  0010                     	;# 
+    63  0011                     	;# 
+    64  0012                     	;# 
+    65  0013                     	;# 
+    66  0014                     	;# 
+    67  0015                     	;# 
+    68  0015                     	;# 
+    69  0016                     	;# 
+    70  0017                     	;# 
+    71  0018                     	;# 
+    72  0019                     	;# 
+    73  001A                     	;# 
+    74  001B                     	;# 
+    75  001B                     	;# 
+    76  001C                     	;# 
+    77  001D                     	;# 
+    78  001E                     	;# 
+    79  001F                     	;# 
+    80  0081                     	;# 
+    81  0085                     	;# 
+    82  0086                     	;# 
+    83  0087                     	;# 
+    84  0088                     	;# 
+    85  0089                     	;# 
+    86  008C                     	;# 
+    87  008D                     	;# 
+    88  008E                     	;# 
+    89  0091                     	;# 
+    90  0092                     	;# 
+    91  0093                     	;# 
+    92  0094                     	;# 
+    93  0098                     	;# 
+    94  0099                     	;# 
+    95  009C                     	;# 
+    96  009D                     	;# 
+    97  009E                     	;# 
+    98  009F                     	;# 
+    99  010C                     	;# 
+   100  010D                     	;# 
+   101  010E                     	;# 
+   102  010F                     	;# 
+   103  018C                     	;# 
+   104  018D                     	;# 
+   105  0000                     	;# 
+   106  0001                     	;# 
+   107  0002                     	;# 
+   108  0003                     	;# 
+   109  0004                     	;# 
+   110  0005                     	;# 
+   111  0006                     	;# 
+   112  0007                     	;# 
+   113  0008                     	;# 
+   114  0009                     	;# 
+   115  000A                     	;# 
+   116  000B                     	;# 
+   117  000C                     	;# 
+   118  000D                     	;# 
+   119  000E                     	;# 
+   120  000E                     	;# 
+   121  000F                     	;# 
+   122  0010                     	;# 
+   123  0011                     	;# 
+   124  0012                     	;# 
+   125  0013                     	;# 
+   126  0014                     	;# 
+   127  0015                     	;# 
+   128  0015                     	;# 
+   129  0016                     	;# 
+   130  0017                     	;# 
+   131  0018                     	;# 
+   132  0019                     	;# 
+   133  001A                     	;# 
+   134  001B                     	;# 
+   135  001B                     	;# 
+   136  001C                     	;# 
+   137  001D                     	;# 
+   138  001E                     	;# 
+   139  001F                     	;# 
+   140  0081                     	;# 
+   141  0085                     	;# 
+   142  0086                     	;# 
+   143  0087                     	;# 
+   144  0088                     	;# 
+   145  0089                     	;# 
+   146  008C                     	;# 
+   147  008D                     	;# 
+   148  008E                     	;# 
+   149  0091                     	;# 
+   150  0092                     	;# 
+   151  0093                     	;# 
+   152  0094                     	;# 
+   153  0098                     	;# 
+   154  0099                     	;# 
+   155  009C                     	;# 
+   156  009D                     	;# 
+   157  009E                     	;# 
+   158  009F                     	;# 
+   159  010C                     	;# 
+   160  010D                     	;# 
+   161  010E                     	;# 
+   162  010F                     	;# 
+   163  018C                     	;# 
+   164  018D                     	;# 
+   165                           
+   166                           	psect	strings
+   167  0003                     __pstrings:
+   168  0003                     stringtab:
+   169  0003                     __stringtab:
+   170  0003                     stringcode:	
+   171                           ;	String table - string pointers are 1 byte each
+   172                           
+   173  0003                     stringdir:
+   174  0003  3000               	movlw	high stringdir
+   175  0004  008A               	movwf	10
+   176  0005  0804               	movf	4,w
+   177  0006  0A84               	incf	4,f
+   178  0007  0782               	addwf	2,f
+   179  0008                     __stringbase:
+   180  0008  3400               	retlw	0
+   181  0009                     __end_of__stringtab:
+   182  0009                     _font:
+   183  0009  3441               	retlw	65
+   184  000A  3400               	retlw	0
+   185  000B  347F               	retlw	127
+   186  000C  3400               	retlw	0
+   187  000D  347F               	retlw	127
+   188  000E  3400               	retlw	0
+   189  000F  3441               	retlw	65
+   190  0010  3400               	retlw	0
+   191  0011  3440               	retlw	64
+   192  0012  3400               	retlw	0
+   193  0013  3460               	retlw	96
+   194  0014  3400               	retlw	0
+   195  0015  3470               	retlw	112
+   196  0016  3400               	retlw	0
+   197  0017  3400               	retlw	0
+   198  0018  3400               	retlw	0
+   199  0019  347C               	retlw	124
+   200  001A  3400               	retlw	0
+   201  001B  347E               	retlw	126
+   202  001C  3400               	retlw	0
+   203  001D  3413               	retlw	19
+   204  001E  3400               	retlw	0
+   205  001F  3413               	retlw	19
+   206  0020  3400               	retlw	0
+   207  0021  347E               	retlw	126
+   208  0022  3400               	retlw	0
+   209  0023  347C               	retlw	124
+   210  0024  3400               	retlw	0
+   211  0025  3400               	retlw	0
+   212  0026  3400               	retlw	0
+   213  0027  3400               	retlw	0
+   214  0028  3400               	retlw	0
+   215  0029  347F               	retlw	127
+   216  002A  3400               	retlw	0
+   217  002B  347F               	retlw	127
+   218  002C  3400               	retlw	0
+   219  002D  340E               	retlw	14
+   220  002E  3400               	retlw	0
+   221  002F  341C               	retlw	28
+   222  0030  3400               	retlw	0
+   223  0031  340E               	retlw	14
+   224  0032  3400               	retlw	0
+   225  0033  347F               	retlw	127
+   226  0034  3400               	retlw	0
+   227  0035  347F               	retlw	127
+   228  0036  3400               	retlw	0
+   229  0037  3400               	retlw	0
+   230  0038  3400               	retlw	0
+   231  0039  3400               	retlw	0
+   232  003A  3400               	retlw	0
+   233  003B  3400               	retlw	0
+   234  003C  3400               	retlw	0
+   235  003D  3400               	retlw	0
+   236  003E  3400               	retlw	0
+   237  003F  3400               	retlw	0
+   238  0040  3400               	retlw	0
+   239  0041  3400               	retlw	0
+   240  0042  3400               	retlw	0
+   241  0043  3400               	retlw	0
+   242  0044  3400               	retlw	0
+   243  0045  3400               	retlw	0
+   244  0046  3400               	retlw	0
+   245  0047  3400               	retlw	0
+   246  0048  3400               	retlw	0
+   247  0049  3422               	retlw	34
+   248  004A  3400               	retlw	0
+   249  004B  3463               	retlw	99
+   250  004C  3400               	retlw	0
+   251  004D  3449               	retlw	73
+   252  004E  3400               	retlw	0
+   253  004F  3449               	retlw	73
+   254  0050  3400               	retlw	0
+   255  0051  347F               	retlw	127
+   256  0052  3400               	retlw	0
+   257  0053  3436               	retlw	54
+   258  0054  3400               	retlw	0
+   259  0055  3400               	retlw	0
+   260  0056  3400               	retlw	0
+   261  0057  3400               	retlw	0
+   262  0058  3400               	retlw	0
+   263  0059  3400               	retlw	0
+   264  005A  3400               	retlw	0
+   265  005B  3400               	retlw	0
+   266  005C  3400               	retlw	0
+   267  005D  3400               	retlw	0
+   268  005E  3400               	retlw	0
+   269  005F  3400               	retlw	0
+   270  0060  3400               	retlw	0
+   271  0061  3400               	retlw	0
+   272  0062  3400               	retlw	0
+   273  0063  3400               	retlw	0
+   274  0064  3400               	retlw	0
+   275  0065  3400               	retlw	0
+   276  0066  3400               	retlw	0
+   277  0067  3400               	retlw	0
+   278  0068  3400               	retlw	0
+   279  0069  347F               	retlw	127
+   280  006A  3400               	retlw	0
+   281  006B  347F               	retlw	127
+   282  006C  3400               	retlw	0
+   283  006D  3406               	retlw	6
+   284  006E  3400               	retlw	0
+   285  006F  340C               	retlw	12
+   286  0070  3400               	retlw	0
+   287  0071  3418               	retlw	24
+   288  0072  3400               	retlw	0
+   289  0073  347F               	retlw	127
+   290  0074  3400               	retlw	0
+   291  0075  347F               	retlw	127
+   292  0076  3400               	retlw	0
+   293  0077  3400               	retlw	0
+   294  0078  3400               	retlw	0
+   295  0079  341C               	retlw	28
+   296  007A  3400               	retlw	0
+   297  007B  343E               	retlw	62
+   298  007C  3400               	retlw	0
+   299  007D  3463               	retlw	99
+   300  007E  3400               	retlw	0
+   301  007F  3441               	retlw	65
+   302  0080  3400               	retlw	0
+   303  0081  3451               	retlw	81
+   304  0082  3400               	retlw	0
+   305  0083  3473               	retlw	115
+   306  0084  3400               	retlw	0
+   307  0085  3472               	retlw	114
+   308  0086  3400               	retlw	0
+   309  0087  3400               	retlw	0
+   310  0088  3400               	retlw	0
+   311  0089  341C               	retlw	28
+   312  008A  3400               	retlw	0
+   313  008B  343E               	retlw	62
+   314  008C  3400               	retlw	0
+   315  008D  3463               	retlw	99
+   316  008E  3400               	retlw	0
+   317  008F  3441               	retlw	65
+   318  0090  3400               	retlw	0
+   319  0091  3463               	retlw	99
+   320  0092  3400               	retlw	0
+   321  0093  343E               	retlw	62
+   322  0094  3400               	retlw	0
+   323  0095  341C               	retlw	28
+   324  0096  3400               	retlw	0
+   325  0097  3400               	retlw	0
+   326  0098  3400               	retlw	0
+   327  0099  347F               	retlw	127
+   328  009A  3400               	retlw	0
+   329  009B  347F               	retlw	127
+   330  009C  3400               	retlw	0
+   331  009D  3406               	retlw	6
+   332  009E  3400               	retlw	0
+   333  009F  340C               	retlw	12
+   334  00A0  3400               	retlw	0
+   335  00A1  3418               	retlw	24
+   336  00A2  3400               	retlw	0
+   337  00A3  347F               	retlw	127
+   338  00A4  3400               	retlw	0
+   339  00A5  347F               	retlw	127
+   340  00A6  3400               	retlw	0
+   341  00A7  3400               	retlw	0
+   342  00A8  3400               	retlw	0
+   343  00A9  3400               	retlw	0
+   344  00AA  3400               	retlw	0
+   345  00AB  3400               	retlw	0
+   346  00AC  3400               	retlw	0
+   347  00AD  3400               	retlw	0
+   348  00AE  3400               	retlw	0
+   349  00AF  3400               	retlw	0
+   350  00B0  3400               	retlw	0
+   351  00B1  3400               	retlw	0
+   352  00B2  3400               	retlw	0
+   353  00B3  3400               	retlw	0
+   354  00B4  3400               	retlw	0
+   355  00B5  3400               	retlw	0
+   356  00B6  3400               	retlw	0
+   357  00B7  3400               	retlw	0
+   358  00B8  3400               	retlw	0
+   359  00B9  3400               	retlw	0
+   360  00BA  3400               	retlw	0
+   361  00BB  3400               	retlw	0
+   362  00BC  3400               	retlw	0
+   363  00BD  3400               	retlw	0
+   364  00BE  3400               	retlw	0
+   365  00BF  3400               	retlw	0
+   366  00C0  3400               	retlw	0
+   367  00C1  3400               	retlw	0
+   368  00C2  3400               	retlw	0
+   369  00C3  3400               	retlw	0
+   370  00C4  3400               	retlw	0
+   371  00C5  3400               	retlw	0
+   372  00C6  3400               	retlw	0
+   373  00C7  3400               	retlw	0
+   374  00C8  3400               	retlw	0
+   375  00C9                     __end_of_font:
+   376  0007                     _PORTCbits	set	7
+   377  0007                     _PORTC	set	7
+   378  0006                     _PORTB	set	6
+   379  0087                     _TRISC	set	135
+   380  0086                     _TRISB	set	134
+   381                           
+   382                           	psect	cinit
+   383  07FC                     start_initialization:	
+   384                           ; #config settings
+   385                           
+   386  07FC                     __initialization:
+   387  07FC                     end_of_initialization:	
+   388                           ;End of C runtime variable initialization code
+   389                           
+   390  07FC                     __end_of__initialization:
+   391  07FC  0183               	clrf	3
+   392  07FD  120A  118A  2F95   	ljmp	_main	;jump to C main() function
+   393                           
+   394                           	psect	cstackCOMMON
+   395  0070                     __pcstackCOMMON:
+   396  0070                     ?_main:
+   397  0070                     ??_main:	
+   398                           ; 1 bytes @ 0x0
+   399                           
+   400                           
+   401                           ; 1 bytes @ 0x0
+   402  0070                     	ds	3
+   403  0073                     main@refresh:
+   404                           
+   405                           ; 2 bytes @ 0x3
+   406  0073                     	ds	2
+   407  0075                     main@scroll:
+   408                           
+   409                           ; 2 bytes @ 0x5
+   410  0075                     	ds	2
+   411  0077                     main@col:
+   412                           
+   413                           ; 2 bytes @ 0x7
+   414  0077                     	ds	2
+   415                           
+   416                           	psect	maintext
+   417  0795                     __pmaintext:	
+   418 ;;
+   419 ;;Main: autosize = 0, tempsize = 3, incstack = 0, save=0
+   420 ;;
+   421 ;; *************** function _main *****************
+   422 ;; Defined at:
+   423 ;;		line 40 in file "main.c"
+   424 ;; Parameters:    Size  Location     Type
+   425 ;;		None
+   426 ;; Auto vars:     Size  Location     Type
+   427 ;;  col             2    7[COMMON] unsigned int 
+   428 ;;  scroll          2    5[COMMON] unsigned int 
+   429 ;;  refresh         2    3[COMMON] unsigned int 
+   430 ;; Return value:  Size  Location     Type
+   431 ;;                  1    wreg      void 
+   432 ;; Registers used:
+   433 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath
+   434 ;; Tracked objects:
+   435 ;;		On entry : B00/0
+   436 ;;		On exit  : 0/0
+   437 ;;		Unchanged: 0/0
+   438 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   439 ;;      Params:         0       0       0       0       0
+   440 ;;      Locals:         6       0       0       0       0
+   441 ;;      Temps:          3       0       0       0       0
+   442 ;;      Totals:         9       0       0       0       0
+   443 ;;Total ram usage:        9 bytes
+   444 ;; Hardware stack levels used:    1
+   445 ;; This function calls:
+   446 ;;		Nothing
+   447 ;; This function is called by:
+   448 ;;		Startup code after reset
+   449 ;; This function uses a non-reentrant model
+   450 ;;
+   451                           
+   452                           
+   453                           ;psect for function _main
+   454  0795                     _main:
+   455  0795                     l660:	
+   456                           ;incstack = 0
+   457                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath]
+   458                           
+   459  0795  1683               	bsf	3,5	;RP0=1, select bank1
+   460  0796  1303               	bcf	3,6	;RP1=0, select bank1
+   461  0797  0186               	clrf	6	;volatile
+   462  0798  0187               	clrf	7	;volatile
+   463  0799  1283               	bcf	3,5	;RP0=0, select bank0
+   464  079A  1303               	bcf	3,6	;RP1=0, select bank0
+   465  079B  0186               	clrf	6	;volatile
+   466  079C  0187               	clrf	7	;volatile
+   467  079D                     l19:
+   468  079D  01F5               	clrf	main@scroll
+   469  079E  01F6               	clrf	main@scroll+1
+   470  079F                     l666:
+   471  079F  01F3               	clrf	main@refresh
+   472  07A0  01F4               	clrf	main@refresh+1
+   473  07A1                     l22:
+   474  07A1  1407               	bsf	7,0	;volatile
+   475  07A2  1007               	bcf	7,0	;volatile
+   476  07A3  1487               	bsf	7,1	;volatile
+   477  07A4  1587               	bsf	7,3	;volatile
+   478  07A5  1187               	bcf	7,3	;volatile
+   479  07A6                     l672:
+   480  07A6  01F7               	clrf	main@col
+   481  07A7  01F8               	clrf	main@col+1
+   482  07A8                     l678:
+   483  07A8  0877               	movf	main@col,w
+   484  07A9  00F0               	movwf	??_main
+   485  07AA  3001               	movlw	1
+   486  07AB                     u55:
+   487  07AB  1003               	clrc
+   488  07AC  0DF0               	rlf	??_main,f
+   489  07AD  3EFF               	addlw	-1
+   490  07AE  1D03               	skipz
+   491  07AF  2FAB               	goto	u55
+   492  07B0  3001               	movlw	(low ((_font-__stringbase)| (0+32768)))& (0+255)
+   493  07B1  0770               	addwf	??_main,w
+   494  07B2  00F1               	movwf	??_main+1
+   495  07B3  0875               	movf	main@scroll,w
+   496  07B4  00F2               	movwf	??_main+2
+   497  07B5  0772               	addwf	??_main+2,w
+   498  07B6  0771               	addwf	??_main+1,w
+   499  07B7  0084               	movwf	4
+   500  07B8  120A  118A  2003  120A  118A  	fcall	stringdir
+   501  07BD  3AFF               	xorlw	255
+   502  07BE  0086               	movwf	6	;volatile
+   503  07BF                     l680:
+   504  07BF  3063               	movlw	99
+   505  07C0  00F0               	movwf	??_main
+   506  07C1                     u97:
+   507  07C1  0BF0               	decfsz	??_main,f
+   508  07C2  2FC1               	goto	u97
+   509  07C3  2FC4               	nop2
+   510  07C4                     l682:
+   511  07C4  1283               	bcf	3,5	;RP0=0, select bank0
+   512  07C5  1303               	bcf	3,6	;RP1=0, select bank0
+   513  07C6  1407               	bsf	7,0	;volatile
+   514  07C7                     l684:
+   515  07C7  1007               	bcf	7,0	;volatile
+   516  07C8                     l686:
+   517  07C8  1087               	bcf	7,1	;volatile
+   518  07C9                     l688:
+   519  07C9  1587               	bsf	7,3	;volatile
+   520  07CA                     l690:
+   521  07CA  1187               	bcf	7,3	;volatile
+   522  07CB                     l692:
+   523  07CB  3001               	movlw	1
+   524  07CC  07F7               	addwf	main@col,f
+   525  07CD  1803               	skipnc
+   526  07CE  0AF8               	incf	main@col+1,f
+   527  07CF  3000               	movlw	0
+   528  07D0  07F8               	addwf	main@col+1,f
+   529  07D1                     l694:
+   530  07D1  3000               	movlw	0
+   531  07D2  0278               	subwf	main@col+1,w
+   532  07D3  3010               	movlw	16
+   533  07D4  1903               	skipnz
+   534  07D5  0277               	subwf	main@col,w
+   535  07D6  1C03               	skipc
+   536  07D7  2FD9               	goto	u61
+   537  07D8  2FDA               	goto	u60
+   538  07D9                     u61:
+   539  07D9  2FA8               	goto	l678
+   540  07DA                     u60:
+   541  07DA                     l696:
+   542  07DA  3001               	movlw	1
+   543  07DB  07F3               	addwf	main@refresh,f
+   544  07DC  1803               	skipnc
+   545  07DD  0AF4               	incf	main@refresh+1,f
+   546  07DE  3000               	movlw	0
+   547  07DF  07F4               	addwf	main@refresh+1,f
+   548  07E0  3000               	movlw	0
+   549  07E1  0274               	subwf	main@refresh+1,w
+   550  07E2  3014               	movlw	20
+   551  07E3  1903               	skipnz
+   552  07E4  0273               	subwf	main@refresh,w
+   553  07E5  1C03               	skipc
+   554  07E6  2FE8               	goto	u71
+   555  07E7  2FE9               	goto	u70
+   556  07E8                     u71:
+   557  07E8  2FA1               	goto	l22
+   558  07E9                     u70:
+   559  07E9                     l698:
+   560  07E9  3001               	movlw	1
+   561  07EA  07F5               	addwf	main@scroll,f
+   562  07EB  1803               	skipnc
+   563  07EC  0AF6               	incf	main@scroll+1,f
+   564  07ED  3000               	movlw	0
+   565  07EE  07F6               	addwf	main@scroll+1,f
+   566  07EF  3000               	movlw	0
+   567  07F0  0276               	subwf	main@scroll+1,w
+   568  07F1  3060               	movlw	96
+   569  07F2  1903               	skipnz
+   570  07F3  0275               	subwf	main@scroll,w
+   571  07F4  1C03               	skipc
+   572  07F5  2FF7               	goto	u81
+   573  07F6  2FF8               	goto	u80
+   574  07F7                     u81:
+   575  07F7  2F9F               	goto	l666
+   576  07F8                     u80:
+   577  07F8  2F9D               	goto	l19
+   578  07F9  120A  118A  2800   	ljmp	start
+   579  07FC                     __end_of_main:
+   580  007E                     btemp	set	126	;btemp
+   581  007E                     wtemp0	set	126
+   582                           
+   583                           	psect	config
+   584                           
+   585                           ;Config register CONFIG @ 0x2007
+   586                           ;	Oscillator Selection bits
+   587                           ;	FOSC = XT, XT oscillator
+   588                           ;	Watchdog Timer Enable bit
+   589                           ;	WDTE = OFF, WDT disabled
+   590                           ;	Power-up Timer Enable bit
+   591                           ;	PWRTE = OFF, PWRT disabled
+   592                           ;	Brown-out Reset Enable bit
+   593                           ;	BOREN = OFF, BOR disabled
+   594                           ;	Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit
+   595                           ;	LVP = OFF, RB3 is digital I/O, HV on MCLR must be used for programming
+   596                           ;	Data EEPROM Memory Code Protection bit
+   597                           ;	CPD = OFF, Data EEPROM code protection off
+   598                           ;	Flash Program Memory Write Enable bits
+   599                           ;	WRT = OFF, Write protection off; all program memory may be written to by EECON control
+   600                           ;	In-Circuit Debugger Mode bit
+   601                           ;	DEBUG = 0x1, unprogrammed default
+   602                           ;	Flash Program Memory Code Protection bit
+   603                           ;	CP = OFF, Code protection off
+   604  2007                     	org	8199
+   605  2007  3F39               	dw	16185
+
+Data Sizes:
+    Strings     0
+    Constant    192
+    Data        0
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14      9       9
+    BANK0            80      0       0
+    BANK1            80      0       0
+    BANK3            96      0       0
+    BANK2            96      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    None.
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (1) _main                                                 9     9      0     182
+                                              0 COMMON     9     9      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 1
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMMON            E      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+COMMON               E      9       9       1       64.3%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+STACK                0      0       0       2        0.0%
+ABS                  0      0       0       3        0.0%
+BITBANK0            50      0       0       4        0.0%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+BANK0               50      0       0       5        0.0%
+BITSFR2              0      0       0       5        0.0%
+SFR2                 0      0       0       5        0.0%
+BITBANK1            50      0       0       6        0.0%
+BANK1               50      0       0       7        0.0%
+BITBANK3            60      0       0       8        0.0%
+BANK3               60      0       0       9        0.0%
+BITBANK2            60      0       0      10        0.0%
+BANK2               60      0       0      11        0.0%
+DATA                 0      0       0      12        0.0%
+
+
+Microchip Technology PIC Macro Assembler V2.20 build 20200408173844 
+Symbol Table                                                                                   Fri Dec 03 10:04:47 2021
+
+                      pc 0002                       l22 07A1                       l19 079D  
+                     u60 07DA                       u61 07D9                       u70 07E9  
+                     u71 07E8                       u55 07AB                       u80 07F8  
+                     u81 07F7                       u97 07C1                       fsr 0004  
+                    l660 0795                      l680 07BF                      l672 07A6  
+                    l690 07CA                      l682 07C4                      l666 079F  
+                    l692 07CB                      l684 07C7                      l694 07D1  
+                    l686 07C8                      l678 07A8                      l696 07DA  
+                    l688 07C9                      l698 07E9                      fsr0 0004  
+            main@refresh 0073                     _main 0795                     _font 0009  
+                   btemp 007E                     start 0000                    ?_main 0070  
+                  _PORTB 0006                    _PORTC 0007                    _TRISB 0086  
+                  _TRISC 0087                    pclath 000A                    status 0003  
+                  wtemp0 007E          __initialization 07FC             __end_of_main 07FC  
+           __end_of_font 00C9                   ??_main 0070  __end_of__initialization 07FC  
+         __pcstackCOMMON 0070               __pmaintext 0795               __stringtab 0003  
+                main@col 0077     end_of_initialization 07FC                _PORTCbits 0007  
+             main@scroll 0075      start_initialization 07FC                ___latbits 0002  
+              __pstrings 0003              __stringbase 0008       __end_of__stringtab 0009  
+          __size_of_main 0067                stringcode 0003                 stringdir 0003  
+               stringtab 0003  

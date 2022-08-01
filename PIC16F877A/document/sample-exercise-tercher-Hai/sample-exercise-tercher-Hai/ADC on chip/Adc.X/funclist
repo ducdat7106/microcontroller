@@ -1,0 +1,23 @@
+_Init_uart: CODE, 3871 0 14
+_LCDByte: CODE, 1856 0 67
+__stringtab: STRING, 2048 0 6
+__stringdata: STRING, 2054 0 44
+___ftpack: CODE, 1413 0 104
+_main: CODE, 53 0 607
+___lwtoft: CODE, 3902 0 20
+_LCDInit: CODE, 1517 0 102
+_InitADC: CODE, 3862 0 9
+_timer2_initialize: CODE, 3922 0 21
+__initialization: CODE, 21 0 28
+___lwdiv: CODE, 4032 0 64
+_LCDWriteString: CODE, 1705 0 82
+_isr: CODE, 660 0 237
+_ReadAdc: CODE, 3981 0 51
+_LCDGotoXY: CODE, 3943 0 38
+_strncmp: CODE, 1787 0 69
+___lwmod: CODE, 1987 0 54
+___ftmul: CODE, 897 0 209
+_LCDBusyLoop: CODE, 1619 0 86
+___fttol: CODE, 1271 0 142
+_Send_data: CODE, 1106 0 165
+Total: 2219

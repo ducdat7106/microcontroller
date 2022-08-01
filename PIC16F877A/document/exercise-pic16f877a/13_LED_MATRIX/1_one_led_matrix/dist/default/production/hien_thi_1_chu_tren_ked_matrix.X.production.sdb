@@ -1,0 +1,77 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"38 G:\My Drive\2_Bai_Lam\1_PIC16F\13_LED_MATRIX\hien thi 1 chu tren ked matrix.X\main_led_matrix.c
+[v _main main `(v  1 e 1 0 ]
+"56
+[v _Display_Led_Matrix Display_Led_Matrix `(v  1 e 1 0 ]
+"96
+[v _run_char run_char `(v  1 e 1 0 ]
+"216 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"278
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"38 G:\My Drive\2_Bai_Lam\1_PIC16F\13_LED_MATRIX\hien thi 1 chu tren ked matrix.X\main_led_matrix.c
+[v _main main `(v  1 e 1 0 ]
+{
+"54
+} 0
+"96
+[v _run_char run_char `(v  1 e 1 0 ]
+{
+"110
+[v run_char@i i `uc  1 a 1 41 ]
+"107
+[v run_char@Index Index `uc  1 a 1 40 ]
+"98
+[v run_char@Array Array `[40]uc  1 a 40 0 ]
+"97
+[v run_char@F953 F953 `[40]uc  1 s 40 F953 ]
+"117
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"6
+[v strlen@cp cp `*.4DCuc  1 a 1 4 ]
+"4
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"8
+[v strlen@s s `*.4DCuc  1 a 1 3 ]
+"13
+} 0
+"56 G:\My Drive\2_Bai_Lam\1_PIC16F\13_LED_MATRIX\hien thi 1 chu tren ked matrix.X\main_led_matrix.c
+[v _Display_Led_Matrix Display_Led_Matrix `(v  1 e 1 0 ]
+{
+[v Display_Led_Matrix@Index Index `uc  1 a 1 wreg ]
+"59
+[v Display_Led_Matrix@i i `uc  1 a 1 7 ]
+"57
+[v Display_Led_Matrix@Code_Shift Code_Shift `uc  1 a 1 6 ]
+"58
+[v Display_Led_Matrix@Code Code `uc  1 a 1 4 ]
+"56
+[v Display_Led_Matrix@Index Index `uc  1 a 1 wreg ]
+[v Display_Led_Matrix@array array `*.4uc  1 p 1 0 ]
+[v Display_Led_Matrix@Index Index `uc  1 a 1 5 ]
+"69
+} 0

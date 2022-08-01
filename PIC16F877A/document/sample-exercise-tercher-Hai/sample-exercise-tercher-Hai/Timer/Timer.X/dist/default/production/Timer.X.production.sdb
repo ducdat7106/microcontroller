@@ -1,0 +1,162 @@
+[p GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"52 D:\Pic\Pic16f\THAY LE THANH HAI\Chuong trinh vi xu ly\Chuong trinh vi xu ly\Timer\Timer.X\Led_7seg.c
+[v _hienthi hienthi `(v  1 e 1 0 ]
+"79
+[v _timer2_initialize timer2_initialize `(v  1 e 1 0 ]
+"94
+[v _Count_up Count_up `II(v  1 e 1 0 ]
+"133
+[v _main main `(i  1 e 2 0 ]
+[s S23 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[u S32 . 1 `S23 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES32  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S55 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+"414
+[u S59 . 1 `S55 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES59  1 e 1 @9 ]
+[s S66 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1340
+[u S73 . 1 `S66 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES73  1 e 1 @133 ]
+[s S104 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1454
+[u S113 . 1 `S104 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES113  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S83 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"1578
+[u S92 . 1 `S83 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES92  1 e 1 @137 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2872
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @144 ]
+"2875
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"2896
+[v _TMR2IE TMR2IE `VEb  1 e 0 @1121 ]
+"2899
+[v _TMR2IF TMR2IF `VEb  1 e 0 @97 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2905
+[v _TOUTPS0 TOUTPS0 `VEb  1 e 0 @147 ]
+"2908
+[v _TOUTPS1 TOUTPS1 `VEb  1 e 0 @148 ]
+"2911
+[v _TOUTPS2 TOUTPS2 `VEb  1 e 0 @149 ]
+"43 D:\Pic\Pic16f\THAY LE THANH HAI\Chuong trinh vi xu ly\Chuong trinh vi xu ly\Timer\Timer.X\Led_7seg.c
+[v _bLed bLed `uc  1 e 1 0 ]
+"45
+[v _number number `[10]uc  1 e 10 0 ]
+"47
+[v _num num `ui  1 e 2 0 ]
+[v _j j `ui  1 e 2 0 ]
+"49
+[v _donvi donvi `uc  1 e 1 0 ]
+[v _truc truc `uc  1 e 1 0 ]
+[v _tram tram `uc  1 e 1 0 ]
+[v _ngin ngin `uc  1 e 1 0 ]
+[v _digit digit `uc  1 e 1 0 ]
+"50
+[v _count count `ui  1 e 2 0 ]
+[v _count_s count_s `ui  1 e 2 0 ]
+"133
+[v _main main `(i  1 e 2 0 ]
+{
+"151
+} 0
+"79
+[v _timer2_initialize timer2_initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"94
+[v _Count_up Count_up `II(v  1 e 1 0 ]
+{
+"131
+} 0
+"52
+[v _hienthi hienthi `(v  1 e 1 0 ]
+{
+"78
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0

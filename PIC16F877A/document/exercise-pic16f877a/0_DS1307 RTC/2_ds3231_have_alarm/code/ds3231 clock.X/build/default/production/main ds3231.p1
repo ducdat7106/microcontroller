@@ -1,0 +1,1761 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"2599 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2599: extern volatile __bit INTE __attribute__((address(0x5C)));
+[v _INTE `Vb ~T0 @X0 0 e@92 ]
+"2605
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2605: extern volatile __bit INTF __attribute__((address(0x59)));
+[v _INTF `Vb ~T0 @X0 0 e@89 ]
+"2569
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2569: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"2602
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2602: extern volatile __bit INTEDG __attribute__((address(0x40E)));
+[v _INTEDG `Vb ~T0 @X0 0 e@1038 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"2686
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2686: extern volatile __bit RB4 __attribute__((address(0x34)));
+[v _RB4 `Vb ~T0 @X0 0 e@52 ]
+"2677
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2677: extern volatile __bit RB1 __attribute__((address(0x31)));
+[v _RB1 `Vb ~T0 @X0 0 e@49 ]
+"2683
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2683: extern volatile __bit RB3 __attribute__((address(0x33)));
+[v _RB3 `Vb ~T0 @X0 0 e@51 ]
+[v F842 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
+[v __delay `JF842 ~T0 @X0 0 e ]
+[p i __delay ]
+"42 ./i2c_master.h
+[; ;./i2c_master.h: 42: void I2C_Start(void);
+[v _I2C_Start `(v ~T0 @X0 0 ef ]
+"49
+[; ;./i2c_master.h: 49: unsigned char I2C_Write_Char(unsigned char Data);
+[v _I2C_Write_Char `(uc ~T0 @X0 0 ef1`uc ]
+"44
+[; ;./i2c_master.h: 44: void I2C_Restart(void);
+[v _I2C_Restart `(v ~T0 @X0 0 ef ]
+"48
+[; ;./i2c_master.h: 48: unsigned char I2C_Read_Char(void);
+[v _I2C_Read_Char `(uc ~T0 @X0 0 ef ]
+"45
+[; ;./i2c_master.h: 45: void I2C_ACK(void);
+[v _I2C_ACK `(v ~T0 @X0 0 ef ]
+"46
+[; ;./i2c_master.h: 46: void I2C_NACK(void);
+[v _I2C_NACK `(v ~T0 @X0 0 ef ]
+"43
+[; ;./i2c_master.h: 43: void I2C_Stop(void);
+[v _I2C_Stop `(v ~T0 @X0 0 ef ]
+"62 ./lcd.h
+[; ;./lcd.h: 62: void LCD_Set_Cursor(unsigned char, unsigned char);
+[v _LCD_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
+"64
+[; ;./lcd.h: 64: void LCD_Write_String(char*);
+[v _LCD_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+"2680 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2680: extern volatile __bit RB2 __attribute__((address(0x32)));
+[v _RB2 `Vb ~T0 @X0 0 e@50 ]
+"63 ./lcd.h
+[; ;./lcd.h: 63: void LCD_Write_Char(char);
+[v _LCD_Write_Char `(v ~T0 @X0 0 ef1`uc ]
+[p mainexit ]
+"2229 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2229: extern volatile unsigned char ADCON1 __attribute__((address(0x09F)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
+"216
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 216: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"1375
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1375: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"3079
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 3079: extern volatile __bit nRBPU __attribute__((address(0x40F)));
+[v _nRBPU `Vb ~T0 @X0 0 e@1039 ]
+"56 ./lcd.h
+[; ;./lcd.h: 56: void LCD_Init();
+[v _LCD_Init `(v ~T0 @X0 0 e? ]
+"40 ./i2c_master.h
+[; ;./i2c_master.h: 40: void I2C_Master_Init(const unsigned long I2C_BaudRat);
+[v _I2C_Master_Init `(v ~T0 @X0 0 ef1`Cul ]
+"54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"21 ./config.h
+[p x FOSC = HS ]
+"22
+[p x WDTE = OFF ]
+"23
+[p x PWRTE = ON ]
+"24
+[p x BOREN = ON ]
+"25
+[p x LVP = ON ]
+"26
+[p x CPD = OFF ]
+"27
+[p x WRT = OFF ]
+"28
+[p x CP = OFF ]
+"22 main ds3231.c
+[; ;main ds3231.c: 22: char Time[] = "  :  :  ",
+[v _Time `uc ~T0 @X0 -> 9 `i e ]
+[i _Time
+:U ..
+-> 32 `c
+-> 32 `c
+-> 58 `c
+-> 32 `c
+-> 32 `c
+-> 58 `c
+-> 32 `c
+-> 32 `c
+-> 0 `c
+..
+]
+"23
+[; ;main ds3231.c: 23:      Date[] = "  /  /20  ",
+[v _Date `uc ~T0 @X0 -> 11 `i e ]
+[i _Date
+:U ..
+-> 32 `c
+-> 32 `c
+-> 47 `c
+-> 32 `c
+-> 32 `c
+-> 47 `c
+-> 50 `c
+-> 48 `c
+-> 32 `c
+-> 32 `c
+-> 0 `c
+..
+]
+"24
+[; ;main ds3231.c: 24:      Alarm1[] = "A1:   :  :00", Alarm2[] = "A2:   :  :00",
+[v _Alarm1 `uc ~T0 @X0 -> 13 `i e ]
+[i _Alarm1
+:U ..
+-> 65 `c
+-> 49 `c
+-> 58 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 58 `c
+-> 32 `c
+-> 32 `c
+-> 58 `c
+-> 48 `c
+-> 48 `c
+-> 0 `c
+..
+]
+[v _Alarm2 `uc ~T0 @X0 -> 13 `i e ]
+[i _Alarm2
+:U ..
+-> 65 `c
+-> 50 `c
+-> 58 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 58 `c
+-> 32 `c
+-> 32 `c
+-> 58 `c
+-> 48 `c
+-> 48 `c
+-> 0 `c
+..
+]
+"25
+[; ;main ds3231.c: 25:      Temperature[] = "T:   .   C";
+[v _Temperature `uc ~T0 @X0 -> 11 `i e ]
+[i _Temperature
+:U ..
+-> 84 `c
+-> 58 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 46 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 67 `c
+-> 0 `c
+..
+]
+"26
+[; ;main ds3231.c: 26: uint8_t i, second, minute, hour, w_day, m_day, month, year,
+[v _i `uc ~T0 @X0 1 e ]
+[v _second `uc ~T0 @X0 1 e ]
+[v _minute `uc ~T0 @X0 1 e ]
+[v _hour `uc ~T0 @X0 1 e ]
+[v _w_day `uc ~T0 @X0 1 e ]
+[v _m_day `uc ~T0 @X0 1 e ]
+[v _month `uc ~T0 @X0 1 e ]
+[v _year `uc ~T0 @X0 1 e ]
+"27
+[; ;main ds3231.c: 27:          alarm1_minute, alarm1_hour, alarm2_minute, alarm2_hour,
+[v _alarm1_minute `uc ~T0 @X0 1 e ]
+[v _alarm1_hour `uc ~T0 @X0 1 e ]
+[v _alarm2_minute `uc ~T0 @X0 1 e ]
+[v _alarm2_hour `uc ~T0 @X0 1 e ]
+"28
+[; ;main ds3231.c: 28:          status_reg, alarm1_status, alarm2_status;
+[v _status_reg `uc ~T0 @X0 1 e ]
+[v _alarm1_status `uc ~T0 @X0 1 e ]
+[v _alarm2_status `uc ~T0 @X0 1 e ]
+"30
+[; ;main ds3231.c: 30: void external_interrupt()
+[v _external_interrupt `(v ~T0 @X0 1 ef ]
+"31
+[; ;main ds3231.c: 31: {
+{
+[e :U _external_interrupt ]
+[f ]
+"32
+[; ;main ds3231.c: 32:     INTE=1;
+[e = _INTE -> -> 1 `i `b ]
+"33
+[; ;main ds3231.c: 33:     INTF=0;
+[e = _INTF -> -> 0 `i `b ]
+"34
+[; ;main ds3231.c: 34:     GIE=1;
+[e = _GIE -> -> 1 `i `b ]
+"35
+[; ;main ds3231.c: 35:     INTEDG = 0;
+[e = _INTEDG -> -> 0 `i `b ]
+"36
+[; ;main ds3231.c: 36: }
+[e :UE 100 ]
+}
+[v $root$_EXT `(v ~T0 @X0 0 e ]
+"39
+[; ;main ds3231.c: 39: void __attribute__((picinterrupt(("")))) EXT(void)
+[v _EXT `(v ~T1 @X0 1 ef ]
+"40
+[; ;main ds3231.c: 40: {
+{
+[e :U _EXT ]
+[f ]
+"41
+[; ;main ds3231.c: 41:   if (INTF)
+[e $ ! _INTF 102  ]
+"42
+[; ;main ds3231.c: 42:   {
+{
+"43
+[; ;main ds3231.c: 43:     RB4 = 1;
+[e = _RB4 -> -> 1 `i `b ]
+"44
+[; ;main ds3231.c: 44:     INTF = 0;
+[e = _INTF -> -> 0 `i `b ]
+"45
+[; ;main ds3231.c: 45:   }
+}
+[e :U 102 ]
+"46
+[; ;main ds3231.c: 46: }
+[e :UE 101 ]
+}
+"50
+[; ;main ds3231.c: 50: __bit debounce (uint8_t button)
+[v _debounce `(b ~T0 @X0 1 ef1`uc ]
+"51
+[; ;main ds3231.c: 51: {
+{
+[e :U _debounce ]
+"50
+[; ;main ds3231.c: 50: __bit debounce (uint8_t button)
+[v _button `uc ~T0 @X0 1 r1 ]
+"51
+[; ;main ds3231.c: 51: {
+[f ]
+"52
+[; ;main ds3231.c: 52:   uint8_t count = 0;
+[v _count `uc ~T0 @X0 1 a ]
+[e = _count -> -> 0 `i `uc ]
+"53
+[; ;main ds3231.c: 53:   for(uint8_t i = 0; i < 5; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 5 `i 104  ]
+[e $U 105  ]
+[e :U 104 ]
+"54
+[; ;main ds3231.c: 54:   {
+{
+"55
+[; ;main ds3231.c: 55:     switch (button)
+[e $U 108  ]
+"56
+[; ;main ds3231.c: 56:     {
+{
+"57
+[; ;main ds3231.c: 57:       case 1: if (RB1 == 0)
+[e :U 109 ]
+[e $ ! == -> _RB1 `i -> 0 `i 110  ]
+"58
+[; ;main ds3231.c: 58:                 count++;
+[e ++ _count -> -> 1 `i `uc ]
+[e :U 110 ]
+"59
+[; ;main ds3231.c: 59:                 break;
+[e $U 107  ]
+"60
+[; ;main ds3231.c: 60:       case 3: if (RB3 == 0)
+[e :U 111 ]
+[e $ ! == -> _RB3 `i -> 0 `i 112  ]
+"61
+[; ;main ds3231.c: 61:                 count++;
+[e ++ _count -> -> 1 `i `uc ]
+[e :U 112 ]
+"62
+[; ;main ds3231.c: 62:                 break;
+[e $U 107  ]
+"63
+[; ;main ds3231.c: 63:       default: break;
+[e :U 113 ]
+[e $U 107  ]
+"64
+[; ;main ds3231.c: 64:     }
+}
+[e $U 107  ]
+[e :U 108 ]
+[e [\ -> _button `i , $ -> 1 `i 109
+ , $ -> 3 `i 111
+ 113 ]
+[e :U 107 ]
+"65
+[; ;main ds3231.c: 65:     _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"66
+[; ;main ds3231.c: 66:   }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 5 `i 104  ]
+[e :U 105 ]
+}
+"67
+[; ;main ds3231.c: 67:   if(count > 2) return 1;
+[e $ ! > -> _count `i -> 2 `i 114  ]
+[e ) -> -> 1 `i `b ]
+[e $UE 103  ]
+[e $U 115  ]
+"68
+[; ;main ds3231.c: 68:   else return 0;
+[e :U 114 ]
+[e ) -> -> 0 `i `b ]
+[e $UE 103  ]
+[e :U 115 ]
+"69
+[; ;main ds3231.c: 69: }
+[e :UE 103 ]
+}
+"74
+[; ;main ds3231.c: 74: uint8_t bcd_to_decimal(uint8_t number)
+[v _bcd_to_decimal `(uc ~T0 @X0 1 ef1`uc ]
+"75
+[; ;main ds3231.c: 75: {
+{
+[e :U _bcd_to_decimal ]
+"74
+[; ;main ds3231.c: 74: uint8_t bcd_to_decimal(uint8_t number)
+[v _number `uc ~T0 @X0 1 r1 ]
+"75
+[; ;main ds3231.c: 75: {
+[f ]
+"76
+[; ;main ds3231.c: 76:   return((number >> 4) * 10 + (number & 0x0F));
+[e ) -> + * >> -> _number `i -> 4 `i -> 10 `i & -> _number `i -> 15 `i `uc ]
+[e $UE 116  ]
+"77
+[; ;main ds3231.c: 77: }
+[e :UE 116 ]
+}
+"80
+[; ;main ds3231.c: 80: uint8_t decimal_to_bcd(uint8_t number)
+[v _decimal_to_bcd `(uc ~T0 @X0 1 ef1`uc ]
+"81
+[; ;main ds3231.c: 81: {
+{
+[e :U _decimal_to_bcd ]
+"80
+[; ;main ds3231.c: 80: uint8_t decimal_to_bcd(uint8_t number)
+[v _number `uc ~T0 @X0 1 r1 ]
+"81
+[; ;main ds3231.c: 81: {
+[f ]
+"82
+[; ;main ds3231.c: 82:   return(((number / 10) << 4) + (number % 10));
+[e ) -> + << / -> _number `i -> 10 `i -> 4 `i % -> _number `i -> 10 `i `uc ]
+[e $UE 117  ]
+"83
+[; ;main ds3231.c: 83: }
+[e :UE 117 ]
+}
+"85
+[; ;main ds3231.c: 85: void RTC_read()
+[v _RTC_read `(v ~T0 @X0 1 ef ]
+"86
+[; ;main ds3231.c: 86: {
+{
+[e :U _RTC_read ]
+[f ]
+"87
+[; ;main ds3231.c: 87:   I2C_Start();
+[e ( _I2C_Start ..  ]
+"88
+[; ;main ds3231.c: 88:   I2C_Write_Char(0xD0);
+[e ( _I2C_Write_Char (1 -> -> 208 `i `uc ]
+"89
+[; ;main ds3231.c: 89:   I2C_Write_Char(0);
+[e ( _I2C_Write_Char (1 -> -> 0 `i `uc ]
+"90
+[; ;main ds3231.c: 90:   I2C_Restart();
+[e ( _I2C_Restart ..  ]
+"91
+[; ;main ds3231.c: 91:   I2C_Write_Char(0xD1);
+[e ( _I2C_Write_Char (1 -> -> 209 `i `uc ]
+"92
+[; ;main ds3231.c: 92:   second = I2C_Read_Char(); I2C_ACK();
+[e = _second ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"93
+[; ;main ds3231.c: 93:   minute = I2C_Read_Char(); I2C_ACK();
+[e = _minute ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"94
+[; ;main ds3231.c: 94:   hour = I2C_Read_Char(); I2C_ACK();
+[e = _hour ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"95
+[; ;main ds3231.c: 95:   w_day = I2C_Read_Char(); I2C_ACK();
+[e = _w_day ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"96
+[; ;main ds3231.c: 96:   m_day = I2C_Read_Char(); I2C_ACK();
+[e = _m_day ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"97
+[; ;main ds3231.c: 97:   month = I2C_Read_Char(); I2C_ACK();
+[e = _month ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"98
+[; ;main ds3231.c: 98:   year = I2C_Read_Char(); I2C_NACK();
+[e = _year ( _I2C_Read_Char ..  ]
+[e ( _I2C_NACK ..  ]
+"99
+[; ;main ds3231.c: 99:   I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"100
+[; ;main ds3231.c: 100: }
+[e :UE 118 ]
+}
+"102
+[; ;main ds3231.c: 102: void alarms_read_display()
+[v _alarms_read_display `(v ~T0 @X0 1 ef ]
+"103
+[; ;main ds3231.c: 103: {
+{
+[e :U _alarms_read_display ]
+[f ]
+"104
+[; ;main ds3231.c: 104:   uint8_t control_reg, temperature_lsb;
+[v _control_reg `uc ~T0 @X0 1 a ]
+[v _temperature_lsb `uc ~T0 @X0 1 a ]
+"105
+[; ;main ds3231.c: 105:   int8_t temperature_msb;
+[v _temperature_msb `c ~T0 @X0 1 a ]
+"106
+[; ;main ds3231.c: 106:   I2C_Start();
+[e ( _I2C_Start ..  ]
+"107
+[; ;main ds3231.c: 107:   I2C_Write_Char(0xD0);
+[e ( _I2C_Write_Char (1 -> -> 208 `i `uc ]
+"108
+[; ;main ds3231.c: 108:   I2C_Write_Char(0x08);
+[e ( _I2C_Write_Char (1 -> -> 8 `i `uc ]
+"109
+[; ;main ds3231.c: 109:   I2C_Restart();
+[e ( _I2C_Restart ..  ]
+"110
+[; ;main ds3231.c: 110:   I2C_Write_Char(0xD1);
+[e ( _I2C_Write_Char (1 -> -> 209 `i `uc ]
+"111
+[; ;main ds3231.c: 111:   alarm1_minute = I2C_Read_Char(); I2C_ACK();
+[e = _alarm1_minute ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"112
+[; ;main ds3231.c: 112:   alarm1_hour = I2C_Read_Char(); I2C_ACK();
+[e = _alarm1_hour ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"113
+[; ;main ds3231.c: 113:   I2C_Read_Char(); I2C_ACK();
+[e ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"114
+[; ;main ds3231.c: 114:   alarm2_minute = I2C_Read_Char(); I2C_ACK();
+[e = _alarm2_minute ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"115
+[; ;main ds3231.c: 115:   alarm2_hour = I2C_Read_Char(); I2C_ACK();
+[e = _alarm2_hour ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"116
+[; ;main ds3231.c: 116:   I2C_Read_Char(); I2C_ACK();
+[e ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"117
+[; ;main ds3231.c: 117:   control_reg = I2C_Read_Char(); I2C_ACK();
+[e = _control_reg ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"118
+[; ;main ds3231.c: 118:   status_reg = I2C_Read_Char(); I2C_ACK();
+[e = _status_reg ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"119
+[; ;main ds3231.c: 119:   I2C_Read_Char(); I2C_ACK();
+[e ( _I2C_Read_Char ..  ]
+[e ( _I2C_ACK ..  ]
+"120
+[; ;main ds3231.c: 120:   temperature_msb = I2C_Read_Char(); I2C_ACK();
+[e = _temperature_msb -> ( _I2C_Read_Char ..  `c ]
+[e ( _I2C_ACK ..  ]
+"121
+[; ;main ds3231.c: 121:   temperature_lsb = I2C_Read_Char(); I2C_NACK();
+[e = _temperature_lsb ( _I2C_Read_Char ..  ]
+[e ( _I2C_NACK ..  ]
+"122
+[; ;main ds3231.c: 122:   I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"124
+[; ;main ds3231.c: 124:   alarm1_minute = bcd_to_decimal(alarm1_minute);
+[e = _alarm1_minute ( _bcd_to_decimal (1 _alarm1_minute ]
+"125
+[; ;main ds3231.c: 125:   alarm1_hour = bcd_to_decimal(alarm1_hour);
+[e = _alarm1_hour ( _bcd_to_decimal (1 _alarm1_hour ]
+"126
+[; ;main ds3231.c: 126:   alarm2_minute = bcd_to_decimal(alarm2_minute);
+[e = _alarm2_minute ( _bcd_to_decimal (1 _alarm2_minute ]
+"127
+[; ;main ds3231.c: 127:   alarm2_hour = bcd_to_decimal(alarm2_hour);
+[e = _alarm2_hour ( _bcd_to_decimal (1 _alarm2_hour ]
+"130
+[; ;main ds3231.c: 130:   Alarm1[8] = alarm1_minute % 10 + '0';
+[e = *U + &U _Alarm1 * -> -> -> 8 `i `ui `ux -> -> # *U &U _Alarm1 `ui `ux -> + -> % -> _alarm1_minute `i -> 10 `i `ui -> 48 `ui `uc ]
+"131
+[; ;main ds3231.c: 131:   Alarm1[7] = alarm1_minute / 10 + '0';
+[e = *U + &U _Alarm1 * -> -> -> 7 `i `ui `ux -> -> # *U &U _Alarm1 `ui `ux -> + -> / -> _alarm1_minute `i -> 10 `i `ui -> 48 `ui `uc ]
+"132
+[; ;main ds3231.c: 132:   Alarm1[5] = alarm1_hour % 10 + '0';
+[e = *U + &U _Alarm1 * -> -> -> 5 `i `ui `ux -> -> # *U &U _Alarm1 `ui `ux -> + -> % -> _alarm1_hour `i -> 10 `i `ui -> 48 `ui `uc ]
+"133
+[; ;main ds3231.c: 133:   Alarm1[4] = alarm1_hour / 10 + '0';
+[e = *U + &U _Alarm1 * -> -> -> 4 `i `ui `ux -> -> # *U &U _Alarm1 `ui `ux -> + -> / -> _alarm1_hour `i -> 10 `i `ui -> 48 `ui `uc ]
+"134
+[; ;main ds3231.c: 134:   Alarm2[8] = alarm2_minute % 10 + '0';
+[e = *U + &U _Alarm2 * -> -> -> 8 `i `ui `ux -> -> # *U &U _Alarm2 `ui `ux -> + -> % -> _alarm2_minute `i -> 10 `i `ui -> 48 `ui `uc ]
+"135
+[; ;main ds3231.c: 135:   Alarm2[7] = alarm2_minute / 10 + '0';
+[e = *U + &U _Alarm2 * -> -> -> 7 `i `ui `ux -> -> # *U &U _Alarm2 `ui `ux -> + -> / -> _alarm2_minute `i -> 10 `i `ui -> 48 `ui `uc ]
+"136
+[; ;main ds3231.c: 136:   Alarm2[5] = alarm2_hour % 10 + '0';
+[e = *U + &U _Alarm2 * -> -> -> 5 `i `ui `ux -> -> # *U &U _Alarm2 `ui `ux -> + -> % -> _alarm2_hour `i -> 10 `i `ui -> 48 `ui `uc ]
+"137
+[; ;main ds3231.c: 137:   Alarm2[4] = alarm2_hour / 10 + '0';
+[e = *U + &U _Alarm2 * -> -> -> 4 `i `ui `ux -> -> # *U &U _Alarm2 `ui `ux -> + -> / -> _alarm2_hour `i -> 10 `i `ui -> 48 `ui `uc ]
+"138
+[; ;main ds3231.c: 138:   alarm1_status = control_reg & 0x01;
+[e = _alarm1_status -> & -> _control_reg `i -> 1 `i `uc ]
+"139
+[; ;main ds3231.c: 139:   alarm2_status = (control_reg >> 1) & 0x01;
+[e = _alarm2_status -> & >> -> _control_reg `i -> 1 `i -> 1 `i `uc ]
+"140
+[; ;main ds3231.c: 140:   if(temperature_msb < 0){
+[e $ ! < -> _temperature_msb `i -> 0 `i 120  ]
+{
+"141
+[; ;main ds3231.c: 141:     temperature_msb *= -1;
+[e =* _temperature_msb -> -U -> 1 `i `c ]
+"142
+[; ;main ds3231.c: 142:     Temperature[2] = '-';
+[e = *U + &U _Temperature * -> -> -> 2 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 45 `ui `uc ]
+"143
+[; ;main ds3231.c: 143:   }
+}
+[e $U 121  ]
+"144
+[; ;main ds3231.c: 144:   else
+[e :U 120 ]
+"145
+[; ;main ds3231.c: 145:     Temperature[2] = ' ';
+[e = *U + &U _Temperature * -> -> -> 2 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 32 `ui `uc ]
+[e :U 121 ]
+"146
+[; ;main ds3231.c: 146:   temperature_lsb >>= 6;
+[e =>> _temperature_lsb -> -> 6 `i `uc ]
+"147
+[; ;main ds3231.c: 147:   Temperature[4] = temperature_msb % 10 + '0';
+[e = *U + &U _Temperature * -> -> -> 4 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> + -> % -> _temperature_msb `i -> 10 `i `ui -> 48 `ui `uc ]
+"148
+[; ;main ds3231.c: 148:   Temperature[3] = temperature_msb / 10 + '0';
+[e = *U + &U _Temperature * -> -> -> 3 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> + -> / -> _temperature_msb `i -> 10 `i `ui -> 48 `ui `uc ]
+"149
+[; ;main ds3231.c: 149:   if(temperature_lsb == 0 || temperature_lsb == 2){
+[e $ ! || == -> _temperature_lsb `i -> 0 `i == -> _temperature_lsb `i -> 2 `i 122  ]
+{
+"150
+[; ;main ds3231.c: 150:     Temperature[7] = '0';
+[e = *U + &U _Temperature * -> -> -> 7 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 48 `ui `uc ]
+"151
+[; ;main ds3231.c: 151:     if(temperature_lsb == 0) Temperature[6] = '0';
+[e $ ! == -> _temperature_lsb `i -> 0 `i 123  ]
+[e = *U + &U _Temperature * -> -> -> 6 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 48 `ui `uc ]
+[e $U 124  ]
+"152
+[; ;main ds3231.c: 152:     else Temperature[6] = '5';
+[e :U 123 ]
+[e = *U + &U _Temperature * -> -> -> 6 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 53 `ui `uc ]
+[e :U 124 ]
+"153
+[; ;main ds3231.c: 153:   }
+}
+[e :U 122 ]
+"154
+[; ;main ds3231.c: 154:   if(temperature_lsb == 1 || temperature_lsb == 3){
+[e $ ! || == -> _temperature_lsb `i -> 1 `i == -> _temperature_lsb `i -> 3 `i 125  ]
+{
+"155
+[; ;main ds3231.c: 155:     Temperature[7] = '5';
+[e = *U + &U _Temperature * -> -> -> 7 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 53 `ui `uc ]
+"156
+[; ;main ds3231.c: 156:     if(temperature_lsb == 1) Temperature[6] = '2';
+[e $ ! == -> _temperature_lsb `i -> 1 `i 126  ]
+[e = *U + &U _Temperature * -> -> -> 6 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 50 `ui `uc ]
+[e $U 127  ]
+"157
+[; ;main ds3231.c: 157:     else Temperature[6] = '7';
+[e :U 126 ]
+[e = *U + &U _Temperature * -> -> -> 6 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 55 `ui `uc ]
+[e :U 127 ]
+"158
+[; ;main ds3231.c: 158:   }
+}
+[e :U 125 ]
+"159
+[; ;main ds3231.c: 159:   Temperature[8] = 223;
+[e = *U + &U _Temperature * -> -> -> 8 `i `ui `ux -> -> # *U &U _Temperature `ui `ux -> -> 223 `i `uc ]
+"160
+[; ;main ds3231.c: 160:   LCD_Set_Cursor(1, 11);
+[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 11 `i `uc ]
+"161
+[; ;main ds3231.c: 161:   LCD_Write_String(Temperature);
+[e ( _LCD_Write_String (1 &U _Temperature ]
+"162
+[; ;main ds3231.c: 162:   LCD_Set_Cursor(3, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 3 `i `uc -> -> 1 `i `uc ]
+"163
+[; ;main ds3231.c: 163:   LCD_Write_String(Alarm1);
+[e ( _LCD_Write_String (1 &U _Alarm1 ]
+"164
+[; ;main ds3231.c: 164:   if(alarm1_status) {
+[e $ ! != -> _alarm1_status `i -> 0 `i 128  ]
+{
+"165
+[; ;main ds3231.c: 165:     LCD_Set_Cursor(3, 18);
+[e ( _LCD_Set_Cursor (2 , -> -> 3 `i `uc -> -> 18 `i `uc ]
+"166
+[; ;main ds3231.c: 166:     LCD_Write_String("ON ");
+[e ( _LCD_Write_String (1 :s 1C ]
+"167
+[; ;main ds3231.c: 167:   }
+}
+[e $U 129  ]
+"168
+[; ;main ds3231.c: 168:   else {
+[e :U 128 ]
+{
+"169
+[; ;main ds3231.c: 169:     LCD_Set_Cursor(3, 18);
+[e ( _LCD_Set_Cursor (2 , -> -> 3 `i `uc -> -> 18 `i `uc ]
+"170
+[; ;main ds3231.c: 170:     LCD_Write_String("OFF");
+[e ( _LCD_Write_String (1 :s 2C ]
+"171
+[; ;main ds3231.c: 171:   }
+}
+[e :U 129 ]
+"172
+[; ;main ds3231.c: 172:   LCD_Set_Cursor(4, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 4 `i `uc -> -> 1 `i `uc ]
+"173
+[; ;main ds3231.c: 173:   LCD_Write_String(Alarm2);
+[e ( _LCD_Write_String (1 &U _Alarm2 ]
+"174
+[; ;main ds3231.c: 174:   if(alarm2_status){
+[e $ ! != -> _alarm2_status `i -> 0 `i 130  ]
+{
+"175
+[; ;main ds3231.c: 175:     LCD_Set_Cursor(4, 18);
+[e ( _LCD_Set_Cursor (2 , -> -> 4 `i `uc -> -> 18 `i `uc ]
+"176
+[; ;main ds3231.c: 176:     LCD_Write_String("ON ");
+[e ( _LCD_Write_String (1 :s 3C ]
+"177
+[; ;main ds3231.c: 177:   }
+}
+[e $U 131  ]
+"178
+[; ;main ds3231.c: 178:   else {
+[e :U 130 ]
+{
+"179
+[; ;main ds3231.c: 179:     LCD_Set_Cursor(4, 18);
+[e ( _LCD_Set_Cursor (2 , -> -> 4 `i `uc -> -> 18 `i `uc ]
+"180
+[; ;main ds3231.c: 180:     LCD_Write_String("OFF");
+[e ( _LCD_Write_String (1 :s 4C ]
+"181
+[; ;main ds3231.c: 181:   }
+}
+[e :U 131 ]
+"182
+[; ;main ds3231.c: 182: }
+[e :UE 119 ]
+}
+"184
+[; ;main ds3231.c: 184: void w_day_display()
+[v _w_day_display `(v ~T0 @X0 1 ef ]
+"185
+[; ;main ds3231.c: 185: {
+{
+[e :U _w_day_display ]
+[f ]
+"186
+[; ;main ds3231.c: 186:   LCD_Set_Cursor(2, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"187
+[; ;main ds3231.c: 187:   switch(w_day)
+[e $U 134  ]
+"188
+[; ;main ds3231.c: 188:   {
+{
+"189
+[; ;main ds3231.c: 189:     case 1: LCD_Write_String("Sun"); break;
+[e :U 135 ]
+[e ( _LCD_Write_String (1 :s 5C ]
+[e $U 133  ]
+"190
+[; ;main ds3231.c: 190:     case 2: LCD_Write_String("Mon"); break;
+[e :U 136 ]
+[e ( _LCD_Write_String (1 :s 6C ]
+[e $U 133  ]
+"191
+[; ;main ds3231.c: 191:     case 3: LCD_Write_String("Tue"); break;
+[e :U 137 ]
+[e ( _LCD_Write_String (1 :s 7C ]
+[e $U 133  ]
+"192
+[; ;main ds3231.c: 192:     case 4: LCD_Write_String("Wed"); break;
+[e :U 138 ]
+[e ( _LCD_Write_String (1 :s 8C ]
+[e $U 133  ]
+"193
+[; ;main ds3231.c: 193:     case 5: LCD_Write_String("Thu"); break;
+[e :U 139 ]
+[e ( _LCD_Write_String (1 :s 9C ]
+[e $U 133  ]
+"194
+[; ;main ds3231.c: 194:     case 6: LCD_Write_String("Fri"); break;
+[e :U 140 ]
+[e ( _LCD_Write_String (1 :s 10C ]
+[e $U 133  ]
+"195
+[; ;main ds3231.c: 195:     default: LCD_Write_String("Sat");
+[e :U 141 ]
+[e ( _LCD_Write_String (1 :s 11C ]
+"196
+[; ;main ds3231.c: 196:   }
+}
+[e $U 133  ]
+[e :U 134 ]
+[e [\ -> _w_day `i , $ -> 1 `i 135
+ , $ -> 2 `i 136
+ , $ -> 3 `i 137
+ , $ -> 4 `i 138
+ , $ -> 5 `i 139
+ , $ -> 6 `i 140
+ 141 ]
+[e :U 133 ]
+"197
+[; ;main ds3231.c: 197: }
+[e :UE 132 ]
+}
+"200
+[; ;main ds3231.c: 200: void RTC_display()
+[v _RTC_display `(v ~T0 @X0 1 ef ]
+"201
+[; ;main ds3231.c: 201: {
+{
+[e :U _RTC_display ]
+[f ]
+"203
+[; ;main ds3231.c: 203:   second = bcd_to_decimal(second);
+[e = _second ( _bcd_to_decimal (1 _second ]
+"204
+[; ;main ds3231.c: 204:   minute = bcd_to_decimal(minute);
+[e = _minute ( _bcd_to_decimal (1 _minute ]
+"205
+[; ;main ds3231.c: 205:   hour = bcd_to_decimal(hour);
+[e = _hour ( _bcd_to_decimal (1 _hour ]
+"206
+[; ;main ds3231.c: 206:   m_day = bcd_to_decimal(m_day);
+[e = _m_day ( _bcd_to_decimal (1 _m_day ]
+"207
+[; ;main ds3231.c: 207:   month = bcd_to_decimal(month);
+[e = _month ( _bcd_to_decimal (1 _month ]
+"208
+[; ;main ds3231.c: 208:   year = bcd_to_decimal(year);
+[e = _year ( _bcd_to_decimal (1 _year ]
+"211
+[; ;main ds3231.c: 211:   Time[7] = second % 10 + '0';
+[e = *U + &U _Time * -> -> -> 7 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> % -> _second `i -> 10 `i `ui -> 48 `ui `uc ]
+"212
+[; ;main ds3231.c: 212:   Time[6] = second / 10 + '0';
+[e = *U + &U _Time * -> -> -> 6 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> / -> _second `i -> 10 `i `ui -> 48 `ui `uc ]
+"213
+[; ;main ds3231.c: 213:   Time[4] = minute % 10 + '0';
+[e = *U + &U _Time * -> -> -> 4 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> % -> _minute `i -> 10 `i `ui -> 48 `ui `uc ]
+"214
+[; ;main ds3231.c: 214:   Time[3] = minute / 10 + '0';
+[e = *U + &U _Time * -> -> -> 3 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> / -> _minute `i -> 10 `i `ui -> 48 `ui `uc ]
+"215
+[; ;main ds3231.c: 215:   Time[1] = hour % 10 + '0';
+[e = *U + &U _Time * -> -> -> 1 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> % -> _hour `i -> 10 `i `ui -> 48 `ui `uc ]
+"216
+[; ;main ds3231.c: 216:   Time[0] = hour / 10 + '0';
+[e = *U + &U _Time * -> -> -> 0 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> / -> _hour `i -> 10 `i `ui -> 48 `ui `uc ]
+"218
+[; ;main ds3231.c: 218:   Date[9] = year % 10 + '0';
+[e = *U + &U _Date * -> -> -> 9 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> % -> _year `i -> 10 `i `ui -> 48 `ui `uc ]
+"219
+[; ;main ds3231.c: 219:   Date[8] = year / 10 + '0';
+[e = *U + &U _Date * -> -> -> 8 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> / -> _year `i -> 10 `i `ui -> 48 `ui `uc ]
+"220
+[; ;main ds3231.c: 220:   Date[4] = month % 10 + '0';
+[e = *U + &U _Date * -> -> -> 4 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> % -> _month `i -> 10 `i `ui -> 48 `ui `uc ]
+"221
+[; ;main ds3231.c: 221:   Date[3] = month / 10 + '0';
+[e = *U + &U _Date * -> -> -> 3 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> / -> _month `i -> 10 `i `ui -> 48 `ui `uc ]
+"222
+[; ;main ds3231.c: 222:   Date[1] = m_day % 10 + '0';
+[e = *U + &U _Date * -> -> -> 1 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> % -> _m_day `i -> 10 `i `ui -> 48 `ui `uc ]
+"223
+[; ;main ds3231.c: 223:   Date[0] = m_day / 10 + '0';
+[e = *U + &U _Date * -> -> -> 0 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> / -> _m_day `i -> 10 `i `ui -> 48 `ui `uc ]
+"225
+[; ;main ds3231.c: 225:   LCD_Set_Cursor(1, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"226
+[; ;main ds3231.c: 226:   LCD_Write_String(Time);
+[e ( _LCD_Write_String (1 &U _Time ]
+"227
+[; ;main ds3231.c: 227:   LCD_Set_Cursor(2, 5);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 5 `i `uc ]
+"228
+[; ;main ds3231.c: 228:   LCD_Write_String(Date);
+[e ( _LCD_Write_String (1 &U _Date ]
+"229
+[; ;main ds3231.c: 229:   w_day_display();
+[e ( _w_day_display ..  ]
+"231
+[; ;main ds3231.c: 231: }
+[e :UE 142 ]
+}
+"234
+[; ;main ds3231.c: 234: void blink()
+[v _blink `(v ~T0 @X0 1 ef ]
+"235
+[; ;main ds3231.c: 235: {
+{
+[e :U _blink ]
+[f ]
+"236
+[; ;main ds3231.c: 236:   uint8_t j = 0;
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+"237
+[; ;main ds3231.c: 237:   while( j < 100 && (RB1 || i >= 5) && RB2 && (RB3 || i < 5) )
+[e $U 144  ]
+[e :U 145 ]
+"238
+[; ;main ds3231.c: 238:   {
+{
+"239
+[; ;main ds3231.c: 239:     j++;
+[e ++ _j -> -> 1 `i `uc ]
+"240
+[; ;main ds3231.c: 240:     _delay((unsigned long)((5)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"241
+[; ;main ds3231.c: 241:   }
+}
+[e :U 144 ]
+"237
+[; ;main ds3231.c: 237:   while( j < 100 && (RB1 || i >= 5) && RB2 && (RB3 || i < 5) )
+[e $ && && && < -> _j `i -> 100 `i || _RB1 >= -> _i `i -> 5 `i _RB2 || _RB3 < -> _i `i -> 5 `i 145  ]
+[e :U 146 ]
+"242
+[; ;main ds3231.c: 242: }
+[e :UE 143 ]
+}
+"245
+[; ;main ds3231.c: 245: uint8_t edit(uint8_t x, uint8_t y, uint8_t parameter)
+[v _edit `(uc ~T0 @X0 1 ef3`uc`uc`uc ]
+"246
+[; ;main ds3231.c: 246: {
+{
+[e :U _edit ]
+"245
+[; ;main ds3231.c: 245: uint8_t edit(uint8_t x, uint8_t y, uint8_t parameter)
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[v _parameter `uc ~T0 @X0 1 r3 ]
+"246
+[; ;main ds3231.c: 246: {
+[f ]
+"247
+[; ;main ds3231.c: 247:   while(debounce(1) || debounce(3));
+[e $U 148  ]
+[e :U 149 ]
+[e :U 148 ]
+[e $ || ( _debounce (1 -> -> 1 `i `uc ( _debounce (1 -> -> 3 `i `uc 149  ]
+[e :U 150 ]
+"249
+[; ;main ds3231.c: 249:   while(1) {
+[e :U 152 ]
+{
+"251
+[; ;main ds3231.c: 251:     while(!RB2)
+[e $U 154  ]
+[e :U 155 ]
+"252
+[; ;main ds3231.c: 252:     {
+{
+"253
+[; ;main ds3231.c: 253:       parameter++;
+[e ++ _parameter -> -> 1 `i `uc ]
+"254
+[; ;main ds3231.c: 254:       if(((i == 0) || (i == 5)) && parameter > 23)
+[e $ ! && || == -> _i `i -> 0 `i == -> _i `i -> 5 `i > -> _parameter `i -> 23 `i 157  ]
+"255
+[; ;main ds3231.c: 255:         parameter = 0;
+[e = _parameter -> -> 0 `i `uc ]
+[e :U 157 ]
+"256
+[; ;main ds3231.c: 256:       if(((i == 1) || (i == 6)) && parameter > 59)
+[e $ ! && || == -> _i `i -> 1 `i == -> _i `i -> 6 `i > -> _parameter `i -> 59 `i 158  ]
+"257
+[; ;main ds3231.c: 257:         parameter = 0;
+[e = _parameter -> -> 0 `i `uc ]
+[e :U 158 ]
+"258
+[; ;main ds3231.c: 258:       if(i == 2 && parameter > 31)
+[e $ ! && == -> _i `i -> 2 `i > -> _parameter `i -> 31 `i 159  ]
+"259
+[; ;main ds3231.c: 259:         parameter = 1;
+[e = _parameter -> -> 1 `i `uc ]
+[e :U 159 ]
+"260
+[; ;main ds3231.c: 260:       if(i == 3 && parameter > 12)
+[e $ ! && == -> _i `i -> 3 `i > -> _parameter `i -> 12 `i 160  ]
+"261
+[; ;main ds3231.c: 261:         parameter = 1;
+[e = _parameter -> -> 1 `i `uc ]
+[e :U 160 ]
+"262
+[; ;main ds3231.c: 262:       if(i == 4 && parameter > 99)
+[e $ ! && == -> _i `i -> 4 `i > -> _parameter `i -> 99 `i 161  ]
+"263
+[; ;main ds3231.c: 263:         parameter = 0;
+[e = _parameter -> -> 0 `i `uc ]
+[e :U 161 ]
+"264
+[; ;main ds3231.c: 264:       if(i == 7 && parameter > 1)
+[e $ ! && == -> _i `i -> 7 `i > -> _parameter `i -> 1 `i 162  ]
+"265
+[; ;main ds3231.c: 265:         parameter = 0;
+[e = _parameter -> -> 0 `i `uc ]
+[e :U 162 ]
+"267
+[; ;main ds3231.c: 267:       LCD_Set_Cursor(x, y);
+[e ( _LCD_Set_Cursor (2 , _x _y ]
+"268
+[; ;main ds3231.c: 268:       LCD_Write_Char(parameter / 10 + '0');
+[e ( _LCD_Write_Char (1 -> + -> / -> _parameter `i -> 10 `i `ui -> 48 `ui `uc ]
+"269
+[; ;main ds3231.c: 269:       LCD_Write_Char(parameter % 10 + '0');
+[e ( _LCD_Write_Char (1 -> + -> % -> _parameter `i -> 10 `i `ui -> 48 `ui `uc ]
+"271
+[; ;main ds3231.c: 271:       if(i >= 5){
+[e $ ! >= -> _i `i -> 5 `i 163  ]
+{
+"272
+[; ;main ds3231.c: 272:         RTC_read();
+[e ( _RTC_read ..  ]
+"273
+[; ;main ds3231.c: 273:         RTC_display();
+[e ( _RTC_display ..  ]
+"274
+[; ;main ds3231.c: 274:       }
+}
+[e :U 163 ]
+"275
+[; ;main ds3231.c: 275:       _delay((unsigned long)((200)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"276
+[; ;main ds3231.c: 276:     }
+}
+[e :U 154 ]
+"251
+[; ;main ds3231.c: 251:     while(!RB2)
+[e $ ! _RB2 155  ]
+[e :U 156 ]
+"278
+[; ;main ds3231.c: 278:     LCD_Set_Cursor(x, y);
+[e ( _LCD_Set_Cursor (2 , _x _y ]
+"279
+[; ;main ds3231.c: 279:     LCD_Write_String("  ");
+[e ( _LCD_Write_String (1 :s 12C ]
+"280
+[; ;main ds3231.c: 280:     blink();
+[e ( _blink ..  ]
+"282
+[; ;main ds3231.c: 282:     LCD_Set_Cursor(x, y);
+[e ( _LCD_Set_Cursor (2 , _x _y ]
+"283
+[; ;main ds3231.c: 283:     LCD_Write_Char(parameter / 10 + '0');
+[e ( _LCD_Write_Char (1 -> + -> / -> _parameter `i -> 10 `i `ui -> 48 `ui `uc ]
+"284
+[; ;main ds3231.c: 284:     LCD_Write_Char(parameter % 10 + '0');
+[e ( _LCD_Write_Char (1 -> + -> % -> _parameter `i -> 10 `i `ui -> 48 `ui `uc ]
+"285
+[; ;main ds3231.c: 285:     blink();
+[e ( _blink ..  ]
+"287
+[; ;main ds3231.c: 287:     if(i >= 5)
+[e $ ! >= -> _i `i -> 5 `i 164  ]
+"288
+[; ;main ds3231.c: 288:     {
+{
+"289
+[; ;main ds3231.c: 289:       RTC_read();
+[e ( _RTC_read ..  ]
+"290
+[; ;main ds3231.c: 290:       RTC_display();
+[e ( _RTC_display ..  ]
+"291
+[; ;main ds3231.c: 291:     }
+}
+[e :U 164 ]
+"293
+[; ;main ds3231.c: 293:     if((!RB1 && i < 5) || (!RB3 && i >= 5))
+[e $ ! || && ! _RB1 < -> _i `i -> 5 `i && ! _RB3 >= -> _i `i -> 5 `i 165  ]
+"294
+[; ;main ds3231.c: 294:     {
+{
+"295
+[; ;main ds3231.c: 295:       i++;
+[e ++ _i -> -> 1 `i `uc ]
+"296
+[; ;main ds3231.c: 296:       return parameter;
+[e ) _parameter ]
+[e $UE 147  ]
+"297
+[; ;main ds3231.c: 297:     }
+}
+[e :U 165 ]
+"298
+[; ;main ds3231.c: 298:   }
+}
+[e :U 151 ]
+[e $U 152  ]
+[e :U 153 ]
+"299
+[; ;main ds3231.c: 299: }
+[e :UE 147 ]
+}
+"301
+[; ;main ds3231.c: 301: uint8_t on_off(uint8_t x, uint8_t y, uint8_t al)
+[v _on_off `(uc ~T0 @X0 1 ef3`uc`uc`uc ]
+"302
+[; ;main ds3231.c: 302: {
+{
+[e :U _on_off ]
+"301
+[; ;main ds3231.c: 301: uint8_t on_off(uint8_t x, uint8_t y, uint8_t al)
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[v _al `uc ~T0 @X0 1 r3 ]
+"302
+[; ;main ds3231.c: 302: {
+[f ]
+"303
+[; ;main ds3231.c: 303:   while(debounce(3));
+[e $U 167  ]
+[e :U 168 ]
+[e :U 167 ]
+[e $ ( _debounce (1 -> -> 3 `i `uc 168  ]
+[e :U 169 ]
+"304
+[; ;main ds3231.c: 304:   while (1)
+[e :U 171 ]
+"305
+[; ;main ds3231.c: 305:   {
+{
+"306
+[; ;main ds3231.c: 306:     while(!RB2)
+[e $U 173  ]
+[e :U 174 ]
+"307
+[; ;main ds3231.c: 307:     {
+{
+"308
+[; ;main ds3231.c: 308:       al = (!al) & 0x01;
+[e = _al -> & -> ! != -> _al `i -> 0 `i `i -> 1 `i `uc ]
+"309
+[; ;main ds3231.c: 309:       LCD_Set_Cursor(x, y);
+[e ( _LCD_Set_Cursor (2 , _x _y ]
+"310
+[; ;main ds3231.c: 310:       if(al == 1) LCD_Write_String("ON ");
+[e $ ! == -> _al `i -> 1 `i 176  ]
+[e ( _LCD_Write_String (1 :s 13C ]
+[e $U 177  ]
+"311
+[; ;main ds3231.c: 311:       else LCD_Write_String("OFF");
+[e :U 176 ]
+[e ( _LCD_Write_String (1 :s 14C ]
+[e :U 177 ]
+"312
+[; ;main ds3231.c: 312:       _delay((unsigned long)((200)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"313
+[; ;main ds3231.c: 313:     }
+}
+[e :U 173 ]
+"306
+[; ;main ds3231.c: 306:     while(!RB2)
+[e $ ! _RB2 174  ]
+[e :U 175 ]
+"315
+[; ;main ds3231.c: 315:     LCD_Set_Cursor(x, y);
+[e ( _LCD_Set_Cursor (2 , _x _y ]
+"316
+[; ;main ds3231.c: 316:     LCD_Write_String("   ");
+[e ( _LCD_Write_String (1 :s 15C ]
+"317
+[; ;main ds3231.c: 317:     blink();
+[e ( _blink ..  ]
+"319
+[; ;main ds3231.c: 319:     LCD_Set_Cursor(x, y);
+[e ( _LCD_Set_Cursor (2 , _x _y ]
+"320
+[; ;main ds3231.c: 320:     if(al == 1) LCD_Write_String("ON ");
+[e $ ! == -> _al `i -> 1 `i 178  ]
+[e ( _LCD_Write_String (1 :s 16C ]
+[e $U 179  ]
+"321
+[; ;main ds3231.c: 321:     else LCD_Write_String("OFF");
+[e :U 178 ]
+[e ( _LCD_Write_String (1 :s 17C ]
+[e :U 179 ]
+"322
+[; ;main ds3231.c: 322:     blink();
+[e ( _blink ..  ]
+"324
+[; ;main ds3231.c: 324:     RTC_read();
+[e ( _RTC_read ..  ]
+"325
+[; ;main ds3231.c: 325:     RTC_display();
+[e ( _RTC_display ..  ]
+"327
+[; ;main ds3231.c: 327:     if(!RB3)
+[e $ ! ! _RB3 180  ]
+"328
+[; ;main ds3231.c: 328:     if(debounce(3))
+[e $ ! ( _debounce (1 -> -> 3 `i `uc 181  ]
+"329
+[; ;main ds3231.c: 329:     {
+{
+"330
+[; ;main ds3231.c: 330:      return al;
+[e ) _al ]
+[e $UE 166  ]
+"331
+[; ;main ds3231.c: 331:     }
+}
+[e :U 181 ]
+[e :U 180 ]
+"332
+[; ;main ds3231.c: 332:   }
+}
+[e :U 170 ]
+[e $U 171  ]
+[e :U 172 ]
+"333
+[; ;main ds3231.c: 333: }
+[e :UE 166 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"339
+[; ;main ds3231.c: 339: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"340
+[; ;main ds3231.c: 340: {
+{
+[e :U _main ]
+[f ]
+"341
+[; ;main ds3231.c: 341:     ADCON1 =0x07;
+[e = _ADCON1 -> -> 7 `i `uc ]
+"343
+[; ;main ds3231.c: 343:     PORTB = 0;
+[e = _PORTB -> -> 0 `i `uc ]
+"344
+[; ;main ds3231.c: 344:     TRISB = 0x0F;
+[e = _TRISB -> -> 15 `i `uc ]
+"346
+[; ;main ds3231.c: 346:     nRBPU = 0;
+[e = _nRBPU -> -> 0 `i `b ]
+"348
+[; ;main ds3231.c: 348:     external_interrupt();
+[e ( _external_interrupt ..  ]
+"350
+[; ;main ds3231.c: 350:     LCD_Init();
+[e ( _LCD_Init ..  ]
+"352
+[; ;main ds3231.c: 352:     I2C_Master_Init(100000);
+[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
+"354
+[; ;main ds3231.c: 354:     while(1)
+[e :U 184 ]
+"355
+[; ;main ds3231.c: 355:     {
+{
+"356
+[; ;main ds3231.c: 356:     if(!RB1)
+[e $ ! ! _RB1 186  ]
+"357
+[; ;main ds3231.c: 357:     if(debounce(1))
+[e $ ! ( _debounce (1 -> -> 1 `i `uc 187  ]
+"358
+[; ;main ds3231.c: 358:     {
+{
+"359
+[; ;main ds3231.c: 359:       i = 0;
+[e = _i -> -> 0 `i `uc ]
+"360
+[; ;main ds3231.c: 360:       hour = edit(1, 1, hour);
+[e = _hour ( _edit (3 , , -> -> 1 `i `uc -> -> 1 `i `uc _hour ]
+"361
+[; ;main ds3231.c: 361:       minute = edit(1, 4, minute);
+[e = _minute ( _edit (3 , , -> -> 1 `i `uc -> -> 4 `i `uc _minute ]
+"363
+[; ;main ds3231.c: 363:       while(debounce(1));
+[e $U 188  ]
+[e :U 189 ]
+[e :U 188 ]
+[e $ ( _debounce (1 -> -> 1 `i `uc 189  ]
+[e :U 190 ]
+"365
+[; ;main ds3231.c: 365:       while(1)
+[e :U 192 ]
+"366
+[; ;main ds3231.c: 366:       {
+{
+"367
+[; ;main ds3231.c: 367:         while(!RB2)
+[e $U 194  ]
+[e :U 195 ]
+"368
+[; ;main ds3231.c: 368:         {
+{
+"369
+[; ;main ds3231.c: 369:           w_day++;
+[e ++ _w_day -> -> 1 `i `uc ]
+"370
+[; ;main ds3231.c: 370:           if(w_day > 7) w_day = 1;
+[e $ ! > -> _w_day `i -> 7 `i 197  ]
+[e = _w_day -> -> 1 `i `uc ]
+[e :U 197 ]
+"371
+[; ;main ds3231.c: 371:           w_day_display();
+[e ( _w_day_display ..  ]
+"372
+[; ;main ds3231.c: 372:           _delay((unsigned long)((200)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"373
+[; ;main ds3231.c: 373:         }
+}
+[e :U 194 ]
+"367
+[; ;main ds3231.c: 367:         while(!RB2)
+[e $ ! _RB2 195  ]
+[e :U 196 ]
+"375
+[; ;main ds3231.c: 375:         LCD_Set_Cursor(2, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"376
+[; ;main ds3231.c: 376:         LCD_Write_String("   ");
+[e ( _LCD_Write_String (1 :s 18C ]
+"377
+[; ;main ds3231.c: 377:         blink();
+[e ( _blink ..  ]
+"378
+[; ;main ds3231.c: 378:         w_day_display();
+[e ( _w_day_display ..  ]
+"379
+[; ;main ds3231.c: 379:         blink();
+[e ( _blink ..  ]
+"380
+[; ;main ds3231.c: 380:         if(!RB1)
+[e $ ! ! _RB1 198  ]
+"381
+[; ;main ds3231.c: 381:         if(debounce(1))
+[e $ ! ( _debounce (1 -> -> 1 `i `uc 199  ]
+"382
+[; ;main ds3231.c: 382:           break;
+[e $U 193  ]
+[e :U 199 ]
+[e :U 198 ]
+"383
+[; ;main ds3231.c: 383:       }
+}
+[e :U 191 ]
+[e $U 192  ]
+[e :U 193 ]
+"385
+[; ;main ds3231.c: 385:       m_day = edit(2, 5, m_day);
+[e = _m_day ( _edit (3 , , -> -> 2 `i `uc -> -> 5 `i `uc _m_day ]
+"386
+[; ;main ds3231.c: 386:       month = edit(2, 8, month);
+[e = _month ( _edit (3 , , -> -> 2 `i `uc -> -> 8 `i `uc _month ]
+"387
+[; ;main ds3231.c: 387:       year = edit(2, 13, year);
+[e = _year ( _edit (3 , , -> -> 2 `i `uc -> -> 13 `i `uc _year ]
+"389
+[; ;main ds3231.c: 389:       while(debounce(1));
+[e $U 200  ]
+[e :U 201 ]
+[e :U 200 ]
+[e $ ( _debounce (1 -> -> 1 `i `uc 201  ]
+[e :U 202 ]
+"392
+[; ;main ds3231.c: 392:       minute = decimal_to_bcd(minute);
+[e = _minute ( _decimal_to_bcd (1 _minute ]
+"393
+[; ;main ds3231.c: 393:       hour = decimal_to_bcd(hour);
+[e = _hour ( _decimal_to_bcd (1 _hour ]
+"394
+[; ;main ds3231.c: 394:       m_day = decimal_to_bcd(m_day);
+[e = _m_day ( _decimal_to_bcd (1 _m_day ]
+"395
+[; ;main ds3231.c: 395:       month = decimal_to_bcd(month);
+[e = _month ( _decimal_to_bcd (1 _month ]
+"396
+[; ;main ds3231.c: 396:       year = decimal_to_bcd(year);
+[e = _year ( _decimal_to_bcd (1 _year ]
+"400
+[; ;main ds3231.c: 400:       I2C_Start();
+[e ( _I2C_Start ..  ]
+"401
+[; ;main ds3231.c: 401:       I2C_Write_Char(0xD0);
+[e ( _I2C_Write_Char (1 -> -> 208 `i `uc ]
+"402
+[; ;main ds3231.c: 402:       I2C_Write_Char(0);
+[e ( _I2C_Write_Char (1 -> -> 0 `i `uc ]
+"403
+[; ;main ds3231.c: 403:       I2C_Write_Char(0);
+[e ( _I2C_Write_Char (1 -> -> 0 `i `uc ]
+"404
+[; ;main ds3231.c: 404:       I2C_Write_Char(minute);
+[e ( _I2C_Write_Char (1 _minute ]
+"405
+[; ;main ds3231.c: 405:       I2C_Write_Char(hour);
+[e ( _I2C_Write_Char (1 _hour ]
+"406
+[; ;main ds3231.c: 406:       I2C_Write_Char(w_day);
+[e ( _I2C_Write_Char (1 _w_day ]
+"407
+[; ;main ds3231.c: 407:       I2C_Write_Char(m_day);
+[e ( _I2C_Write_Char (1 _m_day ]
+"408
+[; ;main ds3231.c: 408:       I2C_Write_Char(month);
+[e ( _I2C_Write_Char (1 _month ]
+"409
+[; ;main ds3231.c: 409:       I2C_Write_Char(year);
+[e ( _I2C_Write_Char (1 _year ]
+"410
+[; ;main ds3231.c: 410:       I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"412
+[; ;main ds3231.c: 412:       _delay((unsigned long)((200)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"414
+[; ;main ds3231.c: 414:     }
+}
+[e :U 187 ]
+[e :U 186 ]
+"416
+[; ;main ds3231.c: 416:     if(!RB3)
+[e $ ! ! _RB3 203  ]
+"417
+[; ;main ds3231.c: 417:     if(debounce(3))
+[e $ ! ( _debounce (1 -> -> 3 `i `uc 204  ]
+"418
+[; ;main ds3231.c: 418:     {
+{
+"419
+[; ;main ds3231.c: 419:       i = 5;
+[e = _i -> -> 5 `i `uc ]
+"420
+[; ;main ds3231.c: 420:       alarm1_hour = edit(3, 5, alarm1_hour);
+[e = _alarm1_hour ( _edit (3 , , -> -> 3 `i `uc -> -> 5 `i `uc _alarm1_hour ]
+"421
+[; ;main ds3231.c: 421:       alarm1_minute = edit(3, 8, alarm1_minute);
+[e = _alarm1_minute ( _edit (3 , , -> -> 3 `i `uc -> -> 8 `i `uc _alarm1_minute ]
+"422
+[; ;main ds3231.c: 422:       alarm1_status = on_off(3, 18, alarm1_status);
+[e = _alarm1_status ( _on_off (3 , , -> -> 3 `i `uc -> -> 18 `i `uc _alarm1_status ]
+"423
+[; ;main ds3231.c: 423:       i = 5;
+[e = _i -> -> 5 `i `uc ]
+"424
+[; ;main ds3231.c: 424:       alarm2_hour = edit(4, 5, alarm2_hour);
+[e = _alarm2_hour ( _edit (3 , , -> -> 4 `i `uc -> -> 5 `i `uc _alarm2_hour ]
+"425
+[; ;main ds3231.c: 425:       alarm2_minute = edit(4, 8, alarm2_minute);
+[e = _alarm2_minute ( _edit (3 , , -> -> 4 `i `uc -> -> 8 `i `uc _alarm2_minute ]
+"426
+[; ;main ds3231.c: 426:       alarm2_status = on_off(4, 18, alarm2_status);
+[e = _alarm2_status ( _on_off (3 , , -> -> 4 `i `uc -> -> 18 `i `uc _alarm2_status ]
+"428
+[; ;main ds3231.c: 428:       while(debounce(3));
+[e $U 205  ]
+[e :U 206 ]
+[e :U 205 ]
+[e $ ( _debounce (1 -> -> 3 `i `uc 206  ]
+[e :U 207 ]
+"430
+[; ;main ds3231.c: 430:       alarm1_minute = decimal_to_bcd(alarm1_minute);
+[e = _alarm1_minute ( _decimal_to_bcd (1 _alarm1_minute ]
+"431
+[; ;main ds3231.c: 431:       alarm1_hour = decimal_to_bcd(alarm1_hour);
+[e = _alarm1_hour ( _decimal_to_bcd (1 _alarm1_hour ]
+"432
+[; ;main ds3231.c: 432:       alarm2_minute = decimal_to_bcd(alarm2_minute);
+[e = _alarm2_minute ( _decimal_to_bcd (1 _alarm2_minute ]
+"433
+[; ;main ds3231.c: 433:       alarm2_hour = decimal_to_bcd(alarm2_hour);
+[e = _alarm2_hour ( _decimal_to_bcd (1 _alarm2_hour ]
+"436
+[; ;main ds3231.c: 436:       I2C_Start();
+[e ( _I2C_Start ..  ]
+"437
+[; ;main ds3231.c: 437:       I2C_Write_Char(0xD0);
+[e ( _I2C_Write_Char (1 -> -> 208 `i `uc ]
+"438
+[; ;main ds3231.c: 438:       I2C_Write_Char(7);
+[e ( _I2C_Write_Char (1 -> -> 7 `i `uc ]
+"439
+[; ;main ds3231.c: 439:       I2C_Write_Char(0);
+[e ( _I2C_Write_Char (1 -> -> 0 `i `uc ]
+"440
+[; ;main ds3231.c: 440:       I2C_Write_Char(alarm1_minute);
+[e ( _I2C_Write_Char (1 _alarm1_minute ]
+"441
+[; ;main ds3231.c: 441:       I2C_Write_Char(alarm1_hour);
+[e ( _I2C_Write_Char (1 _alarm1_hour ]
+"442
+[; ;main ds3231.c: 442:       I2C_Write_Char(0x80);
+[e ( _I2C_Write_Char (1 -> -> 128 `i `uc ]
+"443
+[; ;main ds3231.c: 443:       I2C_Write_Char(alarm2_minute);
+[e ( _I2C_Write_Char (1 _alarm2_minute ]
+"444
+[; ;main ds3231.c: 444:       I2C_Write_Char(alarm2_hour);
+[e ( _I2C_Write_Char (1 _alarm2_hour ]
+"445
+[; ;main ds3231.c: 445:       I2C_Write_Char(0x80);
+[e ( _I2C_Write_Char (1 -> -> 128 `i `uc ]
+"446
+[; ;main ds3231.c: 446:       I2C_Write_Char(4 | alarm1_status | (alarm2_status << 1));
+[e ( _I2C_Write_Char (1 -> | | -> 4 `i -> _alarm1_status `i << -> _alarm2_status `i -> 1 `i `uc ]
+"447
+[; ;main ds3231.c: 447:       I2C_Write_Char(0);
+[e ( _I2C_Write_Char (1 -> -> 0 `i `uc ]
+"448
+[; ;main ds3231.c: 448:       I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"449
+[; ;main ds3231.c: 449:       _delay((unsigned long)((200)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"450
+[; ;main ds3231.c: 450:     }
+}
+[e :U 204 ]
+[e :U 203 ]
+"451
+[; ;main ds3231.c: 451:     if(!RB2 && RB4){
+[e $ ! && ! _RB2 _RB4 208  ]
+{
+"452
+[; ;main ds3231.c: 452:       RB4 = 0;
+[e = _RB4 -> -> 0 `i `b ]
+"453
+[; ;main ds3231.c: 453:       I2C_Start();
+[e ( _I2C_Start ..  ]
+"454
+[; ;main ds3231.c: 454:       I2C_Write_Char(0xD0);
+[e ( _I2C_Write_Char (1 -> -> 208 `i `uc ]
+"455
+[; ;main ds3231.c: 455:       I2C_Write_Char(0x0E);
+[e ( _I2C_Write_Char (1 -> -> 14 `i `uc ]
+"457
+[; ;main ds3231.c: 457:       I2C_Write_Char(4 | ((!(status_reg & 1)) & alarm1_status) | (((!((status_reg >> 1) & 1)) & alarm2_status) << 1));
+[e ( _I2C_Write_Char (1 -> | | -> 4 `i & -> ! != & -> _status_reg `i -> 1 `i -> 0 `i `i -> _alarm1_status `i << & -> ! != & >> -> _status_reg `i -> 1 `i -> 1 `i -> 0 `i `i -> _alarm2_status `i -> 1 `i `uc ]
+"458
+[; ;main ds3231.c: 458:       I2C_Write_Char(0);
+[e ( _I2C_Write_Char (1 -> -> 0 `i `uc ]
+"459
+[; ;main ds3231.c: 459:       I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"460
+[; ;main ds3231.c: 460:     }
+}
+[e :U 208 ]
+"462
+[; ;main ds3231.c: 462:     RTC_read();
+[e ( _RTC_read ..  ]
+"463
+[; ;main ds3231.c: 463:     alarms_read_display();
+[e ( _alarms_read_display ..  ]
+"464
+[; ;main ds3231.c: 464:     RTC_display();
+[e ( _RTC_display ..  ]
+"466
+[; ;main ds3231.c: 466:     _delay((unsigned long)((50)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"468
+[; ;main ds3231.c: 468:   }
+}
+[e :U 183 ]
+[e $U 184  ]
+[e :U 185 ]
+"470
+[; ;main ds3231.c: 470:     return;
+[e $UE 182  ]
+"471
+[; ;main ds3231.c: 471: }
+[e :UE 182 ]
+}
+[a 9C 84 104 117 0 ]
+[a 11C 83 97 116 0 ]
+[a 5C 83 117 110 0 ]
+[a 6C 77 111 110 0 ]
+[a 10C 70 114 105 0 ]
+[a 7C 84 117 101 0 ]
+[a 8C 87 101 100 0 ]
+[a 2C 79 70 70 0 ]
+[a 4C 79 70 70 0 ]
+[a 14C 79 70 70 0 ]
+[a 17C 79 70 70 0 ]
+[a 1C 79 78 32 0 ]
+[a 3C 79 78 32 0 ]
+[a 13C 79 78 32 0 ]
+[a 16C 79 78 32 0 ]
+[a 15C 32 32 32 0 ]
+[a 18C 32 32 32 0 ]
+[a 12C 32 32 0 ]
