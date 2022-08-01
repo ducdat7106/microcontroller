@@ -1,93 +1,0 @@
-Dependencies for Project 'vidu111', Target 'vidu112233': (DO NOT MODIFY !)
-CompilerVersion: 6140000::V6.14::ARMCLANG
-F (.\scr\stm32f10x_conf.h)(0x61605441)()
-F (.\scr\stm32f10x_it.c)(0x61605442)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./scr -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/CMSIS/CM3/CoreSupport -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10x_StdPeriph_Driver/inc-I"C:/Users/NGUYEN DUC DAT/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include"-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ./objects/stm32f10x_it.o -MD)
-I (scr\stm32f10x_it.h)(0x61605442)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x61605444)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x61605444)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED619F4)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x61605444)
-I (scr\stm32f10x_conf.h)(0x61605441)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x61605445)
-F (.\scr\stm32f10x_it.h)(0x61605442)()
-F (.\scr\system_stm32f10x.c)(0x61605442)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./scr -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/CMSIS/CM3/CoreSupport -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10x_StdPeriph_Driver/inc-I"C:/Users/NGUYEN DUC DAT/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include"-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ./objects/system_stm32f10x.o -MD)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x61605444)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x61605444)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED619F4)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x61605444)
-I (scr\stm32f10x_conf.h)(0x61605441)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x61605445)
-F (.\scr\main.c)(0x61D276EE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./scr -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/CMSIS/CM3/CoreSupport -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x -I ../../STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10x_StdPeriph_Driver/inc-I"C:/Users/NGUYEN DUC DAT/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include"-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="531" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ./objects/main.o -MD)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x61605444)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x61605444)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED619F4)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x61605444)
-I (scr\stm32f10x_conf.h)(0x61605441)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x61605445)
-I (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x61605445)
-F (..\..\STM32F10x_StdPeriph_Lib_V3.6.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s)(0x61605445)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-3-I"C:/Users/NGUYEN DUC DAT/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include"-IC:/Keil_v5/ARM/CMSIS/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 531" -Wa,armasm,--pd,"STM32F10X_MD SETA 1"-o ./objects/startup_stm32f10x_md.o)

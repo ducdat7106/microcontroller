@@ -1,1 +1,0 @@
-chưa cấu hình được am pm trên ds1307

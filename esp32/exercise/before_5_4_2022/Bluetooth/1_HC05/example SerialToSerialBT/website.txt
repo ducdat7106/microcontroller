@@ -1,2 +1,0 @@
-web
-https://microcontrollerslab.com/esp32-bluetooth-classic-arduino-ide/
