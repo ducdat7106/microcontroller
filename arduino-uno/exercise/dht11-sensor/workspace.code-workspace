@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "dht11_esp32",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cmath": "cpp"
+		}
+	}
+}
